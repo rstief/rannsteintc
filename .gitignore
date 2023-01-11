@@ -8,6 +8,9 @@ node_modules/
 # No vscode stuff
 .vscode
 
+# No IntelliJ
+.idea
+
 # testing
 /coverage
 

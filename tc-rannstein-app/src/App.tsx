@@ -2,6 +2,9 @@ import React from 'react';
 import './App.css';
 import { AppBar, Button, createTheme, Grid, IconButton, ThemeProvider, Toolbar, Typography } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
+// @ts-ignore
+import ChatBot from 'react-simple-chatbot';
+import testFlow from './chatbot-flow/test-flow';
 
 
 const theme = createTheme({
@@ -49,12 +52,9 @@ function App() {
       </AppBar>
       <Grid container sx={{ justifyContent: "center", alignItems: "stretch", height: "100%"}}>
         {/* empty side left*/}
-        
         {/* add chatbot */}
         <Grid item xs={12} md={6} sx={{backgroundColor: "green"}}>
-          <Typography variant="h6">
-            My App
-          </Typography>
+          <ChatBot steps={testFlow} />
         </Grid>
         {/* empty side right */}
         

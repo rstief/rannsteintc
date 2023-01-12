@@ -7,10 +7,9 @@ import reportWebVitals from './reportWebVitals';
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
+//strict mode does not work with the chabot: https://github.com/LucasBassetti/react-simple-chatbot/issues/346
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+  <App/>
 );
 
 // If you want to start measuring performance in your app, pass a function

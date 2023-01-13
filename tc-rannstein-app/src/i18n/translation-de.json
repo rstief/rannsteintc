@@ -1,6 +1,8 @@
 {
-    "translation": {
-            "hello-msg": "hallo welt",
-            "second-msg": "dies ist ein test"
-    }
+  "translation": {
+    "hello-msg": "hallo welt",
+    "second-msg": "dies ist ein test",
+    "third-msg": "das ist nun ein zweiter flow!",
+    "fourth-msg": ":)))"
+  }
 }

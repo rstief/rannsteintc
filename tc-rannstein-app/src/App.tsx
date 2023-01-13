@@ -2,9 +2,8 @@ import React from 'react';
 import './App.css';
 import { AppBar, Button, createTheme, Grid, IconButton, ThemeProvider, Toolbar, Typography } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
-// @ts-ignore
-import ChatBot from 'react-simple-chatbot';
-import testFlow from './chatbot-flow/test-flow';
+
+import ConfiguredChatBot from './components/ConfiguredChatBot';
 
 
 const theme = createTheme({
@@ -54,10 +53,9 @@ function App() {
         {/* empty side left*/}
         {/* add chatbot */}
         <Grid item xs={12} md={6} sx={{backgroundColor: "green"}}>
-          <ChatBot steps={testFlow} />
+          <ConfiguredChatBot/>
         </Grid>
         {/* empty side right */}
-        
       </Grid>
     </ThemeProvider>
   );

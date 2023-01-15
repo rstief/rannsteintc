@@ -4,6 +4,7 @@
 
 .App-logo {
   height: 20px;
+  align-self: center;
   pointer-events: none;
 }
 

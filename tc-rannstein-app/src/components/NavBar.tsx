@@ -1,7 +1,7 @@
-import { AppBar, Box, Divider, IconButton, Menu, MenuItem, Toolbar, Typography } from "@mui/material"
+import { AppBar, Box, Divider, IconButton, Menu, MenuItem, Toolbar, Typography } from '@mui/material'
 import MenuIcon from '@mui/icons-material/Menu';
 import logo from '../assets/logo.svg'
-import React from "react";
+import React from 'react';
 
 
 const NavBar = () => {
@@ -15,28 +15,28 @@ const NavBar = () => {
     };
   
     return(
-        <AppBar position="static" sx={{}}>
-        <Toolbar sx={{ display: "flex", alignItems: "center", justifyContent: "space-between" }}>
-          <Box sx={{flexDirection: "row", flexWrap: 'nowrap', justifyContent: "flex-start"}}>
-            <img src={logo} className="App-logo" alt="logo" />
-            <Typography variant="h6">
+        <AppBar position='static' sx={{}}>
+        <Toolbar sx={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
+          <Box sx={{flexDirection: 'row', flexWrap: 'nowrap', display: 'flex'}}>
+            <img src={logo} className='App-logo' alt='logo' />
+            <Typography variant='h6' sx={{ml: '10px'}}>
               Lilo
             </Typography>
           </Box>
-          <IconButton color="inherit" aria-label="menu" aria-controls={open ? 'basic-menu' : undefined} aria-haspopup="true"
+          <IconButton color='inherit' aria-label='menu' aria-controls={open ? 'basic-menu' : undefined} aria-haspopup='true'
             aria-expanded={open ? 'true' : undefined}
             onClick={handleClick}>
             <MenuIcon />
           </IconButton>
           <Menu
-            id="basic-menu"
+            id='basic-menu'
             anchorEl={anchorEl}
             open={open}
             onClose={handleClose}
             MenuListProps={{
               'aria-labelledby': 'basic-button',
             }}>
-            <MenuItem sx={{ backgroundColor: "#2D5E6E" }} onClick={undefined}>Police Resources</MenuItem>
+            <MenuItem sx={{ backgroundColor: '#2D5E6E' }} onClick={undefined}>Police Resources</MenuItem>
             <MenuItem onClick={handleClose}>
               <Typography>
                 Closest Police Stations
@@ -49,7 +49,7 @@ const NavBar = () => {
             </MenuItem>
             <Divider />
 
-            <MenuItem sx={{ backgroundColor: "#2D5E6E" }} onClick={undefined}>Legal Resources</MenuItem>
+            <MenuItem sx={{ backgroundColor: '#2D5E6E' }} onClick={undefined}>Legal Resources</MenuItem>
             <MenuItem onClick={handleClose}>
               <Typography>
                 Closest Police Stations
@@ -62,7 +62,7 @@ const NavBar = () => {
             </MenuItem>
             <Divider />
 
-            <MenuItem sx={{ backgroundColor: "#2D5E6E" }} onClick={undefined}>Community Resources</MenuItem>
+            <MenuItem sx={{ backgroundColor: '#2D5E6E' }} onClick={undefined}>Community Resources</MenuItem>
             <MenuItem onClick={handleClose}>
               <Typography>
                 Support Groups & Hotlines

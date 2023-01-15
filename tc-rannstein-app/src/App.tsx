@@ -1,6 +1,7 @@
 import './App.css';
-import { createTheme, Grid, ThemeProvider } from '@mui/material';
+import { Box, createTheme, Grid, Stack, ThemeProvider, Typography } from '@mui/material';
 import NavBar from './components/NavBar';
+import LinearProgressWithLabel, { LinearProgressProps } from '@mui/material/LinearProgress';
 // @ts-ignore
 import ChatBot from 'react-simple-chatbot';
 import testFlow from './chatbot-flow/test-flow';
@@ -10,10 +11,10 @@ const theme = createTheme({
   palette: {
     mode: 'light',
     primary: {
-      main: '#2D5E6E',
+      main: '#FFFFFF',
     },
     secondary: {
-      main: '#f50057',
+      main: '#2D5E6E',
     },
   },
   breakpoints: {
@@ -31,15 +32,14 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <NavBar />
-      <Grid container sx={{ justifyContent: 'center', alignItems: 'stretch', height: '100%' }}>
-        {/* empty side left*/}
-        {/* add chatbot */}
-        <Grid item xs={12} md={6} sx={{ backgroundColor: 'green' }}>
+      <Box sx={{ height: 788 }}>
+        <Box sx={{ height: '20%', width: '100%'}}>
+          <Typography>Progress Bar</Typography>
+        </Box>  
+        <Box sx={{ height: '80%'}}>
           <ChatBot steps={testFlow} />
-        </Grid>
-        {/* empty side right */}
-
-      </Grid>
+        </Box>
+      </Box>
     </ThemeProvider>
   );
 }

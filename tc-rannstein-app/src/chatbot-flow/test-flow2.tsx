@@ -1,31 +1,31 @@
-import i18n from "../i18n/i18n";
+import React from "react";
+import CustomBubble from "../components/CustomBubble";
+import botImg from '../resources/botAvatar.svg';
 
 
 const flow: any[] = [
     {
         id: '3',
-        message: i18n.t("third-msg"),
-        trigger: '4',
-    },
-    {
-        id: '4',
-        user: true,
-        trigger: '5'
-    },
-    {
-        id: '5',
-        message: i18n.t("fourth-msg"),
-        trigger: '6'
+        component: <CustomBubble
+            firstLine='Test'
+            secondLine= 'Test2'
+            image={botImg}
+            imageAlt='nothing to see here :)'
+        />,
+        trigger: '6',
     },
     {
         id: '6',
-        message: 'ich red noch ein bisschen damit es scrollt',
-        trigger: '7'
+        options: [
+            { value: 1, label: 'Number 1', trigger: '7' },
+            { value: 2, label: 'Number 2', trigger: '7' },
+            { value: 3, label: 'Number 3', trigger: '7' },
+        ],
     },
     {
         id: '7',
-        message: ':)',
+        user: true,
         end: true
-    },
+    }
 ];
 export default flow;

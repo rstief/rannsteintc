@@ -25,6 +25,9 @@ const theme = createTheme({
       xl: 1536,
     },
   },
+  typography: {
+    fontFamily: 'Raleway'
+  }
 });
 
 function App() {
@@ -52,7 +55,7 @@ function App() {
       <Grid container sx={{ justifyContent: "center", alignItems: "stretch", height: "100%"}}>
         {/* empty side left*/}
         {/* add chatbot */}
-        <Grid item xs={12} md={6} sx={{backgroundColor: "green"}}>
+        <Grid item xs={12} md={6}>
           <ConfiguredChatBot/>
         </Grid>
         {/* empty side right */}

@@ -1,5 +1,8 @@
 {
   "translation": {
+    "chatbot": {
+      "messagePlaceholder": "Type a message..."
+    },
     "hello-msg": "hello world",
     "second-msg": "this is a test",
     "third-msg": "this is a second flow!",

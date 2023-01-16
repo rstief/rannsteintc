@@ -1,11 +1,64 @@
 {
   "translation": {
     "chatbot": {
-      "messagePlaceholder": "Type a message..."
-    },
-    "hello-msg": "hello world",
-    "second-msg": "this is a test",
-    "third-msg": "this is a second flow!",
-    "fourth-msg": ":)))"
+      "messagePlaceholder": "Type a message...",
+      "errorMessage": "I'm sorry, I'm not able to do that yet. If you want to try some other options please refresh the page.",
+      "seekHelp": {
+        "hello1": "Hello, I’m Lilo! This is a safe and anonymous space and I’m here to help you.",
+        "hello2": "You can ask me anything, pick a topic below or do the Crime Preliminary Assessment with me.",
+        "helloAnswer": {
+          "preliminary": {
+            "header": "Crime Preliminary Assessment",
+            "text": "Answer a few quick questions to narrow down on the specific crime and get tailored recommended help"
+          },
+          "crime": {
+            "header": "A crime has happened...",
+            "text": "I don’t know what to do"
+          },
+          "physicalAssault": {
+            "header": "I have been...",
+            "text": "physically assaulted"
+          },
+          "sexualAssault": {
+            "header": "I have been...",
+            "text": "sexually assaulted"
+          }
+        },
+        "preliminary": "Preliminary Assessment",
+        "crime": "A crime has happened and I don't know what to do",
+        "physicalAssault": "I have been physically assaulted",
+        "sexualAssault": "I have been sexually assaulted"
+      },
+      "preliminary": {
+        "hello1": "Hello, I’m Lilo! This is a safe and anonymous space and I’m here to guide you through this.",
+        "hello2": "There will be a series of questions where you can either pick an option or type your message in.",
+        "hello3": "At the end, there will be a list of all the possible crimes that may apply and you can export it and save it as a pdf.",
+        "helloAnswer": "Let’s get started!"
+      },
+      "information": {
+        "hello1": "Hello, I’m Lilo! This is a safe and anonymous space and I’m here to help you.",
+        "hello2": "You can ask me anything, pick a topic below or do the Crime Preliminary Assessment with me.",
+        "helloAnswer": {
+          "preliminary": {
+            "header": "Crime Preliminary Assessment",
+            "text": "Answer a few quick questions to narrow down on the specific crime and get tailored recommended help"
+          },
+          "police": {
+            "header": "Police Resources"
+          },
+          "legal": {
+            "header": "Legal Resources"
+          },
+          "community": {
+            "header": "Community Resources"
+          }
+        },
+        "preliminary": "Crime Preliminary Assessment",
+        "police": "Police Resources",
+        "legal": "Legal Resources",
+        "community": "Community Resources",
+        "forward": "Alright, I'll forward you to an information page about that topic. If you need me again, I'll be here."
+      }
+    }
   }
 }

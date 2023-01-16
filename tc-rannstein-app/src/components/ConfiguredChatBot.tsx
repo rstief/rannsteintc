@@ -4,7 +4,7 @@ import ChatBot from 'react-simple-chatbot';
 import { ThemeProvider } from 'styled-components';
 
 import flow from "../chatbot-flow/flow";
-import botAvatar from "../resources/botAvatar2.svg";
+import botAvatar from "../resources/botAvatar.svg";
 import i18n from "i18next";
 
 const msgDelay: number = 700;

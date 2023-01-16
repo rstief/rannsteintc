@@ -45,8 +45,9 @@ function StartBubbles() {
 
 const flow: any[] = [
     {
-        id: '3',
+        id: 'seek-help-01',
         component: <StartBubbles/>,
     }
 ];
+
 export default flow;

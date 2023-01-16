@@ -26,7 +26,7 @@ const config = {
     bubbleOptionStyle: {background: '#FFF', color: '#000', borderRadius: '18px 18px 0px 18px', fontFamily: font},
     headerComponent: <div style={{height: '10px'}}/>,
     placeholder: i18n.t('chatbot.messagePlaceholder'),
-    style: {height: '100%'},
+    style: {height: '100%', width: '390px'},
     customStyle: {all: 'unset'}
 }
 

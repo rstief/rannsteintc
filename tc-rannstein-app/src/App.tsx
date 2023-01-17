@@ -4,6 +4,7 @@ import { AppBar, Button, createTheme, Grid, IconButton, ThemeProvider, Toolbar, 
 import MenuIcon from '@mui/icons-material/Menu';
 
 import ConfiguredChatBot from './components/ConfiguredChatBot';
+import flow from "./chatbot-flow/flow";
 
 
 const theme = createTheme({
@@ -56,7 +57,7 @@ function App() {
         {/* empty side left*/}
         {/* add chatbot */}
         <Grid item xs={12} md={6}>
-          <ConfiguredChatBot/>
+          <ConfiguredChatBot steps={flow} width="100%" height="600px"/>
         </Grid>
         {/* empty side right */}
       </Grid>

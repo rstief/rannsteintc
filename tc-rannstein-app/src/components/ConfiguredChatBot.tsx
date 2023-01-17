@@ -3,7 +3,6 @@ import React from "react";
 import ChatBot from 'react-simple-chatbot';
 import { ThemeProvider } from 'styled-components';
 
-import flow from "../chatbot-flow/flow";
 import botAvatar from "../resources/botAvatar.svg";
 import i18n from "i18next";
 
@@ -12,26 +11,28 @@ const font: string = 'Raleway';
 
 const config = {
     //functional
-    steps: flow,
     cache: false, //todo: can be used, bugs out when you refresh between bot steps
     //delays
     botDelay: msgDelay,
     customDelay: msgDelay,
     userDelay: msgDelay,
-    //style
+    //avatar styles
     avatarStyle: {background: '#FFF', borderRadius: '50%'},
     botAvatar: botAvatar,
     hideUserAvatar: true,
+    //bubbles and message box styles
     bubbleStyle: {maxWidth: 'calc(100% - 94px)', overflowWrap: 'break-word'},
     bubbleOptionStyle: {background: '#FFF', color: '#000', borderRadius: '18px 18px 0px 18px', fontFamily: font},
-    headerComponent: <div style={{height: '10px'}}/>,
+    customStyle: {all: 'unset'},
     placeholder: i18n.t('chatbot.messagePlaceholder'),
-    style: {height: '100%', width: '390px'},
-    customStyle: {all: 'unset'}
+    //layout
+    headerComponent: <div style={{height: '10px'}}/>,
+    contentStyle: {height: '100%'}, //chatbot scrollable part fills remaining space in flex layout
+    style: {display: 'flex', flexDirection: 'column'},
 }
 
 const theme = {
-    background: 'linear-gradient(180deg, rgb(154,178,185) 0%, rgb(178,198,204) 35%, rgb(247,250,250) 100%)',
+    background: 'linear-gradient(180deg, #9AB2B9 0%, #B2C6CC 35%, #F7FAFA 100%)',
     //background: 'linear-gradient(180deg, rgba(45,94,110,0.48) 0%, rgba(48,100,117,0.37) 35%, rgba(56,118,138,0.04) 100%)',
     fontFamily: font,
     botBubbleColor: '#2D5E6E',
@@ -40,10 +41,10 @@ const theme = {
     userFontColor: '#FFF',
 };
 
-function ConfiguredChatBot() {
+function ConfiguredChatBot(props: any) {
     return(
         <ThemeProvider theme={theme}>
-            <ChatBot {...config} />
+            <ChatBot {...config} steps={props.steps} style={{...config.style, height: props.height, width: props.width}}/>
         </ThemeProvider>
     )
 }

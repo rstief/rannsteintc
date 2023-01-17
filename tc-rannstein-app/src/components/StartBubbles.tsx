@@ -17,7 +17,7 @@ function StartBubbles(props: any) {
                     <Typography sx={{fontSize: '12px'}}>{props.largeBubble.text}</Typography>
                 </OptionBubble>
             </div>
-            <div style={{display: 'flex', gap: '8px', paddingTop: '8px'}}>
+            <div style={{display: 'flex', gap: '8px', paddingTop: '8px', justifyContent: 'space-evenly'}}>
                 <ImageBubble
                     header={props.bubble1.header}
                     text={props.bubble1.text}

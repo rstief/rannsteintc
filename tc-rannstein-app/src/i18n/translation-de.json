@@ -1,6 +1,11 @@
 {
-    "translation": {
-            "hello-msg": "hallo welt",
-            "second-msg": "dies ist ein test"
-    }
+  "translation": {
+    "chatbot": {
+      "messagePlaceholder": "Nachricht eingeben..."
+    },
+    "hello-msg": "hallo welt",
+    "second-msg": "dies ist ein test",
+    "third-msg": "das ist nun ein zweiter flow!",
+    "fourth-msg": ":)))"
+  }
 }

@@ -3,8 +3,14 @@
 }
 
 .App-logo {
-  height: 40vmin;
+  height: 20px;
+  align-self: center;
   pointer-events: none;
+}
+
+.intropageimages {
+  height: 125px;
+  align-self: center;
 }
 
 @media (prefers-reduced-motion: no-preference) {

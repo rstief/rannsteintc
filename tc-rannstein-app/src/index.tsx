@@ -30,6 +30,9 @@ const theme = createTheme({
       xl: 1536,
     },
   },
+  typography: {
+    fontFamily: 'Raleway'
+  }
 });
 
 const router = createBrowserRouter([

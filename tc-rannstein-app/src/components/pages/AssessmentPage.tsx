@@ -1,14 +1,15 @@
 import { Box } from '@mui/material';
 // @ts-ignore
 import ChatBot from 'react-simple-chatbot';
-import testFlow from '../../chatbot-flow/test-flow';
 import InfoBar from '../InfoBar';
+import ConfiguredChatBot from "../ConfiguredChatBot";
+import flow from "../../chatbot-flow/flow";
 
 const AssessmentPage = () => {
   return (
     <Box>
       <InfoBar />
-      <ChatBot steps={testFlow} />
+        <ConfiguredChatBot steps={flow} width="100%" height="600px"/>
     </Box>
   )
 }

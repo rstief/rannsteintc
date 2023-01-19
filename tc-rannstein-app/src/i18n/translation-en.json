@@ -1,5 +1,7 @@
 {
   "translation": {
+    "yes": "yes",
+    "no": "no",
     "chatbot": {
       "messagePlaceholder": "Type a message...",
       "errorMessage": "I'm sorry, I'm not able to do that yet. If you want to try some other options please refresh the page.",
@@ -33,7 +35,78 @@
         "hello1": "Hello, I’m Lilo! This is a safe and anonymous space and I’m here to guide you through this.",
         "hello2": "There will be a series of questions where you can either pick an option or type your message in.",
         "hello3": "At the end, there will be a list of all the possible crimes that may apply and you can export it and save it as a pdf.",
-        "helloAnswer": "Let’s get started!"
+        "helloAnswer": "Let’s get started!",
+        "start": "Were you harmed or did something get damaged/stolen?",
+        "startAnswer": {
+          "harmed": "harmed",
+          "damaged": "damaged",
+          "stolen": "stolen"
+        },
+        "stolen1": "Did the perpetrator hurt or threaten you?",
+        "stolen1Answer": {
+          "hurt": "hurt",
+          "threatened": "threaten",
+          "none": "none of these"
+        },
+        "stolen2-2": "Did the perpetrator have a weapon?",
+        "stolen2-3": "Were you robbed or scammed?",
+        "stolen2-3Answer": {
+          "robbed": "robbed",
+          "scammed": "scammed"
+        },
+        "stolen3-1": "Was your home broken into?",
+        "damaged1": "Were you hurt or did something get stolen?",
+        "damaged1Answer": {
+          "hurt": "hurt",
+          "stolen": "stolen",
+          "none": "none of these"
+        },
+        "damaged2-2": "Was your home broken into?",
+        "harmed1": "How were you harmed?",
+        "harmed1Answer": {
+          "physically": "physically",
+          "sexually": "sexually",
+          "verbally": "verbally"
+        },
+        "harmed2-1": "Was there something damaged or stolen?",
+        "harmed2-1Answer": {
+          "damaged": "damaged",
+          "stolen": "stolen",
+          "none": "none of these"
+        },
+        "harmed2-2": "Were you also hurt in another way?",
+        "harmed2-3": "Was it in person or through the Internet?",
+        "harmed2-3Answer": {
+          "in-person": "in-person",
+          "online": "online"
+        },
+        "harmed3-1": "Did the perpetrator use a weapon?",
+        "harmed3-2": "Did the perpetrator use a weapon?",
+        "harmed3-3": "Were you insulted, threatened or was your reputation damaged?",
+        "harmed3-3Answer": {
+          "insulted": "insulted",
+          "threatened": "threatened",
+          "reputation": "reputation damaged"
+        },
+        "harmed4-1": "Were there multiple perpetrators?",
+        "harmed4-2": "Were there multiple perpetrators?",
+        "done": {
+          "1": "Thank you for your response. I have narrowed down a few possibilities that could be the crime. ",
+          "2": "Each result features tailored resources which you can access.",
+          "3": "These results can also be exported into a PDF for your reference.",
+          "4": "If there’s anything else, feel free to talk to me or explore our other resources.",
+          "5": "Wishing you all the best, and stay safe!"
+        },
+        "resultNote": {
+          "1": "These results reference the German Criminal Code. For more details, please visit:",
+          "2": "https://www.gesetze-im-internet.de/englisch_stgb/"
+        },
+        "retry": "if you think none of these apply to you, you can try the assessment again or if you’re not sure what to do, talk to me so I can help you.",
+        "retryAnswer": {
+          "redo": "Redo Assessment",
+          "talk": "Talk to Lilo"
+        },
+        "divider": "Start of Preliminary Assessment"
       },
       "information": {
         "hello1": "Hello, I’m Lilo! This is a safe and anonymous space and I’m here to help you.",
@@ -58,6 +131,53 @@
         "legal": "Legal Resources",
         "community": "Community Resources",
         "forward": "Alright, I'll forward you to an information page about that topic. If you need me again, I'll be here."
+      }
+    },
+    "paragraphs": {
+      "177": {
+        "title": "Section 177: Sexual assault; sexual coercion; rape"
+      },
+      "184i": {
+        "title": "Section 184i: Sexual harassment"
+      },
+      "185": {
+        "title": "Section 185: Insult"
+      },
+      "186": {
+        "title": "Section 186: Malicious gossip (Üble Nachrede)"
+      },
+      "187": {
+        "title": "Section 187: Defamation"
+      },
+      "223": {
+        "title": "Section 223: Bodily harm"
+      },
+      "224": {
+        "title": "Section 224: Dangerous bodily harm"
+      },
+      "241": {
+        "title": "Section 241: Threatening commission of serious criminal offence"
+      },
+      "242": {
+        "title": "Section 242: Theft"
+      },
+      "244-1": {
+        "title": "Section 244: Armed theft"
+      },
+      "244-3": {
+        "title": "Section 244: Theft by burglary of dwellings"
+      },
+      "249": {
+        "title": "Section 249: Robbery"
+      },
+      "250": {
+        "title": "Section 250: Aggravated robbery"
+      },
+      "263": {
+        "title": "Section 263: Fraud"
+      },
+      "303": {
+        "title": "Section 303: Criminal damage"
       }
     }
   }

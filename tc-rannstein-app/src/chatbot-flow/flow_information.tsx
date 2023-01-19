@@ -55,21 +55,25 @@ const flow: any[] = [
     {
         id: 'information.preliminary',
         component: <UserBubble text={i18n.t('chatbot.information.preliminary')}/>,
-        trigger: "preliminary.hello2"
+        delay: 700,
+        trigger: "preliminary.divider"
     },
     {
         id: 'information.police',
         component: <UserBubble text={i18n.t('chatbot.information.police')}/>,
+        delay: 700,
         trigger: 'information.forwardPolice'
     },
     {
         id: 'information.legal',
         component: <UserBubble text={i18n.t('chatbot.information.legal')}/>,
+        delay: 700,
         trigger: 'information.forwardLegal'
     },
     {
         id: 'information.community',
         component: <UserBubble text={i18n.t('chatbot.information.community')}/>,
+        delay: 700,
         trigger: 'information.forwardCommunity'
     },
     {

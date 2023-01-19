@@ -55,21 +55,25 @@ const flow: any[] = [
     {
         id: 'seekHelp.preliminary',
         component: <UserBubble text={i18n.t('chatbot.seekHelp.preliminary')}/>,
-        trigger: "preliminary.hello2"
+        delay: 700,
+        trigger: "preliminary.divider"
     },
     {
         id: 'seekHelp.crime',
         component: <UserBubble text={i18n.t('chatbot.seekHelp.crime')}/>,
+        delay: 700,
         trigger: "error" //todo
     },
     {
         id: 'seekHelp.physicalAssault',
         component: <UserBubble text={i18n.t('chatbot.seekHelp.physicalAssault')}/>,
+        delay: 700,
         trigger: "error" //todo
     },
     {
         id: 'seekHelp.sexualAssault',
         component: <UserBubble text={i18n.t('chatbot.seekHelp.sexualAssault')}/>,
+        delay: 700,
         trigger: "error" //todo
     },
 

@@ -6,16 +6,15 @@ import { ThemeProvider } from 'styled-components';
 import botAvatar from "../resources/botAvatar.svg";
 import i18n from "i18next";
 
-const msgDelay: number = 700;
 const font: string = 'Raleway';
 
 const config = {
     //functional
     cache: false, //todo: can be used, bugs out when you refresh between bot steps
     //delays
-    botDelay: msgDelay,
-    customDelay: msgDelay,
-    userDelay: msgDelay,
+    botDelay: 1000,
+    customDelay: 1000, //1k
+    userDelay: 700, //700
     //avatar styles
     avatarStyle: {background: '#FFF', borderRadius: '50%'},
     botAvatar: botAvatar,

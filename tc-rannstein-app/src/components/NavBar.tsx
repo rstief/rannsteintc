@@ -1,5 +1,6 @@
-import { AppBar, Box, Divider, IconButton, Menu, MenuItem, Toolbar, Typography } from '@mui/material'
+import { Accordion, AccordionDetails, AccordionSummary, AppBar, Box, Button, Divider, IconButton, Link, Menu, MenuItem, Stack, Toolbar, Typography } from '@mui/material'
 import MenuIcon from '@mui/icons-material/Menu';
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import logo from '../assets/logo.svg'
 import React from 'react';
 
@@ -35,8 +36,110 @@ const NavBar = () => {
                     onClose={handleClose}
                     MenuListProps={{
                         'aria-labelledby': 'basic-button',
-                    }}>
-                    <MenuItem sx={{ backgroundColor: '#2D5E6E' }} onClick={undefined}>Police Resources</MenuItem>
+                    }}
+                    sx={{ alignContent: 'start' }}>
+                    <MenuItem>
+                        <Accordion color='secondary' sx={{ color: 'black', backgroundColor: '#2D5E6E' }}>
+                            <AccordionSummary
+                                expandIcon={<ExpandMoreIcon />}
+                                aria-controls="panel2a-content"
+                                id="panel2a-header">
+                                <Typography>Police Resources</Typography>
+                            </AccordionSummary>
+                            <AccordionDetails
+                                sx={{ backgroundColor: 'white' }}>
+                                <Stack>
+                                    <Button
+                                        color='secondary'
+                                        sx={{ justifyContent: 'start' }}
+                                        onClick={() => {
+                                            console.log("tsete")
+                                        }}>
+                                        <Link href='../lilo/infopage' color='secondary' underline='none'>
+                                            Closest Police Station
+                                        </Link>
+                                    </Button>
+                                    <Divider />
+                                    <Button
+                                        color='secondary'
+                                        sx={{ justifyContent: 'start' }}
+                                        onClick={() => {
+                                            console.log("tete")
+                                        }}>
+                                        <Link href='../lilo/infopage' color='secondary' underline='none'>
+                                            Reporting Crime & What To Do
+                                        </Link>
+                                    </Button>
+                                </Stack>
+                            </AccordionDetails>
+                        </Accordion>
+                    </MenuItem>
+                    <MenuItem>
+                        <Accordion color='secondary' sx={{ color: 'black', backgroundColor: '#2D5E6E' }}>
+                            <AccordionSummary
+                                expandIcon={<ExpandMoreIcon />}
+                                aria-controls="panel2a-content"
+                                id="panel2a-header">
+                                <Typography>Legal Resources</Typography>
+                            </AccordionSummary>
+                            <AccordionDetails sx={{ backgroundColor: 'white' }}>
+                                <Stack sx={{ justifyContent: 'start' }}>
+                                    <Button
+                                        color='secondary'
+                                        sx={{ justifyContent: 'start' }}
+                                        onClick={() => {
+                                            console.log("tsete")
+                                        }}>
+                                        <Link href='../lilo/infopage' color='secondary' underline='none'>
+                                            Closest Legal Aid and Lawyers
+                                        </Link>
+                                    </Button>
+                                    <Divider />
+                                    <Button
+                                        color='secondary'
+                                        sx={{ justifyContent: 'start' }}
+                                        onClick={() => {
+                                            console.log("tete")
+                                        }}>
+                                        <Link href='../lilo/infopage' color='secondary' underline='none'>
+                                            Local Laws
+                                        </Link>
+                                    </Button>
+                                </Stack>
+                            </AccordionDetails>
+                        </Accordion>
+                    </MenuItem>
+
+                    <MenuItem>
+                        <Accordion color='secondary' sx={{ color: 'black', backgroundColor: '#2D5E6E' }}>
+                            <AccordionSummary
+                                expandIcon={<ExpandMoreIcon />}
+                                aria-controls="panel2a-content"
+                                id="panel2a-header">
+                                <Typography>Legal Resources</Typography>
+                            </AccordionSummary>
+                            <AccordionDetails sx={{ backgroundColor: 'white' }}>
+                                <Stack sx={{ justifyContent: 'start' }}>
+                                    <Button
+                                        color='secondary'
+                                        sx={{ justifyContent: 'start' }}
+                                        onClick={() => {
+                                            console.log("tsete")
+                                        }}>
+                                        <Link href='../lilo/infopage' color='secondary' underline='none'>
+                                            Support Groups & Hotlines
+                                        </Link>
+                                    </Button>
+                                </Stack>
+                            </AccordionDetails>
+                        </Accordion>
+                    </MenuItem>
+
+
+
+                    {/* <MenuItem sx={{ backgroundColor: '#2D5E6E' }} onClick={undefined}>
+                        Police Resources
+                    </MenuItem>
                     <MenuItem onClick={handleClose}>
                         <Typography>
                             Closest Police Stations
@@ -52,12 +155,12 @@ const NavBar = () => {
                     <MenuItem sx={{ backgroundColor: '#2D5E6E' }} onClick={undefined}>Legal Resources</MenuItem>
                     <MenuItem onClick={handleClose}>
                         <Typography>
-                            Closest Police Stations
+                            Closest Legal Aid and Lawyers
                         </Typography>
                     </MenuItem>
                     <MenuItem onClick={handleClose}>
                         <Typography>
-                            Reporting Crime & What To Do
+                            Local Laws
                         </Typography>
                     </MenuItem>
                     <Divider />
@@ -67,7 +170,7 @@ const NavBar = () => {
                         <Typography>
                             Support Groups & Hotlines
                         </Typography>
-                    </MenuItem>
+                    </MenuItem> */}
                 </Menu>
             </Toolbar>
         </AppBar>

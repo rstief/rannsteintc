@@ -11,10 +11,22 @@ const errorFlow: any[] = [
         end: true
     }
 ];
-const flow: any[] = empty.concat(
+
+const preliminaryFlow: any[] = empty.concat(
+    flow_preliminary,
+    errorFlow
+)
+
+const seekHelpFlow: any[] = empty.concat(
     flow_seekHelp,
     flow_preliminary,
     errorFlow
-);
+)
 
-export default flow;
+const informationFlow: any[] = empty.concat(
+    flow_information,
+    flow_preliminary,
+    errorFlow
+)
+
+export {preliminaryFlow, seekHelpFlow, informationFlow};

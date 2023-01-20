@@ -1,5 +1,5 @@
 import { AppBar, Box, Toolbar, Typography, Link, IconButton, FormControl, InputLabel, MenuItem, Select, SelectChangeEvent } from '@mui/material';
-import logo from '../../assets/logo.svg'
+import logo from '../../assets/logoWithName.svg'
 import introassessment from '../../assets/introassessment.svg'
 import introexplore from '../../assets/introexplore.svg'
 import introseekhelp from '../../assets/introseekhelp.svg'
@@ -17,10 +17,7 @@ const IntroPage = () => {
       <><AppBar position='static' sx={{}}>
         <Toolbar sx={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
           <Box sx={{ flexDirection: 'row', flexWrap: 'nowrap', display: 'flex' }}>
-            <img src={logo} className='App-logo' alt='logo' />
-            <Typography variant='h6' sx={{ ml: '10px', color: '#2D5E6E' }}>
-              Lilo
-            </Typography>
+            <img src={logo} alt='logo' />
           </Box>
         </Toolbar>
       </AppBar>
@@ -56,10 +53,7 @@ const IntroPage = () => {
     <><AppBar position='static' sx={{}}>
       <Toolbar sx={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
         <Box sx={{ flexDirection: 'row', flexWrap: 'nowrap', display: 'flex' }}>
-          <img src={logo} className='App-logo' alt='logo' />
-          <Typography variant='h6' sx={{ ml: '10px', color: '#2D5E6E' }}>
-            Lilo
-          </Typography>
+          <img src={logo} alt='logo' />
         </Box>
       </Toolbar>
     </AppBar>

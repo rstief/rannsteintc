@@ -2,12 +2,6 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 20px;
-  align-self: center;
-  pointer-events: none;
-}
-
 .intropageimages {
   height: 125px;
   align-self: center;
@@ -17,12 +11,6 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
 }
 
 .App-header {
@@ -38,13 +26,4 @@
 
 .App-link {
   color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }

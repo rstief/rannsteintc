@@ -1,7 +1,7 @@
 import { Accordion, AccordionDetails, AccordionSummary, AppBar, Box, Button, Divider, IconButton, Link, Menu, MenuItem, Stack, Toolbar, Typography } from '@mui/material'
 import MenuIcon from '@mui/icons-material/Menu';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import logo from '../assets/logo.svg'
+import logo from '../assets/logoWithName.svg'
 import React from 'react';
 
 
@@ -19,10 +19,7 @@ const NavBar = () => {
         <AppBar position='static' sx={{}}>
             <Toolbar sx={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
                 <Box sx={{ flexDirection: 'row', flexWrap: 'nowrap', display: 'flex' }}>
-                    <img src={logo} className='App-logo' alt='logo' />
-                    <Typography variant='h6' sx={{ ml: '10px', color: '#2D5E6E' }}>
-                        Lilo
-                    </Typography>
+                    <img src={logo} alt='logo' />
                 </Box>
                 <IconButton color='secondary' aria-label='menu' aria-controls={open ? 'basic-menu' : undefined} aria-haspopup='true'
                     aria-expanded={open ? 'true' : undefined}

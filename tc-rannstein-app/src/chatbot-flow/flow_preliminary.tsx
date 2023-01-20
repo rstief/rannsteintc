@@ -2,6 +2,7 @@ import React from "react";
 import i18n from "../i18n/i18n";
 import PreliminaryResult from "../components/PreliminaryResult";
 import DividerBubble from "../components/DividerBubble";
+import Navigator from "../components/Navigator";
 
 const flow: any[] = [
     {
@@ -246,7 +247,7 @@ const flow: any[] = [
         component: <DoneBubble/>,
         asMessage: true,
         trigger: 'preliminary.resultNote',
-        delay: 2500
+        delay: 2000
     },
     {
         id: 'preliminary.resultNote',
@@ -268,15 +269,14 @@ const flow: any[] = [
     {
         id: 'preliminary.retryAnswer',
         options: [
-            {value:1, label: i18n.t('chatbot.preliminary.retryAnswer.redo'), trigger: 'preliminary.divider'}, //todo: clear history somehow
+            {value:1, label: i18n.t('chatbot.preliminary.retryAnswer.redo'), trigger: 'preliminary.routePreliminary'},
             {value:2, label: i18n.t('chatbot.preliminary.retryAnswer.talk'), trigger: 'error'}, //todo (not in this prototype)
         ],
     },
     {
-        id: 'preliminary.divider',
-        component: <DividerBubble text={i18n.t('chatbot.preliminary.divider')}/>,
-        delay: 500,
-        trigger: "preliminary.hello2",
+        id: 'preliminary.routePreliminary',
+        component: <Navigator route="/lilo/assessment"/>,
+        end: true
     }
 
 ];

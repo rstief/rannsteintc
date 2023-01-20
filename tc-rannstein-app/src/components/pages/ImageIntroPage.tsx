@@ -19,7 +19,7 @@ const ImageIntroPage = () => {
                 {t("introPages.page1.hello")}
             </Typography>
 
-            <img src={introimage} className='intropageimages' alt='intro'/>
+            <img src={introimage} className='introimage' alt='intro'/>
         </Box>
     )
 }

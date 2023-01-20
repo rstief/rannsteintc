@@ -133,7 +133,7 @@
         "forward": "Alright, I'll forward you to an information page about that topic. If you need me again, I'll be here."
       }
     },
-    "introPages" : {
+    "introPages": {
       "page1": {
         "hello": "Hi I’m Lilo, your local law expert!"
       },

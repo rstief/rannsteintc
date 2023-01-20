@@ -3,9 +3,19 @@
     "chatbot": {
       "messagePlaceholder": "Nachricht eingeben..."
     },
-    "hello-msg": "hallo welt",
-    "second-msg": "dies ist ein test",
-    "third-msg": "das ist nun ein zweiter flow!",
-    "fourth-msg": ":)))"
+    "introPages" : {
+      "page1": {
+        "hello": "Hallo, ich bin Lilo, deine digitale Rechtsexpertin!"
+      },
+      "page2": {
+        "header": "Für möglichst genaue Informtionen geben Sie bitte ihr Bundesland und Ihre Sprache an",
+        "stateSelect": "Bundesland",
+        "languageSelect": "Sprache"
+      },
+      "page3": {
+        "header": "Would you like to:"
+      }
+    },
+    "no": "nein"
   }
 }

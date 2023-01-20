@@ -2,9 +2,11 @@ import { Box, Typography } from "@mui/material"
 import { useNavigate } from "react-router-dom";
 import introimage from '../../assets/introimage.svg'
 // import { setTimeout } from 'timers/promises';
+import {useTranslation} from "react-i18next";
 
 const ImageIntroPage = () => {
-    const navigate = useNavigate()
+    const { t } = useTranslation();
+    const navigate = useNavigate();
 
     setTimeout(() => {
         console.log('This will run after 2 seconds!')
@@ -14,10 +16,10 @@ const ImageIntroPage = () => {
     return (
         <Box display={'flex'} sx={{ flexDirection:'column', justifyContent: 'center', alignItems: 'center', height: '600px'}}>
             <Typography align='center' fontWeight='bold' mt='20px' color='#263238' mb='30px'>
-                Hi I’m Lilo, your local law enforcement expert 
+                {t("introPages.page1.hello")}
             </Typography>
 
-            <img src={introimage} className='intropageimages' alt='intro' />
+            <img src={introimage} className='intropageimages' alt='intro'/>
         </Box>
     )
 }

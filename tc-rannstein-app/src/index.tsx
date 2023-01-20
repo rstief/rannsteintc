@@ -11,6 +11,7 @@ import { ThemeProvider } from '@emotion/react';
 import { createTheme } from '@mui/material';
 import ImageIntroPage from './components/pages/ImageIntroPage';
 import CommunityPage from './components/pages/CommunityPage';
+import './i18n/i18n';
 
 const theme = createTheme({
   palette: {

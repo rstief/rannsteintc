@@ -133,6 +133,19 @@
         "forward": "Alright, I'll forward you to an information page about that topic. If you need me again, I'll be here."
       }
     },
+    "introPages" : {
+      "page1": {
+        "hello": "Hi I’m Lilo, your local law expert!"
+      },
+      "page2": {
+        "header": "For more accurate information, please provide your location and language",
+        "stateSelect": "State",
+        "languageSelect": "Language"
+      },
+      "page3": {
+        "header": "Would you like to:"
+      }
+    },
     "paragraphs": {
       "177": {
         "title": "Section 177: Sexual assault; sexual coercion; rape"

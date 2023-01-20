@@ -3,14 +3,16 @@ import logo from '../../assets/logoWithName.svg'
 import introassessment from '../../assets/introassessment.svg'
 import introexplore from '../../assets/introexplore.svg'
 import introseekhelp from '../../assets/introseekhelp.svg'
+import {useTranslation} from "react-i18next";
 import { useState } from 'react';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 
 const IntroPage = () => {
+  const {t, i18n} = useTranslation();
   const [currentPage, setPage] = useState(0);
   const [gerState, setGerState] = useState('bavaria');
-  const [language, setLanguage] = useState('german');
+  const [language, setLanguage] = useState(localStorage.getItem("language") ?? 'en');
 
   if (currentPage === 1) {
     return (
@@ -60,12 +62,12 @@ const IntroPage = () => {
       <Box display={'flex'} sx={{ flexDirection: 'column', justifyContent: 'space-evenly', height: '700px', alignItems: 'center' }}>
         <Box display={'flex'} sx={{ flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}>
           <Typography align='left' mb={'10px'} ml='20px' sx={{ fontSize: '14px', fontWeight: 'bold' }}>
-            For more accurate information, please provide your location
+            {t("introPages.page2.header")}
           </Typography>
         </Box>
         <Box sx={{ width: 120 }}>
           <FormControl fullWidth>
-            <InputLabel>State</InputLabel>
+            <InputLabel>{t("introPages.page2.stateSelect")}</InputLabel>
             <Select
               // labelId="demo-simple-select-label"
               // id="demo-simple-select"
@@ -83,18 +85,22 @@ const IntroPage = () => {
         </Box>
         <Box sx={{ width: 120 }}>
         <FormControl fullWidth>
-          <InputLabel>Language</InputLabel>
+          <InputLabel>{t("introPages.page2.languageSelect")}</InputLabel>
           <Select
             // labelId="demo-simple-select-label"
             // id="demo-simple-select"
             value={language}
             label="Language"
             onChange={(event: SelectChangeEvent) =>{
-              setLanguage(event.target.value)
+              let language: string = event.target.value
+              //set language for local state, storage (chatbot translation) and other translations.
+              setLanguage(language);
+              localStorage.setItem("language", language);
+              i18n.changeLanguage(language);
             }}
           >
-            <MenuItem value={'englisch'}>Englisch</MenuItem>
-            <MenuItem value={'german'}>Deutsch</MenuItem>
+            <MenuItem value={'en'}>Englisch</MenuItem>
+            <MenuItem value={'de'}>Deutsch</MenuItem>
           </Select>
         </FormControl>
         </Box>

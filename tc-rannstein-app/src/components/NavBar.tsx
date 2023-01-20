@@ -1,6 +1,7 @@
 import { Accordion, AccordionDetails, AccordionSummary, AppBar, Box, Button, Divider, IconButton, Link, Menu, MenuItem, Stack, Toolbar, Typography } from '@mui/material'
 import MenuIcon from '@mui/icons-material/Menu';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+
 import logo from '../assets/logoWithName.svg'
 import React from 'react';
 
@@ -34,99 +35,70 @@ const NavBar = () => {
                     MenuListProps={{
                         'aria-labelledby': 'basic-button',
                     }}
-                    sx={{ alignContent: 'start' }}>
-                    <MenuItem>
-                        <Accordion color='secondary' sx={{ color: 'black', backgroundColor: '#2D5E6E' }}>
+                    >
+                    <MenuItem sx={{padding: 0, display: 'block', marginTop: '-8px' /* negative margin for first element*/}}>
+                        <Accordion color='secondary' sx={{color: 'black', backgroundColor: '#2D5E6E' }} square={true} disableGutters={true}>
                             <AccordionSummary
-                                expandIcon={<ExpandMoreIcon />}
+                                expandIcon={<ExpandMoreIcon sx={{color:'#FFF'}}/>}
                                 aria-controls="panel2a-content"
                                 id="panel2a-header">
-                                <Typography color='primary'>Police Resources</Typography>
+                                <Typography color='primary' fontWeight='bold' fontSize='14px'>POLICE RESOURCES</Typography>
                             </AccordionSummary>
-                            <AccordionDetails
-                                sx={{ backgroundColor: 'white' }}>
-                                <Link href='../lilo/infopage' color='secondary' underline='none'>
-                                    Closest Police Station
-                                </Link>
-                                <Divider />
-                                <Link href='../lilo/infopage' color='secondary' underline='none'>
-                                    Reporting Crime & What To Do
-                                </Link>
+                            <AccordionDetails sx={{ backgroundColor: 'white', padding: "0" }}>
+                                <div className="buttonPadding">
+                                    <Link href='../lilo/infopage' color='secondary' underline='none'>
+                                        Closest Police Station
+                                    </Link>
+                                </div>
+                                <Divider className="menuDivider"/>
+                                <div className="buttonPadding">
+                                    <Link href='../lilo/infopage' color='secondary' underline='none'>
+                                        Reporting Crime & What To Do
+                                    </Link>
+                                </div>
                             </AccordionDetails>
                         </Accordion>
                     </MenuItem>
-                    <MenuItem>
-                        <Accordion color='secondary' sx={{ color: 'black', backgroundColor: '#2D5E6E' }}>
+                    <MenuItem sx={{padding: 0, display: 'block'}}>
+                        <Accordion sx={{ backgroundColor: '#2D5E6E' }} square={true} disableGutters={true}>
                             <AccordionSummary
-                                expandIcon={<ExpandMoreIcon />}
+                                expandIcon={<ExpandMoreIcon sx={{color:'#FFF'}}/>}
                                 aria-controls="panel2a-content"
                                 id="panel2a-header">
-                                <Typography color='primary'>Legal Resources</Typography>
+                                <Typography color='primary' fontWeight='bold' fontSize='14px'>LEGAL RESOURCES</Typography>
                             </AccordionSummary>
-                            <AccordionDetails sx={{ backgroundColor: 'white' }}>
-                                <Link href='../lilo/infopage' color='secondary' underline='none'>
-                                    Closest Legal Aid and Lawyers
-                                </Link>
-                                <Divider />
-                                <Link href='../lilo/infopage' color='secondary' underline='none'>
-                                    Local Laws
-                                </Link>
+                            <AccordionDetails sx={{ backgroundColor: 'white', padding: "0" }}>
+                                <div className="buttonPadding">
+                                    <Link href='../lilo/infopage' color='secondary' underline='none'>
+                                        Closest Legal Aid and Lawyers
+                                    </Link>
+                                </div>
+                                <Divider className={"menuDivider"}/>
+                                <div className="buttonPadding">
+                                    <Link href='../lilo/infopage' color='secondary' underline='none'>
+                                        Local Laws
+                                    </Link>
+                                </div>
                             </AccordionDetails>
                         </Accordion>
                     </MenuItem>
-
-                    <MenuItem>
-                        <Accordion color='secondary' sx={{ color: 'black', backgroundColor: '#2D5E6E' }}>
+                    <MenuItem sx={{padding: 0, display: 'block', marginBottom: '-8px' /* negative margin for last element*/}}>
+                        <Accordion color='secondary' sx={{ color: 'black', backgroundColor: '#2D5E6E' }} square={true} disableGutters={true}>
                             <AccordionSummary
-                                expandIcon={<ExpandMoreIcon />}
+                                expandIcon={<ExpandMoreIcon sx={{color:'#FFF'}}/>}
                                 aria-controls="panel2a-content"
                                 id="panel2a-header">
-                                <Typography color='primary'>Community Resources</Typography>
+                                <Typography color='primary' fontWeight='bold' fontSize='14px'>COMMUNITY RESOURCES</Typography>
                             </AccordionSummary>
-                            <AccordionDetails sx={{ backgroundColor: 'white' }}>
-                                <Link href='../lilo/communityresources' color='secondary' underline='none'>
-                                    Support Groups & Hotlines
-                                </Link>
+                            <AccordionDetails sx={{ backgroundColor: 'white', padding: "0" }}>
+                                <div className="buttonPadding">
+                                    <Link href='../lilo/communityresources' color='secondary' underline='none'>
+                                        Support Groups & Hotlines
+                                    </Link>
+                                </div>
                             </AccordionDetails>
                         </Accordion>
                     </MenuItem>
-
-
-
-                    {/* <MenuItem sx={{ backgroundColor: '#2D5E6E' }} onClick={undefined}>
-                        Police Resources
-                    </MenuItem>
-                    <MenuItem onClick={handleClose}>
-                        <Typography>
-                            Closest Police Stations
-                        </Typography>
-                    </MenuItem>
-                    <MenuItem onClick={handleClose}>
-                        <Typography>
-                            Reporting Crime & What To Do
-                        </Typography>
-                    </MenuItem>
-                    <Divider />
-
-                    <MenuItem sx={{ backgroundColor: '#2D5E6E' }} onClick={undefined}>Legal Resources</MenuItem>
-                    <MenuItem onClick={handleClose}>
-                        <Typography>
-                            Closest Legal Aid and Lawyers
-                        </Typography>
-                    </MenuItem>
-                    <MenuItem onClick={handleClose}>
-                        <Typography>
-                            Local Laws
-                        </Typography>
-                    </MenuItem>
-                    <Divider />
-
-                    <MenuItem sx={{ backgroundColor: '#2D5E6E' }} onClick={undefined}>Community Resources</MenuItem>
-                    <MenuItem onClick={handleClose}>
-                        <Typography>
-                            Support Groups & Hotlines
-                        </Typography>
-                    </MenuItem> */}
                 </Menu>
             </Toolbar>
         </AppBar>

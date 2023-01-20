@@ -9,6 +9,8 @@
 
 .introimage {
   width: 75%;
+  max-width: 75%;
+  max-height: 75%;
   align-self: center;
 }
 
@@ -31,4 +33,15 @@
 
 .App-link {
   color: #61dafb;
+}
+
+/* Menu Bar */
+
+.menuDivider {
+  borderBottomWidth: 1.5;
+  background: #2D5E6E;
+}
+
+.buttonPadding {
+  padding: 8px;
 }

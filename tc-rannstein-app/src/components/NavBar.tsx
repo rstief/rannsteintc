@@ -44,33 +44,17 @@ const NavBar = () => {
                                 expandIcon={<ExpandMoreIcon />}
                                 aria-controls="panel2a-content"
                                 id="panel2a-header">
-                                <Typography>Police Resources</Typography>
+                                <Typography color='primary'>Police Resources</Typography>
                             </AccordionSummary>
                             <AccordionDetails
                                 sx={{ backgroundColor: 'white' }}>
-                                <Stack>
-                                    <Button
-                                        color='secondary'
-                                        sx={{ justifyContent: 'start' }}
-                                        onClick={() => {
-                                            console.log("tsete")
-                                        }}>
-                                        <Link href='../lilo/infopage' color='secondary' underline='none'>
-                                            Closest Police Station
-                                        </Link>
-                                    </Button>
-                                    <Divider />
-                                    <Button
-                                        color='secondary'
-                                        sx={{ justifyContent: 'start' }}
-                                        onClick={() => {
-                                            console.log("tete")
-                                        }}>
-                                        <Link href='../lilo/infopage' color='secondary' underline='none'>
-                                            Reporting Crime & What To Do
-                                        </Link>
-                                    </Button>
-                                </Stack>
+                                <Link href='../lilo/infopage' color='secondary' underline='none'>
+                                    Closest Police Station
+                                </Link>
+                                <Divider />
+                                <Link href='../lilo/infopage' color='secondary' underline='none'>
+                                    Reporting Crime & What To Do
+                                </Link>
                             </AccordionDetails>
                         </Accordion>
                     </MenuItem>
@@ -80,32 +64,16 @@ const NavBar = () => {
                                 expandIcon={<ExpandMoreIcon />}
                                 aria-controls="panel2a-content"
                                 id="panel2a-header">
-                                <Typography>Legal Resources</Typography>
+                                <Typography color='primary'>Legal Resources</Typography>
                             </AccordionSummary>
                             <AccordionDetails sx={{ backgroundColor: 'white' }}>
-                                <Stack sx={{ justifyContent: 'start' }}>
-                                    <Button
-                                        color='secondary'
-                                        sx={{ justifyContent: 'start' }}
-                                        onClick={() => {
-                                            console.log("tsete")
-                                        }}>
-                                        <Link href='../lilo/infopage' color='secondary' underline='none'>
-                                            Closest Legal Aid and Lawyers
-                                        </Link>
-                                    </Button>
-                                    <Divider />
-                                    <Button
-                                        color='secondary'
-                                        sx={{ justifyContent: 'start' }}
-                                        onClick={() => {
-                                            console.log("tete")
-                                        }}>
-                                        <Link href='../lilo/infopage' color='secondary' underline='none'>
-                                            Local Laws
-                                        </Link>
-                                    </Button>
-                                </Stack>
+                                <Link href='../lilo/infopage' color='secondary' underline='none'>
+                                    Closest Legal Aid and Lawyers
+                                </Link>
+                                <Divider />
+                                <Link href='../lilo/infopage' color='secondary' underline='none'>
+                                    Local Laws
+                                </Link>
                             </AccordionDetails>
                         </Accordion>
                     </MenuItem>
@@ -116,21 +84,12 @@ const NavBar = () => {
                                 expandIcon={<ExpandMoreIcon />}
                                 aria-controls="panel2a-content"
                                 id="panel2a-header">
-                                <Typography>Legal Resources</Typography>
+                                <Typography color='primary'>Community Resources</Typography>
                             </AccordionSummary>
                             <AccordionDetails sx={{ backgroundColor: 'white' }}>
-                                <Stack sx={{ justifyContent: 'start' }}>
-                                    <Button
-                                        color='secondary'
-                                        sx={{ justifyContent: 'start' }}
-                                        onClick={() => {
-                                            console.log("tsete")
-                                        }}>
-                                        <Link href='../lilo/infopage' color='secondary' underline='none'>
-                                            Support Groups & Hotlines
-                                        </Link>
-                                    </Button>
-                                </Stack>
+                                <Link href='../lilo/communityresources' color='secondary' underline='none'>
+                                    Support Groups & Hotlines
+                                </Link>
                             </AccordionDetails>
                         </Accordion>
                     </MenuItem>

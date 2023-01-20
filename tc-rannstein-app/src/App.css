@@ -13,6 +13,12 @@
   align-self: center;
 }
 
+.communityfriendimage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;

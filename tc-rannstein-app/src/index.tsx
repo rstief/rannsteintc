@@ -10,6 +10,7 @@ import SeekHelpPage from './components/pages/SeekHelpPage';
 import { ThemeProvider } from '@emotion/react';
 import { createTheme } from '@mui/material';
 import ImageIntroPage from './components/pages/ImageIntroPage';
+import CommunityPage from './components/pages/CommunityPage';
 
 const theme = createTheme({
   palette: {
@@ -60,6 +61,10 @@ const router = createBrowserRouter([
         path: "infopage",
         element: <InfoPage />,
       },
+      {
+        path: "communityresources",
+        element: <CommunityPage/>
+      }
     ],
   },
 ]);

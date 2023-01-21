@@ -12,6 +12,7 @@ import { createTheme } from '@mui/material';
 import ImageIntroPage from './components/pages/ImageIntroPage';
 import CommunityPage from './components/pages/CommunityPage';
 import './i18n/i18n';
+import CommunityOrgPage from './components/pages/CommunityOrgPage';
 
 const theme = createTheme({
   palette: {
@@ -65,6 +66,10 @@ const router = createBrowserRouter([
       {
         path: "communityresources",
         element: <CommunityPage/>
+      },
+      {
+        path: "communityorg/:orgId",
+        element: <CommunityOrgPage />,
       }
     ],
   },

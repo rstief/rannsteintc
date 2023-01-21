@@ -1,7 +1,137 @@
 {
   "translation": {
+    "yes": "ja",
+    "no": "nein",
     "chatbot": {
-      "messagePlaceholder": "Nachricht eingeben..."
+      "messagePlaceholder": "Nachricht eingeben...",
+      "errorMessage": "Es tut mir leid, ich kann das noch nicht tun. Wenn Sie versuchen möchten, einige andere Optionen auszuwählen, aktualisieren Sie bitte die Seite.",
+      "seekHelp": {
+        "hello1": "Hallo, ich bin Lilo! Dies ist ein sicherer und anonymer Raum und ich bin hier, um Ihnen zu helfen.",
+        "hello2": "Sie können mich alles fragen, ein Thema unten auswählen oder die Crime-Voruntersuchung mit mir machen.",
+        "helloAnswer": {
+          "preliminary": {
+            "header": "Crime-Voruntersuchung",
+            "text": "Beantworten Sie ein paar schnelle Fragen, um auf den bestimmten Verbrechen einzugrenzen und passende empfohlene Hilfe zu erhalten"
+          },
+          "crime": {
+            "header": "Es hat ein Verbrechen stattgefunden...",
+            "text": "Ich weiß nicht, was ich tun soll"
+          },
+          "physicalAssault": {
+            "header": "Ich wurde...",
+            "text": "körperlich angegriffen"
+          },
+          "sexualAssault": {
+            "header": "Ich wurde...",
+            "text": "sexuell belästigt"
+          }
+        },
+        "preliminary": "Voruntersuchung",
+        "crime": "Es hat ein Verbrechen stattgefunden und ich weiß nicht, was ich tun soll",
+        "physicalAssault": "Ich wurde körperlich angegriffen",
+        "sexualAssault": "Ich wurde sexuell belästigt"
+      },
+      "preliminary": {
+        "hello1": "Hallo, ich bin Lilo! Dies ist ein sicherer und anonymer Raum und ich bin hier, um Sie durch diesen Prozess zu führen.",
+        "hello2": "Es wird eine Reihe von Fragen geben, bei denen Sie entweder eine Option auswählen oder Ihre Nachricht eingeben können.",
+        "hello3": "Am Ende wird es eine Liste aller möglichen Verbrechen geben, die in Frage kommen könnten, und Sie können sie exportieren und als PDF speichern.",
+        "helloAnswer": "Lass uns anfangen!",
+        "start": "Wurden Sie verletzt oder wurde etwas beschädigt/gestohlen?",
+        "startAnswer": {
+          "harmed": "verletzt",
+          "damaged": "beschädigt",
+          "stolen": "gestohlen"
+        },
+        "stolen1": "Hat der Täter Sie verletzt oder bedroht?",
+        "stolen1Answer": {
+          "hurt": "verletzt",
+          "threatened": "bedroht",
+          "none": "keine dieser"
+        },
+        "stolen2-2": "Hatte der Täter eine Waffe?",
+        "stolen2-3": "Wurden Sie ausgeraubt oder betrogen?",
+        "stolen2-3Answer": {
+          "robbed": "ausgeraubt",
+          "scammed": "betrogen"
+        },
+        "stolen3-1": "Wurde Ihr Haus eingebrochen?",
+        "damaged1": "Wurden Sie verletzt oder wurde etwas gestohlen?",
+        "damaged1Answer": {
+          "hurt": "verletzt",
+          "stolen": "gestohlen",
+          "none": "keine dieser"
+        },
+        "damaged2-2": "Wurde Ihr Haus eingebrochen?",
+        "harmed1": "Wie wurden Sie verletzt?",
+        "harmed1Answer": {
+          "physically": "körperlich",
+          "sexually": "sexuell",
+          "verbally": "verbal"
+        },
+        "harmed2-1": "Wurde etwas beschädigt oder gestohlen?",
+        "harmed2-1Answer": {
+          "damaged": "beschädigt",
+          "stolen": "gestohlen",
+          "none": "keine dieser"
+        },
+        "harmed2-2": "Wurden Sie auf eine andere Weise auch verletzt?",
+        "harmed2-3": "War es persönlich oder durch das Internet?",
+        "harmed2-3Answer": {
+          "in-person": "persönlich",
+          "online": "online"
+        },
+        "harmed3-1": "Hat der Täter eine Waffe benutzt?",
+        "harmed3-2": "Hat der Täter eine Waffe benutzt?",
+        "harmed3-3": "Wurden Sie beleidigt, bedroht oder wurde Ihr Ruf beschädigt?",
+        "harmed3-3Answer": {
+          "insulted": "beleidigt",
+          "threatened": "bedroht",
+          "reputation": "Ruf beschädigt"
+        },
+        "harmed4-1": "Gab es mehrere Täter?",
+        "harmed4-2": "Gab es mehrere Täter?",
+        "done": {
+          "1": "Vielen Dank für Ihre Antwort. Ich habe ein paar Möglichkeiten eingegrenzt, die das Verbrechen sein könnten. ",
+          "2": "Jedes Ergebnis enthält angepasste Ressourcen, auf die Sie zugreifen können.",
+          "3": "Diese Ergebnisse können auch als PDF exportiert werden, zu Ihrer Referenz.",
+          "4": "Wenn es noch etwas gibt, zögern Sie bitte nicht, mit mir zu sprechen oder unsere anderen Ressourcen zu erkunden.",
+          "5": "Wünsche Ihnen alles Gute und bleiben Sie sicher!"
+        },
+        "resultNote": {
+          "1": "Diese Ergebnisse beziehen sich auf das deutsche Strafgesetzbuch. Für weitere Details besuchen Sie bitte:",
+          "2": "https://www.gesetze-im-internet.de/englisch_stgb/"
+        },
+        "retry": "wenn Sie denken, dass keines dieser Ergebnisse auf Sie zutrifft, können Sie die Untersuchung erneut versuchen oder wenn Sie sich nicht sicher sind, was Sie tun sollen, sprechen Sie mit mir, damit ich Ihnen helfen kann.",
+        "retryAnswer": {
+          "redo": "Untersuchung wiederholen",
+          "talk": "Mit Lilo sprechen"
+        },
+        "divider": "Beginn der Voruntersuchung"
+      },
+      "information": {
+        "hello1": "Hallo, ich bin Lilo! Dies ist ein sicherer und anonymer Raum und ich bin hier, um Ihnen zu helfen.",
+        "hello2": "Sie können mir alles fragen, ein Thema unten auswählen oder die Crime-Voruntersuchung mit mir machen.",
+        "helloAnswer": {
+          "preliminary": {
+            "header": "Crime-Voruntersuchung",
+            "text": "Beantworten Sie ein paar schnelle Fragen, um auf den bestimmten Verbrechen einzugrenzen und passende empfohlene Hilfe zu erhalten"
+          },
+          "police": {
+            "header": "Polizei Ressourcen"
+          },
+          "legal": {
+            "header": "Rechtsressourcen"
+          },
+          "community": {
+            "header": "Community-Ressourcen"
+          }
+        },
+        "preliminary": "Crime-Voruntersuchung",
+        "police": "Polizei Ressourcen",
+        "legal": "Rechtsressourcen",
+        "community": "Community-Ressourcen",
+        "forward": "In Ordnung, ich leite Sie an eine Informationsseite zu diesem Thema weiter. Wenn Sie mich wieder brauchen, bin ich hier."
+      }
     },
     "introPages" : {
       "page1": {
@@ -15,7 +145,6 @@
       "page3": {
         "header": "Would you like to:"
       }
-    },
-    "no": "nein"
+    }
   }
 }

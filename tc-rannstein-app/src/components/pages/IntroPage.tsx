@@ -69,8 +69,6 @@ const IntroPage = () => {
           <FormControl fullWidth>
             <InputLabel>{t("introPages.page2.stateSelect")}</InputLabel>
             <Select
-              // labelId="demo-simple-select-label"
-              // id="demo-simple-select"
               value={gerState}
               label="State"
               onChange={(event: SelectChangeEvent) =>{

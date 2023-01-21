@@ -1,45 +1,43 @@
 import { Box, Typography } from '@mui/material';
 import ResourcesBar from '../ResourcesBar';
 import communityfriendship from '../../assets/communityfriendship.svg'
+import { useParams } from 'react-router-dom';
+import Divider from '@mui/material/Divider';
+import Button from '@mui/material/Button';
 
 const CommunityOrgPage = () => {
+
+    let { orgId } = useParams();
+
+    console.log(orgId);
+
     return (
         <Box>
             <ResourcesBar innerRef='/lilo/communityresources' name='Community Resources'></ResourcesBar>
-            <Box display={'flex'} height='125px' borderRadius='20px' borderColor='secondary.main' marginLeft='8px' marginRight='8px' mb='80px' sx={{ border: 1, justifyContent: 'space-between' }}>
-                <Typography m='8px' fontSize='13px'>
-                    It’s not always easy to seek out police and legal help,
-                    there are always other support
-                    groups and organisations that
-                    are here for you!
-                </Typography>
-                <img src={communityfriendship} className='intropageimages' alt='intro' />
-            </Box>
-            <CommunityItem/>
-            <CommunityItem/>
-            <CommunityItem/>
-            <CommunityItem/>
-        </Box>
-    )
-}
-
-const CommunityItem = () => {
-    return (
-        <Box display={'flex'} height='100px' borderRadius='20px' marginLeft='20px' marginRight='20px' mt='10px' 
-        sx={{ border: 1, justifyContent: 'space-between', boxShadow: 3, borderColor:'white'}}>
-            <Box height={'100%'} width={'35%'}>
+            <Box display={'flex'} height='20%' marginLeft='8px' marginRight='8px' mb='10px' sx={{ justifyContent: 'space-between' }}>
                 <img src={communityfriendship} className='communityfriendimage' alt='intro' />
+                <Typography m='8px' fontSize='13px'>
+                    Fachstelle gegen sexualisierte gewalt an Frauen {orgId}
+                </Typography>
             </Box>
-            <Box sx={{ flexGrow: 5 }}>
-                <Box display={'flex'} sx={{ height:'100%', flexDirection:'column-reverse'}}>
-                
-                <Typography m='8px' fontSize='10px'>
-                    Test : Test : Test
+            <Divider sx={{marginLeft: '30px', marginRight:'30px'}} />
+            <Box height='50%' ml='20px' mr='20px' pb='5px' pl='10px' pr='10px' sx={{ boxShadow: 4, borderRadius: '10px' }}>
+                <Typography m='8px' fontSize='13px'>
+                    Location
                 </Typography>
-                <Typography m='8px' fontSize='10px'>
-                    Lara
+                <Typography m='8px' fontSize='13px'>
+                    Telefon
                 </Typography>
+                <Box pr='5px' pl='5px' sx={{border:1, borderColor:'black', borderRadius: '10px'}}>
+                    <Typography m='5px' fontSize='10px'>
+                        Lara is a rape crisis and counselling centre that offers assistance to women and girls over the age of 14 who have been raped, sexually abused, and/or sexually harassed
+                    </Typography>
                 </Box>
+            </Box>
+            <Box>
+                <Typography fontWeight='bold' m='15px'>
+                    Programms & Services
+                </Typography>
             </Box>
         </Box>
     )

@@ -9,7 +9,7 @@ const ResourcesBar = (props: any) => {
             <Link href={props.innerRef} color= 'secondary' alignSelf='center' ml='8px' underline='none'>
                  {backText}
             </Link>
-            <Typography textAlign='center' ml='50px' mt='5px'>
+            <Typography fontWeight={'bold'} textAlign='center' ml='50px' mt='5px'>
                 {props.name}
             </Typography>
         </Box>

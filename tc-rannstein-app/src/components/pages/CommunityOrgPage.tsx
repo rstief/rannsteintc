@@ -33,7 +33,7 @@ const CommunityOrgPage = () => {
     return (
         <Box>
             <ResourcesBar innerRef='/lilo/communityresources' name='Community Resources'></ResourcesBar>
-            <Box display={'flex'} height='20%' marginLeft='8px' marginRight='8px' mb='10px' sx={{ justifyContent: 'space-between' }}>
+            <Box display={'flex'} height='20%' marginLeft='8px' marginRight='8px' mb='10px' sx={{ justifyContent: 'space-between'}}>
                 <img src={communityfriendship} className='communityfriendimage' alt='intro' width='15%' />
                 <Typography width='85%' m='8px' fontSize='13px' >
                     {detailOrg.fullName}
@@ -41,7 +41,7 @@ const CommunityOrgPage = () => {
             </Box>
             <Divider sx={{ marginLeft: '30px', marginRight: '30px' }} />
             <Box height='50%' ml='20px' mr='20px' pb='5px' pl='10px' pr='10px' sx={{ boxShadow: 4, borderRadius: '10px' }}>
-                <Box display={'flex'} justifyContent={'space-evenly'}>
+                <Box display={'flex'} pt='5px' justifyContent={'space-evenly'}>
                     <Chip sx={{ justifyContent: 'center' }} icon={<LocationOnIcon />} />
                     <Chip icon={<CallIcon />} />
                     <Chip icon={<LanguageIcon />} />

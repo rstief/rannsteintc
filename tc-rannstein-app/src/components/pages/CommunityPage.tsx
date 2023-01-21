@@ -30,7 +30,7 @@ const CommunityPage = () => {
     return (
         <Box display={'flex'} flexDirection='column' justifyContent='center' >
             <ResourcesBar name='Community Resources' innerRef='/lilo/assessment'></ResourcesBar>
-            <Box display={'flex'} height='125px' borderRadius='20px' borderColor='secondary.main' marginLeft='8px' marginRight='8px' mb='80px' sx={{ border: 1, justifyContent: 'space-between' }}>
+            <Box display={'flex'} height='125px' borderRadius='20px' borderColor='secondary.main' marginLeft='8px' marginRight='8px' mt='10px' mb='20px' sx={{ border: 1, justifyContent: 'space-between' }}>
                 <Typography m='8px' fontSize='13px'>
                     It’s not always easy to seek out police and legal help,
                     there are always other support

@@ -16,7 +16,7 @@ const IntroPage = () => {
 
   if (currentPage === 1) {
     return (
-      <><AppBar position='static' sx={{}}>
+      <><AppBar elevation={0} position='static' sx={{}}>
         <Toolbar sx={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
           <Box sx={{ flexDirection: 'row', flexWrap: 'nowrap', display: 'flex' }}>
             <img src={logo} alt='logo' />
@@ -52,7 +52,7 @@ const IntroPage = () => {
     )
   }
   return (
-    <><AppBar position='static' sx={{}}>
+    <><AppBar elevation={0} position='static' sx={{}}>
       <Toolbar sx={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
         <Box sx={{ flexDirection: 'row', flexWrap: 'nowrap', display: 'flex' }}>
           <img src={logo} alt='logo' />

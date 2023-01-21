@@ -291,7 +291,6 @@ function DoneBubble() {
             {i18n.t('chatbot.preliminary.done.5')}
         </div>
         //{i18n.t('chatbot.preliminary.done.3')}<br/><br/>
-        //todo: we don't export yet... what do we even export?
     );
 }
 

@@ -28,8 +28,49 @@
         },
         "preliminary": "Preliminary Assessment",
         "crime": "A crime has happened and I don't know what to do",
+        "crimeDoPreliminary": "Would you like to do a Crime Preliminary Assessment where I will help you to narrow down on the specific crimes and recommend tailored help?",
+        "crime1-1": "Every crime is worth reporting, no matter how severe it may seem at the moment.",
+        "crime1-2": "Here’s a step-by-step guide on what you can do after experiencing a crime. Just click it to download.",
+        "crimeGuide": "What To do After A Crime",
+        "crime3": "Would you like some additional resources or do you just want to talk?",
+        "crime3Answer": {
+          "resources": "Additional resources",
+          "talk": "Talk to Lilo"
+        },
+        "crime3Resources": "Sure thing! What type of help do you need?",
         "physicalAssault": "I have been physically assaulted",
-        "sexualAssault": "I have been sexually assaulted"
+        "sexualAssault": "I have been sexually assaulted",
+        "sexual1-1": "If you have been sexually assaulted, it is important to remember that it was not your fault. Rape & sexual assault is always wrong - no matter who commits it or where it happens. ",
+        "sexual1-2": "I will be guiding you through a series of questions and steps on what you should do to seek the right type of help.",
+        "sexual2": "These questions might be a little tough to get through, but I’m right here with you to get you the support you want.",
+        "sexual3": "Did the crime take place recently (e.g. past 24 hours)?",
+        "sexual3Answer": {
+          "yes": "Yes, it was recent",
+          "no": "No, it was not"
+        },
+        "sexual4": "Was the perpetrator a stranger or somebody you recognise/know?",
+        "sexual4Answer": {
+          "stranger": "A stranger",
+          "know": "Somebody I know"
+        },
+        "sexual5": "Are you under 18?",
+        "sexual5Answer": {
+          "yes": "Yes, I am under 18",
+          "no": "No, I am older than 18"
+        },
+        "sexual6": "Are you in a safe area now?",
+        "sexual6Answer": {
+          "yes": "Yes, I am",
+          "no": "No, I am not"
+        },
+        "sexual7": "Do you have anyone you can trust/lean on for support right now?",
+        "sexual7Answer": {
+          "yes": "Yes, I do",
+          "no": "No, I do not"
+        },
+        "sexual8": "Thank you for answering those questions, it must not have been easy but it is really brave of you.",
+        "sexual10": "If you think none of these apply or if you just want to talk, I'll be here.",
+        "talk": "Talk to Lilo"
       },
       "preliminary": {
         "hello1": "Hello, I’m Lilo! This is a safe and anonymous space and I’m here to guide you through this.",

@@ -11,7 +11,7 @@
     },
     "phone": "(07152) 331 23 304",
     "link": "www.seehaus-ev.de",
-    "tags": ["all"],
+    "tags": ["All"],
     "services": ["Personal counselling", "Online counselling", "Phone counselling", "Self-help groups", "Victims and offenders in conversation"]
   },
   {
@@ -19,14 +19,14 @@
     "shortName": "Weisser Ring e.V.",
     "fullName": "Weisser Ring e.V.",
     "description": "Victim support organisation that is active nationwide, the victim helpline is available daily between 7 a.m. and 10 p.m. They know which services can be obtained through other service providers and can point out the way to find the right ones.",
-    "state": "all",
+    "state": "National",
     "address": {
       "street": "Weberstraße 16",
       "city": "55130 Mainz"
     },
     "phone": "+49 6131 830 30",
     "link": " https://weisser-ring.de/english",
-    "tags": ["all"],
+    "tags": ["All"],
     "services": ["Helpline: 116 006", "Personal helpdesks", " Quick and professional assistance ", "Accompanying the victim to court", "Assistance in dealing with paperwork and other official matter"]
   },
   {
@@ -34,14 +34,14 @@
     "shortName": "ado",
     "fullName": "Arbeitskreis der Opferhilfen in Deutschland e.V.",
     "description": " An umbrella organisation for a range of professional victim support organisations operating at the regional level. Der gemeinnützige Verein dient der ideellen und finanziellen Unterstützung der ado-Mitglieder.",
-    "state": "all",
+    "state": "National",
     "address": {
       "street": " Oldenburger Str. 38",
       "city": "10551 Berlin"
     },
     "phone": "+49 (0)176 - 60357576",
     "link": "https://www.opferhilfen.de/",
-    "tags": ["all"],
+    "tags": ["All"],
     "services": ["Advice", "Counseling centers", "Court Preparation"]
   },
   {
@@ -59,5 +59,4 @@
     "tags": ["Right-Wing", "Racist", "Antisemitic Violence"],
     "services": ["Counseling Center"]
   }
-
 ]

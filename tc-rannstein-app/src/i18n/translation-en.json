@@ -2,6 +2,11 @@
   "translation": {
     "yes": "yes",
     "no": "no",
+    "states": {
+      "bayern": "Bavaria",
+      "hamburg": "Hamburg",
+      "berlin": "Berlin"
+    },
     "chatbot": {
       "messagePlaceholder": "Type a message...",
       "errorMessage": "I'm sorry, I'm not able to do that yet. If you want to try some other options please refresh the page.",

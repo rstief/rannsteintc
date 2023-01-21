@@ -75,9 +75,9 @@ const IntroPage = () => {
                 setGerState(event.target.value)
               }}
             >
-              <MenuItem value={'bavaria'}>Bavaria</MenuItem>
-              <MenuItem value={'berlin'}>Berlin</MenuItem>
-              <MenuItem value={'hamburg'}>Hamburg</MenuItem>
+              <MenuItem value={'bavaria'}>{t("states.bayern")}</MenuItem>
+              <MenuItem value={'berlin'}>{t("states.berlin")}</MenuItem>
+              <MenuItem value={'hamburg'}>{t("states.hamburg")}</MenuItem>
             </Select>
           </FormControl>
         </Box>
@@ -97,7 +97,7 @@ const IntroPage = () => {
               i18n.changeLanguage(language);
             }}
           >
-            <MenuItem value={'en'}>Englisch</MenuItem>
+            <MenuItem value={'en'}>English</MenuItem>
             <MenuItem value={'de'}>Deutsch</MenuItem>
           </Select>
         </FormControl>

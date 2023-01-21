@@ -3,6 +3,7 @@ import ResourcesBar from '../ResourcesBar';
 import communityfriendship from '../../assets/communityfriendship.svg'
 import { useNavigate } from 'react-router-dom';
 import organisationList from '../../data/organizations.json'
+import { useState } from 'react';
 
 interface org {
     id: String
@@ -22,6 +23,10 @@ interface org {
 
 const CommunityPage = () => {
 
+    const [filter, setFilter] = useState("All");
+
+    const tags: string[] = ["All", "Right-Wing", "Racist", "Antisemitic Violence"];
+
     return (
         <Box display={'flex'} flexDirection='column' justifyContent='center' >
             <ResourcesBar name='Community Resources' innerRef='/lilo/assessment'></ResourcesBar>
@@ -35,18 +40,22 @@ const CommunityPage = () => {
                 <img src={communityfriendship} className='intropageimages' alt='intro' />
             </Box>
             <Box display={'flex'} flexDirection='row' alignSelf='center' justifySelf='center' width='80%' height={'30px'}>
-                <Chip label="All" size={"small"} onClick={() => {
-                    console.log('test')
-                }} />
-                <Chip label="Clickable" size={"small"} onClick={() => {
-                    console.log('test')
-                }} />
-                <Chip label="Clickable" size={"small"} onClick={() => {
-                    console.log('test')
-                }} />
+                {/* <Chip label="All" size={"small"} onClick={() => {
+                    setFilter('All')
+                }} /> */}
+                {tags.map(
+                    (item: string, index, array) => <Chip sx={{m:'2px'}} label={item} size={"small"} onClick={() => {
+                        setFilter(item)
+                    }
+                    } />
+                )}
             </Box>
             {organisationList.map(
-                (item: org, index, array: org[]) => <CommunityItem key={item.id} id={item.id} />
+                (item: org, index, array: org[]) => {
+                    if (item.tags.includes(filter) || filter === 'All') {
+                        return <CommunityItem key={item.id} id={item.id} />;
+                    }
+                }
             )}
         </Box>
     )
@@ -74,7 +83,7 @@ const CommunityItem = (props: any) => {
         })
 
         return (
-            <Typography fontSize='10px' textOverflow={'ellipsis'} sx={{overflow: 'hidden', textOverflow: 'ellipsis' }}>
+            <Typography fontSize='10px' textOverflow={'ellipsis'} sx={{ overflow: 'hidden', textOverflow: 'ellipsis' }}>
                 {servicesString}
             </Typography>
         )
@@ -84,7 +93,7 @@ const CommunityItem = (props: any) => {
         <Box onClick={() => {
             navigate('../communityorg/' + props.id)
         }} display={'flex'} height='100px' borderRadius='20px' marginLeft='20px' marginRight='20px' mt='10px'
-            sx={{ border: 1, justifyContent: 'space-between', boxShadow: 3, borderColor: 'white', overflow: 'hidden', textOverflow: 'ellipsis'  }}>
+            sx={{ border: 1, justifyContent: 'space-between', boxShadow: 3, borderColor: 'white', overflow: 'hidden', textOverflow: 'ellipsis' }}>
             <Box height={'100px'} width={'35%'}>
                 <img src={communityfriendship} className='communityfriendimage' alt='intro' />
             </Box>
@@ -98,7 +107,7 @@ const CommunityItem = (props: any) => {
                         </div>
                     }
                 </Box>
-                <Box display={'flex'} height='85%' sx={{ flexDirection:'column' ,justifyContent: 'center'}}>
+                <Box display={'flex'} height='85%' sx={{ flexDirection: 'column', justifyContent: 'center' }}>
                     <Typography mb='8px' fontSize='10px'>
                         {detailOrg.shortName}
                     </Typography>

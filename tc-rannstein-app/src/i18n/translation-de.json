@@ -2,6 +2,11 @@
   "translation": {
     "yes": "ja",
     "no": "nein",
+    "states": {
+      "bayern": "Bayern",
+      "hamburg": "Hamburg",
+      "berlin": "Berlin"
+    },
     "chatbot": {
       "messagePlaceholder": "Nachricht eingeben...",
       "errorMessage": "Es tut mir leid, ich kann das noch nicht tun. Wenn Sie versuchen möchten, einige andere Optionen auszuwählen, aktualisieren Sie bitte die Seite.",

@@ -7,6 +7,7 @@ import organisationList from '../../data/organizations.json'
 import CallIcon from '@mui/icons-material/Call';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import LanguageIcon from '@mui/icons-material/Language';
+import { width } from '@mui/system';
 
 interface org {
     id: String
@@ -41,7 +42,7 @@ const CommunityOrgPage = () => {
             <Divider sx={{ marginLeft: '30px', marginRight: '30px' }} />
             <Box height='50%' ml='20px' mr='20px' pb='5px' pl='10px' pr='10px' sx={{ boxShadow: 4, borderRadius: '10px' }}>
                 <Box display={'flex'} justifyContent={'space-evenly'}>
-                    <Chip sx={{ justifyContent:'center' }} icon={<LocationOnIcon />} />
+                    <Chip sx={{ justifyContent: 'center' }} icon={<LocationOnIcon />} />
                     <Chip icon={<CallIcon />} />
                     <Chip icon={<LanguageIcon />} />
                 </Box>
@@ -61,6 +62,16 @@ const CommunityOrgPage = () => {
                 <Typography fontWeight='bold' m='15px'>
                     Programms & Services
                 </Typography>
+                {
+                    <Box display={'flex'} flexWrap='wrap' flexDirection='row' justifyContent={'center'}>
+                        {detailOrg.services.map(
+                            (item: string[], index: any, array: org[]) => 
+                            <Box m={'4px'} width={'100px'} height={'100px'} sx={{ border: 1, backgroundColor: '#38768A'}} borderColor={'black'} borderRadius='15px' >
+                                <Typography m={'4px'} color='white'>{item}</Typography>
+                            </Box>
+                        )}
+                    </Box>
+                }
             </Box>
         </Box>
     )

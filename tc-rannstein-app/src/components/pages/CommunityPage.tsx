@@ -48,11 +48,6 @@ const CommunityPage = () => {
             {organisationList.map(
                 (item: org, index, array: org[]) => <CommunityItem key={item.id} id={item.id} />
             )}
-
-            {/* <CommunityItem id='1' />
-            <CommunityItem id='2' />
-            <CommunityItem id='3' />
-            <CommunityItem id='4' /> */}
         </Box>
     )
 }

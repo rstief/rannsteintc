@@ -5,6 +5,7 @@ import fistIcon from "../resources/icons/fist.svg";
 import xIcon from "../resources/icons/x.svg";
 import questionMarkIcon from "../resources/icons/questionMark.svg";
 import UserBubble from "../components/UserBubble";
+import Navigator from "../components/Navigator";
 
 const startBubblesProps = {
     largeBubble: {
@@ -56,7 +57,12 @@ const flow: any[] = [
         id: 'seekHelp.preliminary',
         component: <UserBubble text={i18n.t('chatbot.seekHelp.preliminary')}/>,
         delay: 700,
-        trigger: "preliminary.divider"
+        trigger: "seekHelp.routePreliminary"
+    },
+    {
+        id: 'seekHelp.routePreliminary',
+        component: <Navigator route="/lilo/assessment"/>,
+        end: true
     },
     {
         id: 'seekHelp.crime',

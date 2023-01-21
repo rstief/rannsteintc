@@ -19,13 +19,11 @@ const preliminaryFlow: any[] = empty.concat(
 
 const seekHelpFlow: any[] = empty.concat(
     flow_seekHelp,
-    flow_preliminary,
     errorFlow
 )
 
 const informationFlow: any[] = empty.concat(
     flow_information,
-    flow_preliminary,
     errorFlow
 )
 

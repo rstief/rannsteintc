@@ -5,6 +5,7 @@ import policeIcon from "../resources/icons/police.svg";
 import legalIcon from "../resources/icons/legal.svg";
 import communityIcon from "../resources/icons/community.svg";
 import UserBubble from "../components/UserBubble";
+import Navigator from "../components/Navigator";
 
 const startBubblesProps = {
     largeBubble: {
@@ -56,7 +57,12 @@ const flow: any[] = [
         id: 'information.preliminary',
         component: <UserBubble text={i18n.t('chatbot.information.preliminary')}/>,
         delay: 700,
-        trigger: "preliminary.divider"
+        trigger: "information.routePreliminary"
+    },
+    {
+        id: 'information.routePreliminary',
+        component: <Navigator route="/lilo/assessment"/>,
+        end: true
     },
     {
         id: 'information.police',
@@ -77,20 +83,38 @@ const flow: any[] = [
         trigger: 'information.forwardCommunity'
     },
     {
-        id: 'information.forwardPolice', //todo: trigger some re-routing
+        id: 'information.forwardPolice',
         message: i18n.t('chatbot.information.forward'),
+        trigger: "information.routePolice",
+    },
+    {
+        id: 'information.forwardLegal',
+        message: i18n.t('chatbot.information.forward'),
+        trigger: "information.routeLegal"
+    },
+    {
+        id: 'information.forwardCommunity',
+        message: i18n.t('chatbot.information.forward'),
+        trigger: "information.routeCommunity"
+    },
+    {
+        id: 'information.routePolice', //todo: add real route
+        component: <Navigator route="/lilo/policeresources"/>,
+        delay: 2000,
         end: true
     },
     {
-        id: 'information.forwardLegal', //todo: trigger some re-routing
-        message: i18n.t('chatbot.information.forward'),
+        id: 'information.routeLegal', //todo: add real route
+        component: <Navigator route="/lilo/legalresources"/>,
+        delay: 2000,
         end: true
     },
     {
-        id: 'information.forwardCommunity', //todo: trigger some re-routing
-        message: i18n.t('chatbot.information.forward'),
+        id: 'information.routeCommunity',
+        component: <Navigator route="/lilo/communityresources"/>,
+        delay: 2000,
         end: true
-    },
+    }
 ];
 
 export default flow;

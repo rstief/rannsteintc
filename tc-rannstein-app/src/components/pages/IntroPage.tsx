@@ -26,7 +26,7 @@ const IntroPage = () => {
         <Box display={'flex'} sx={{ flexDirection: 'column', justifyContent: 'space-evenly', height: '700px', alignItems: 'center' }}>
           <Box display={'flex'} sx={{ flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}>
             <Typography align='left' mb={'10px'} sx={{ fontWeight: 'bold' }}>
-              Would you like to:
+              {t("introPages.page3.header")}
             </Typography>
             <Link href='../lilo/assessment' sx={{ color: 'black' }} >
               <AssessmentImage />

@@ -3,7 +3,7 @@ import ResourcesBar from '../ResourcesBar';
 import communityfriendship from '../../assets/communityfriendship.svg'
 import { useParams } from 'react-router-dom';
 import Divider from '@mui/material/Divider';
-import Button from '@mui/material/Button';
+import organisationList from '../../data/organizations.json'
 
 const CommunityOrgPage = () => {
 

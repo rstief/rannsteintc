@@ -2,8 +2,26 @@ import { Box, Chip, Typography } from '@mui/material';
 import ResourcesBar from '../ResourcesBar';
 import communityfriendship from '../../assets/communityfriendship.svg'
 import { useNavigate } from 'react-router-dom';
+import organisationList from '../../data/organizations.json'
+
+interface org {
+    id: String
+    shortName: string,
+    fullName: string,
+    description: string,
+    state: string,
+    address: {
+        street: string,
+        city: string
+    },
+    phone: string,
+    link: string,
+    tags: string[],
+    services: string[]
+}
 
 const CommunityPage = () => {
+
     return (
         <Box display={'flex'} flexDirection='column' justifyContent='center' >
             <ResourcesBar name='Community Resources' innerRef='/lilo/assessment'></ResourcesBar>
@@ -27,10 +45,14 @@ const CommunityPage = () => {
                     console.log('test')
                 }} />
             </Box>
-            <CommunityItem id='1' />
+            {organisationList.map(
+                (item: org, index, array: org[]) => <CommunityItem key={item.id} id={item.id} />
+            )}
+
+            {/* <CommunityItem id='1' />
             <CommunityItem id='2' />
             <CommunityItem id='3' />
-            <CommunityItem id='4' />
+            <CommunityItem id='4' /> */}
         </Box>
     )
 }
@@ -39,8 +61,11 @@ const CommunityItem = (props: any) => {
     const navigate = useNavigate();
 
     /// todo add json loader with props.id
-    const services: string[] = ["Advice", "Counseling centers", "Court Preparation"];
-    const tags: string[] = ["All", "Racist Violence"]
+    const detailOrg: org | any = organisationList.find(item => item.id === props.id)
+    const services: string[] = detailOrg.services;
+    // ["Advice", "Counseling centers", "Court Preparation"];
+    const tags: string[] = detailOrg.tags;
+    // ["All", "Racist Violence"]
 
     function servicesRender(): JSX.Element {
         let servicesString = '';
@@ -54,7 +79,7 @@ const CommunityItem = (props: any) => {
         })
 
         return (
-            <Typography fontSize='10px'>
+            <Typography fontSize='10px' textOverflow={'ellipsis'} sx={{overflow: 'hidden', textOverflow: 'ellipsis' }}>
                 {servicesString}
             </Typography>
         )
@@ -64,31 +89,25 @@ const CommunityItem = (props: any) => {
         <Box onClick={() => {
             navigate('../communityorg/' + props.id)
         }} display={'flex'} height='100px' borderRadius='20px' marginLeft='20px' marginRight='20px' mt='10px'
-            sx={{ border: 1, justifyContent: 'space-between', boxShadow: 3, borderColor: 'white' }}>
-            <Box height={'100%'} width={'35%'}>
+            sx={{ border: 1, justifyContent: 'space-between', boxShadow: 3, borderColor: 'white', overflow: 'hidden', textOverflow: 'ellipsis'  }}>
+            <Box height={'100px'} width={'35%'}>
                 <img src={communityfriendship} className='communityfriendimage' alt='intro' />
             </Box>
-            <Box pl={'10px'} pt='15px' height='100px' sx={{ flexGrow: 5 }}>
-                <Box pb='10px' >
+            <Box pl={'10px'} pt='10px' height='100px' width={'65%'} >
+                <Box pb='10px' height='15%' overflow={'hidden'}>
                     {
                         <div>
                             {tags.map(
-                                (item, index, array) => <Chip sx={{ml:'4px', mr:'4px'}} size='small' label={item} />
+                                (item, index, array) => <Chip sx={{ ml: '2px', mr: '2px' }} size='small' label={item} />
                             )}
                         </div>
                     }
-                    {/* <Chip size='small' label='Test' />
-                    <Chip size='small' label='Test' />
-                    <Chip size='small' label='Test' /> */}
                 </Box>
-                <Box display={'flex'} sx={{ flexDirection: 'column-reverse' }}>
-                    {/* <Typography fontSize='10px'>
-                        Test : Test : Test
-                    </Typography> */}
-                    {servicesRender()}
+                <Box display={'flex'} height='85%' sx={{ flexDirection:'column' ,justifyContent: 'center'}}>
                     <Typography mb='8px' fontSize='10px'>
-                        Lara
+                        {detailOrg.shortName}
                     </Typography>
+                    {servicesRender()}
                 </Box>
 
             </Box>

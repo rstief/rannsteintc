@@ -4,9 +4,22 @@
     "no": "no",
     "back": "Back",
     "states": {
-      "bayern": "Bavaria",
-      "hamburg": "Hamburg",
-      "berlin": "Berlin"
+      "BW": "Baden-Württemberg",
+      "BY": "Bavaria",
+      "BE": "Berlin",
+      "BB": "Brandenburg",
+      "HB": "Bremen",
+      "HH": "Hamburg",
+      "HE": "Hesse",
+      "NI": "Lower Saxony",
+      "MV": "Mecklenburg-Vorpommern",
+      "NW": "North Rhine-Westphalia",
+      "RP": "Rhineland-Palatinate",
+      "SL": "Saarland",
+      "SN": "Saxony",
+      "ST": "Saxony-Anhalt",
+      "SH": "Schleswig-Holstein",
+      "TH": "Thuringia"
     },
     "crimes":{
       "sa": "Sexual Assault",
@@ -57,6 +70,17 @@
       "community": {
         "key": "COMMUNITY RESOURCES",
         "l1": "Support Groups & Hotlines"
+      },
+      "lilo": {
+        "key": "LILO",
+        "l1": "Crime Preliminary Assessment",
+        "l2": "Seek Help",
+        "l3": "Explore Information"
+      },
+      "settings": {
+        "key": "SETTINGS",
+        "l1": "State",
+        "l2": "Language"
       }
     },
     "assessment": {
@@ -245,7 +269,7 @@
         "languageSelect": "Language"
       },
       "page3": {
-        "header": "Would you like to:"
+        "header": "What would you like to do?"
       }
     },
     "paragraphs": {

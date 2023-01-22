@@ -10,7 +10,7 @@ const font: string = 'Raleway';
 
 const config = {
     //functional
-    cache: true, //todo: can be used, bugs out when you refresh between bot steps
+    cache: false, //todo: can be used, bugs out when you refresh between bot steps
     //delays
     botDelay: 1000,
     customDelay: 1000, //1k

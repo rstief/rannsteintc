@@ -1,134 +1,181 @@
-import { AppBar, Box, Toolbar, Typography, Link, IconButton, FormControl, InputLabel, MenuItem, Select, SelectChangeEvent } from '@mui/material';
+import {
+    AppBar,
+    Box,
+    Toolbar,
+    Typography,
+    Link,
+    IconButton,
+    FormControl,
+    InputLabel,
+    MenuItem,
+    Select,
+    SelectChangeEvent
+} from '@mui/material';
 import logo from '../../assets/logoWithName.svg'
 import introassessment from '../../assets/introassessment.svg'
 import introexplore from '../../assets/introexplore.svg'
 import introseekhelp from '../../assets/introseekhelp.svg'
 import {useTranslation} from "react-i18next";
-import { useState } from 'react';
+import {useState} from 'react';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
+import states from '../../data/states.json';
 
 const IntroPage = () => {
-  const {t, i18n} = useTranslation();
-  const [currentPage, setPage] = useState(0);
-  const [gerState, setGerState] = useState('bavaria');
-  const [language, setLanguage] = useState(localStorage.getItem("language") ?? 'en');
+    const {t, i18n} = useTranslation();
+    const [currentPage, setPage] = useState(0);
+    const [gerState, setGerState] = useState(localStorage.getItem("state") ?? 'BY');
+    const [language, setLanguage] = useState(localStorage.getItem("language") ?? 'en');
 
-  if (currentPage === 1) {
+    if (currentPage === 1) {
+        return (
+            <><AppBar elevation={0} position='static' sx={{}}>
+                <Toolbar sx={{display: 'flex', alignItems: 'center', justifyContent: 'space-between'}}>
+                    <Box sx={{flexDirection: 'row', flexWrap: 'nowrap', display: 'flex'}}>
+                        <img src={logo} alt='logo'/>
+                    </Box>
+                </Toolbar>
+            </AppBar>
+                <Box display={'flex'} sx={{
+                    flexDirection: 'column',
+                    justifyContent: 'space-evenly',
+                    height: '700px',
+                    alignItems: 'center'
+                }}>
+                    <Box display={'flex'}
+                         sx={{flexDirection: 'column', justifyContent: 'center', alignItems: 'center'}}>
+                        <Typography align='left' mb={'10px'} sx={{fontSize: '16px', fontWeight: 'bold'}}>
+                            {t("introPages.page3.header")}
+                        </Typography>
+                        <Link href='../lilo/assessment' sx={{color: 'black'}}>
+                            <AssessmentImage/>
+                        </Link>
+                    </Box>
+
+                    <Link href='../lilo/seekhelp' sx={{color: 'black'}}>
+                        <SeekhelpImage/>
+                    </Link>
+
+                    <Link href='../lilo/infopage' sx={{color: 'black'}}>
+                        <ExploreImage/>
+                    </Link>
+
+                    <IconButton
+                        onClick={() => {
+                            setPage(0)
+                        }}>
+                        <ArrowBackIcon/>
+                    </IconButton>
+                </Box>
+            </>
+        )
+    }
     return (
-      <><AppBar elevation={0} position='static' sx={{}}>
-        <Toolbar sx={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
-          <Box sx={{ flexDirection: 'row', flexWrap: 'nowrap', display: 'flex' }}>
-            <img src={logo} alt='logo' />
-          </Box>
-        </Toolbar>
-      </AppBar>
-        <Box display={'flex'} sx={{ flexDirection: 'column', justifyContent: 'space-evenly', height: '700px', alignItems: 'center' }}>
-          <Box display={'flex'} sx={{ flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}>
-            <Typography align='left' mb={'10px'} sx={{ fontWeight: 'bold' }}>
-              {t("introPages.page3.header")}
-            </Typography>
-            <Link href='../lilo/assessment' sx={{ color: 'black' }} >
-              <AssessmentImage />
-            </Link>
-          </Box>
-
-          <Link href='../lilo/seekhelp' sx={{ color: 'black' }}>
-            <SeekhelpImage />
-          </Link>
-
-          <Link href='../lilo/infopage' sx={{ color: 'black' }}>
-            <ExploreImage />
-          </Link>
-
-          <IconButton
-            onClick={() => {
-              setPage(0)
-            }}>
-            <ArrowBackIcon />
-          </IconButton>
-        </Box>
-      </>
+        <><AppBar elevation={0} position='static' sx={{}}>
+            <Toolbar sx={{display: 'flex', alignItems: 'center', justifyContent: 'space-between'}}>
+                <Box sx={{flexDirection: 'row', flexWrap: 'nowrap', display: 'flex'}}>
+                    <img src={logo} alt='logo'/>
+                </Box>
+            </Toolbar>
+        </AppBar>
+            <Box display={'flex'}
+                 sx={{flexDirection: 'column', justifyContent: 'space-evenly', height: '75%', alignItems: 'center'}}>
+                <div style={{width:'80%'}}>
+                    <Typography sx={{fontSize: '16px', fontWeight: 'bold'}}>
+                        {t("introPages.page2.header")}
+                    </Typography>
+                </div>
+                <div style={{width:'80%'}}>
+                    <Typography sx={{fontSize: '16px', fontWeight: 'bold', paddingBottom: '4px'}}>
+                        {t("introPages.page2.stateSelect")}
+                    </Typography>
+                    <FormControl size={"small"} sx={{width:"100%"}}>
+                    <Select
+                        value={gerState}
+                        variant={"outlined"}
+                        onChange={(event: SelectChangeEvent) => {
+                            let state: string = event.target.value
+                            setGerState(state);
+                            localStorage.setItem("state", state);
+                        }}
+                        sx={{
+                            background: '#F7F8F9', fontSize: '16px',
+                            '.MuiOutlinedInput-notchedOutline': {
+                                borderColor: '#F7F8F9',
+                            },
+                            '&.Mui-focused .MuiOutlinedInput-notchedOutline': {
+                                borderColor: '#F7F8F9',
+                            },
+                            '&:hover .MuiOutlinedInput-notchedOutline': {
+                                borderColor: '#F7F8F9',
+                            }
+                        }}
+                    >
+                        {states.map((value) => {
+                            return <MenuItem value={value} key={value}>{t(`states.${value}`)}</MenuItem>
+                        })}
+                    </Select>
+                    </FormControl>
+                </div>
+                <div style={{width:'80%'}}>
+                    <Typography sx={{fontSize: '16px', fontWeight: 'bold', paddingBottom: '4px'}}>
+                        {t("introPages.page2.languageSelect")}
+                    </Typography>
+                    <FormControl size={"small"} sx={{width:"100%"}}>
+                    <Select
+                        value={language}
+                        onChange={(event: SelectChangeEvent) => {
+                            let language: string = event.target.value
+                            //set language for local state, storage (chatbot translation) and other translations.
+                            setLanguage(language);
+                            localStorage.setItem("language", language);
+                            i18n.changeLanguage(language);
+                        }}
+                        sx={{
+                            background: '#F7F8F9', fontSize: '16px',
+                            '.MuiOutlinedInput-notchedOutline': {
+                            borderColor: '#F7F8F9',
+                        },
+                            '&.Mui-focused .MuiOutlinedInput-notchedOutline': {
+                            borderColor: '#F7F8F9',
+                        },
+                            '&:hover .MuiOutlinedInput-notchedOutline': {
+                            borderColor: '#F7F8F9',
+                        }
+                        }}
+                    >
+                        <MenuItem value={'en'}>English</MenuItem>
+                        <MenuItem value={'de'}>Deutsch</MenuItem>
+                    </Select>
+                    </FormControl>
+                </div>
+                <IconButton
+                    onClick={() => {
+                        setPage(1)
+                    }}>
+                    <ArrowForwardIcon/>
+                </IconButton>
+            </Box>
+        </>
     )
-  }
-  return (
-    <><AppBar elevation={0} position='static' sx={{}}>
-      <Toolbar sx={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
-        <Box sx={{ flexDirection: 'row', flexWrap: 'nowrap', display: 'flex' }}>
-          <img src={logo} alt='logo' />
-        </Box>
-      </Toolbar>
-    </AppBar>
-      <Box display={'flex'} sx={{ flexDirection: 'column', justifyContent: 'space-evenly', height: '700px', alignItems: 'center' }}>
-        <Box display={'flex'} sx={{ flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}>
-          <Typography align='left' mb={'10px'} ml='20px' sx={{ fontSize: '14px', fontWeight: 'bold' }}>
-            {t("introPages.page2.header")}
-          </Typography>
-        </Box>
-        <Box sx={{ width: 120 }}>
-          <FormControl fullWidth>
-            <InputLabel>{t("introPages.page2.stateSelect")}</InputLabel>
-            <Select
-              value={gerState}
-              label="State"
-              onChange={(event: SelectChangeEvent) =>{
-                setGerState(event.target.value)
-              }}
-            >
-              <MenuItem value={'bavaria'}>{t("states.bayern")}</MenuItem>
-              <MenuItem value={'berlin'}>{t("states.berlin")}</MenuItem>
-              <MenuItem value={'hamburg'}>{t("states.hamburg")}</MenuItem>
-            </Select>
-          </FormControl>
-        </Box>
-        <Box sx={{ width: 120 }}>
-        <FormControl fullWidth>
-          <InputLabel>{t("introPages.page2.languageSelect")}</InputLabel>
-          <Select
-            // labelId="demo-simple-select-label"
-            // id="demo-simple-select"
-            value={language}
-            label="Language"
-            onChange={(event: SelectChangeEvent) =>{
-              let language: string = event.target.value
-              //set language for local state, storage (chatbot translation) and other translations.
-              setLanguage(language);
-              localStorage.setItem("language", language);
-              i18n.changeLanguage(language);
-            }}
-          >
-            <MenuItem value={'en'}>English</MenuItem>
-            <MenuItem value={'de'}>Deutsch</MenuItem>
-          </Select>
-        </FormControl>
-        </Box>
-        <IconButton
-          onClick={() => {
-            setPage(1)
-          }}>
-          <ArrowForwardIcon />
-        </IconButton>
-      </Box>
-    </>
-  )
 }
 
 function AssessmentImage() {
-  return (
-    <img src={introassessment} className='intropageimages' alt='assessment' />
-  )
+    return (
+        <img src={introassessment} className='intropageimages' alt='assessment'/>
+    )
 }
 
 function ExploreImage() {
-  return (
-    <img src={introexplore} className='intropageimages' alt='explore' />
-  )
+    return (
+        <img src={introexplore} className='intropageimages' alt='explore'/>
+    )
 }
 
 function SeekhelpImage() {
-  return (
-    <img src={introseekhelp} className='intropageimages' alt='seekhelp' />
-  )
+    return (
+        <img src={introseekhelp} className='intropageimages' alt='seekhelp'/>
+    )
 }
 
 export default IntroPage; 

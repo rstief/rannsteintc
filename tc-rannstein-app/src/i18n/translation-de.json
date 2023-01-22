@@ -4,9 +4,22 @@
     "no": "nein",
     "back": "Zurück",
     "states": {
-      "bayern": "Bayern",
-      "hamburg": "Hamburg",
-      "berlin": "Berlin"
+      "BW": "Baden-Württemberg",
+      "BY": "Bayern",
+      "BE": "Berlin",
+      "BB": "Brandenburg",
+      "HB": "Bremen",
+      "HH": "Hamburg",
+      "HE": "Hessen",
+      "NI": "Niedersachsen",
+      "MV": "Mecklenburg-Vorpommern",
+      "NW": "Nordrhein-Westfalen",
+      "RP": "Rheinland-Pfalz",
+      "SL": "Saarland",
+      "SN": "Sachsen",
+      "ST": "Sachsen-Anhalt",
+      "SH": "Schleswig-Holstein",
+      "TH": "Thüringen"
     },
     "crimes": {
       "sa": "Sexueller Angriff",
@@ -57,6 +70,17 @@
       "community": {
         "key": "GEMEINSCHAFTLICHE RESSOURCEN",
         "l1": "Selbsthilfegruppen und Hotlines"
+      },
+      "lilo": {
+        "key": "LILO",
+        "l1": "Straftateinschätzung",
+        "l2": "Hilfe erhalten",
+        "l3": "Informationen erhalten"
+      },
+      "settings": {
+        "key": "EINSTELLUNGEN",
+        "l1": "Bundesland",
+        "l2": "Sprache"
       }
     },
     "assessment": {
@@ -181,7 +205,7 @@
             "header": "Polizei Ressourcen"
           },
           "legal": {
-            "header": "Rechtsressourcen"
+            "header": "Rechts-Ressourcen"
           },
           "community": {
             "header": "Community-Ressourcen"

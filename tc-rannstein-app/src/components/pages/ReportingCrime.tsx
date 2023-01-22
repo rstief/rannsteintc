@@ -17,7 +17,7 @@ const ReportingCrime = () => {
             <ResourcesBar name='Reporting Crime & What To Do' innerRef='/lilo/assessment'></ResourcesBar>
             <Box display={'flex'} justifyContent='center' flexDirection={'row'} >
                 <Box onClick={() => {
-                    navigate('../legalresourceslawyer')
+                    navigate('../notimplemented')
                 }}
                     display={'flex'} flexDirection='column' height='125px' width={'175px'} borderRadius='20px' marginLeft='8px' marginRight='8px'
                     mt='10px' mb='10px' overflow={'clip'} sx={{ border: 1, justifyContent: 'space-between', backgroundColor: '#348DAA' }}>
@@ -32,7 +32,7 @@ const ReportingCrime = () => {
                     </Box>
                 </Box>
                 <Box onClick={() => {
-                    navigate('../legalresourceslawyer')
+                    navigate('../notimplemented')
                 }}
                     display={'flex'} flexDirection='column' height='125px' width={'175px'} borderRadius='20px' marginLeft='8px' marginRight='8px'
                     mt='10px' mb='10px' overflow={'clip'} sx={{ border: 1, justifyContent: 'space-between', backgroundColor: '#348DAA' }}>

@@ -7,6 +7,26 @@
       "hamburg": "Hamburg",
       "berlin": "Berlin"
     },
+    "navbar":{
+      "police": {
+        "key": "POLICE RESOURCES",
+        "l1": "Closest Police Station",
+        "l2": "Reporting Crime & What To Do"
+      },
+      "legal": {
+        "key": "LEGAL RESOURCES",
+        "l1": "Closest Legal Aid and Lawyers",
+        "l2": "Local Laws"
+      },
+      "community": {
+        "key": "COMMUNITY RESOURCES",
+        "l1": "Support Groups & Hotlines"
+      }
+    },
+    "assessment": {
+      "howto1": "How to use our Crime Preliminary Assessment!",
+      "howto2": "Answer a few quick questions for us to narrow down on the specific crime and the recommended help"
+    },
     "chatbot": {
       "messagePlaceholder": "Type a message...",
       "errorMessage": "I'm sorry, I'm not able to do that yet. If you want to try some other options please refresh the page.",

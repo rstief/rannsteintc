@@ -7,6 +7,26 @@
       "hamburg": "Hamburg",
       "berlin": "Berlin"
     },
+    "navbar":{
+      "police": {
+        "key": "POLIZEI RESOURCEN",
+        "l1": "Nächste Polizeiwache",
+        "l2": "Verbrechen melden und Was tun"
+      },
+      "legal": {
+        "key": "JURISTISCHE RESSOURCEN",
+        "l1": "Nächstgelegene Rechtshilfe und Anwälte",
+        "l2": "Lokales Recht"
+      },
+      "community": {
+        "key": "GEMEINSCHAFTLICHE RESSOURCEN",
+        "l1": "Selbsthilfegruppen und Hotlines"
+      }
+    },
+    "assessment": {
+      "howto1": "So nutzen Sie unsere Straftateinschätzung!",
+      "howto2": "Beantworten Sie ein paar kurze Fragen, damit wir das spezifische Verbrechen und die empfohlene Hilfe eingrenzen können"
+    },
     "chatbot": {
       "messagePlaceholder": "Nachricht eingeben...",
       "errorMessage": "Es tut mir leid, ich kann das noch nicht tun. Wenn Sie versuchen möchten, einige andere Optionen auszuwählen, aktualisieren Sie bitte die Seite.",

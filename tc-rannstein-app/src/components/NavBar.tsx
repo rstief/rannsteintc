@@ -4,9 +4,12 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
 import logo from '../assets/logoWithName.svg'
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 
 
 const NavBar = () => {
+    const { t, i18n } = useTranslation();
+
     const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
     const open = Boolean(anchorEl);
     const handleClick = (event: React.MouseEvent<HTMLButtonElement>) => {
@@ -42,18 +45,18 @@ const NavBar = () => {
                                 expandIcon={<ExpandMoreIcon sx={{color:'#FFF'}}/>}
                                 aria-controls="panel2a-content"
                                 id="panel2a-header">
-                                <Typography color='primary' fontWeight='bold' fontSize='14px'>POLICE RESOURCES</Typography>
+                                <Typography color='primary' fontWeight='bold' fontSize='14px'>{t('navbar.police.key')}</Typography>
                             </AccordionSummary>
                             <AccordionDetails sx={{ backgroundColor: 'white', padding: "0" }}>
                                 <div className="buttonPadding">
                                     <Link href='../lilo/notimplemented' color='secondary' underline='none'>
-                                        Closest Police Station
+                                    {t('navbar.police.l1')}
                                     </Link>
                                 </div>
                                 <Divider className="menuDivider"/>
                                 <div className="buttonPadding">
                                     <Link href='../../lilo/reportcrime' color='secondary' underline='none'>
-                                        Reporting Crime & What To Do
+                                    {t('navbar.police.l2')}
                                     </Link>
                                 </div>
                             </AccordionDetails>
@@ -65,18 +68,18 @@ const NavBar = () => {
                                 expandIcon={<ExpandMoreIcon sx={{color:'#FFF'}}/>}
                                 aria-controls="panel2a-content"
                                 id="panel2a-header">
-                                <Typography color='primary' fontWeight='bold' fontSize='14px'>LEGAL RESOURCES</Typography>
+                                <Typography color='primary' fontWeight='bold' fontSize='14px'>{t('navbar.legal.key')}</Typography>
                             </AccordionSummary>
                             <AccordionDetails sx={{ backgroundColor: 'white', padding: "0" }}>
                                 <div className="buttonPadding">
                                     <Link href='../lilo/notimplemented' color='secondary' underline='none'>
-                                        Closest Legal Aid and Lawyers
+                                    {t('navbar.legal.l1')}
                                     </Link>
                                 </div>
                                 <Divider className={"menuDivider"}/>
                                 <div className="buttonPadding">
                                     <Link href='../../lilo/legalresources' color='secondary' underline='none'>
-                                        Local Laws
+                                    {t('navbar.legal.l2')}
                                     </Link>
                                 </div>
                             </AccordionDetails>
@@ -88,12 +91,12 @@ const NavBar = () => {
                                 expandIcon={<ExpandMoreIcon sx={{color:'#FFF'}}/>}
                                 aria-controls="panel2a-content"
                                 id="panel2a-header">
-                                <Typography color='primary' fontWeight='bold' fontSize='14px'>COMMUNITY RESOURCES</Typography>
+                                <Typography color='primary' fontWeight='bold' fontSize='14px'>{t('navbar.community.key')}</Typography>
                             </AccordionSummary>
                             <AccordionDetails sx={{ backgroundColor: 'white', padding: "0" }}>
                                 <div className="buttonPadding">
                                     <Link href='../../lilo/communityresources' color='secondary' underline='none'>
-                                        Support Groups & Hotlines
+                                    {t('navbar.community.l1')}
                                     </Link>
                                 </div>
                             </AccordionDetails>

@@ -33,18 +33,18 @@ const CommunityOrgPage = () => {
     return (
         <Box>
             <ResourcesBar innerRef='/lilo/communityresources' name='Community Resources'></ResourcesBar>
-            <Box display={'flex'} height='20%' marginLeft='8px' marginRight='8px' mb='10px' sx={{ justifyContent: 'space-between'}}>
+            <Box key={1} display={'flex'} height='20%' marginLeft='8px' marginRight='8px' mb='10px' sx={{ justifyContent: 'space-between'}}>
                 <img src={communityfriendship} className='communityfriendimage' alt='intro' width='15%' />
                 <Typography width='85%' m='8px' fontSize='13px' >
                     {detailOrg.fullName}
                 </Typography>
             </Box>
             <Divider sx={{ marginLeft: '30px', marginRight: '30px' }} />
-            <Box height='50%' ml='20px' mr='20px' pb='5px' pl='10px' pr='10px' sx={{ boxShadow: 4, borderRadius: '10px' }}>
+            <Box key={2} height='50%' ml='20px' mr='20px' pb='5px' pl='10px' pr='10px' sx={{ boxShadow: 4, borderRadius: '10px' }}>
                 <Box display={'flex'} pt='5px' justifyContent={'space-evenly'}>
-                    <Chip sx={{ justifyContent: 'center' }} icon={<LocationOnIcon />} />
-                    <Chip icon={<CallIcon />} />
-                    <Chip icon={<LanguageIcon />} />
+                    <Chip key={1} sx={{ justifyContent: 'center' }} icon={<LocationOnIcon />} />
+                    <Chip key={2} icon={<CallIcon />} />
+                    <Chip key={3} icon={<LanguageIcon />} />
                 </Box>
                 <Typography m='8px' fontSize='13px'>
                     {detailOrg.address.street + detailOrg.address.city}
@@ -58,7 +58,7 @@ const CommunityOrgPage = () => {
                     </Typography>
                 </Box>
             </Box>
-            <Box>
+            <Box key={3}>
                 <Typography fontWeight='bold' m='15px'>
                     Programms & Services
                 </Typography>
@@ -66,7 +66,7 @@ const CommunityOrgPage = () => {
                     <Box display={'flex'} flexWrap='wrap' flexDirection='row' justifyContent={'center'}>
                         {detailOrg.services.map(
                             (item: string[], index: any, array: org[]) => 
-                            <Box m={'4px'} width={'100px'} height={'100px'} sx={{ border: 1, backgroundColor: '#38768A'}} borderColor={'black'} borderRadius='15px' >
+                            <Box key={index} m={'4px'} width={'100px'} height={'100px'} sx={{ border: 1, backgroundColor: '#38768A'}} borderColor={'black'} borderRadius='15px' >
                                 <Typography m={'4px'} color='white'>{item}</Typography>
                             </Box>
                         )}

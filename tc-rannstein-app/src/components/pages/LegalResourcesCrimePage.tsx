@@ -3,29 +3,12 @@ import ResourcesBar from '../ResourcesBar';
 import sexualharassment from '../../assets/sexualharassment.svg'
 import { useParams } from 'react-router-dom';
 import Divider from '@mui/material/Divider';
-import organisationList from '../../data/organizations.json'
-
-interface org {
-    id: String
-    shortName: string,
-    fullName: string,
-    description: string,
-    state: string,
-    address: {
-        street: string,
-        city: string
-    },
-    phone: string,
-    link: string,
-    tags: string[],
-    services: string[]
-}
 
 const LegalResourcesCrimePage = () => {
 
     let { crime } = useParams();
-    const detailOrg: org | any = organisationList.find(item => item.id === '1')
     console.log(crime);
+
     return (
         <Box>
             <ResourcesBar innerRef='/lilo/legalresources' name='Local Laws'></ResourcesBar>

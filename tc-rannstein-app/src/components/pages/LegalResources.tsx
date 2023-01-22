@@ -41,37 +41,35 @@ const LegalResourcesPage = () => {
                 <Typography fontWeight='bold' m='15px'>
                     Sensitive Crimes
                 </Typography>
-                {
-                    <Box display={'flex'} flexWrap='wrap' flexDirection='row' justifyContent={'space-evenly'}>
-                        <Box display={'flex'} flexDirection={'column'} onClick={() => {
-                            navigate('../legalcrimeresources/sexualassault')
-                        }}>
-                            <Box m={'4px'} alignSelf='center' width={'65px'} height={'65px'} sx={{ border: 1, backgroundColor: '#D9D9D9' }} borderColor={'black'} borderRadius='15px'>
-                                <img src={sexualassault} className='lawyerimage' alt='lawyer' >
-                                </img>
-                            </Box>
-                            <Typography m={'4px'} align='center' color='black' fontSize={'11px'}>Sexual Assault</Typography>
+                <Box display={'flex'} flexWrap='wrap' flexDirection='row' justifyContent={'space-evenly'}>
+                    <Box display={'flex'} flexDirection={'column'} onClick={() => {
+                        navigate('../legalcrimeresources/sexualassault')
+                    }}>
+                        <Box m={'4px'} alignSelf='center' width={'65px'} height={'65px'} sx={{ border: 1, backgroundColor: '#D9D9D9' }} borderColor={'black'} borderRadius='15px'>
+                            <img src={sexualassault} className='lawyerimage' alt='lawyer' >
+                            </img>
                         </Box>
-                        <Box display={'flex'} flexDirection={'column'} onClick={() => {
-                            navigate('../legalcrimeresources/sexualharassment')
-                        }}>
-                            <Box m={'4px'} alignSelf='center' width={'65px'} height={'65px'} sx={{ border: 1, backgroundColor: '#D9D9D9' }} borderColor={'black'} borderRadius='15px'>
-                                <img src={sexualharassment} className='lawyerimage' alt='lawyer' >
-                                </img>
-                            </Box>
-                            <Typography m={'4px'} align='center' color='black' fontSize={'11px'}>Sexual Harassment</Typography>
-                        </Box>
-                        <Box display={'flex'} flexDirection={'column'} onClick={() => {
-                            navigate('../legalcrimeresources/physicalassault')
-                        }}>
-                            <Box m={'4px'} alignSelf='center' width={'65px'} height={'65px'} sx={{ border: 1, backgroundColor: '#D9D9D9' }} borderColor={'black'} borderRadius='15px'>
-                                <img src={physicalassault} className='lawyerimage' alt='lawyer' >
-                                </img>
-                            </Box>
-                            <Typography m={'4px'} align='center' color='black' fontSize={'11px'}>Physical Assault</Typography>
-                        </Box>
+                        <Typography m={'4px'} align='center' color='black' fontSize={'11px'}>Sexual Assault</Typography>
                     </Box>
-                }
+                    <Box display={'flex'} flexDirection={'column'} onClick={() => {
+                        navigate('../legalcrimeresources/sexualharassment')
+                    }}>
+                        <Box m={'4px'} alignSelf='center' width={'65px'} height={'65px'} sx={{ border: 1, backgroundColor: '#D9D9D9' }} borderColor={'black'} borderRadius='15px'>
+                            <img src={sexualharassment} className='lawyerimage' alt='lawyer' >
+                            </img>
+                        </Box>
+                        <Typography m={'4px'} align='center' color='black' fontSize={'11px'}>Sexual Harassment</Typography>
+                    </Box>
+                    <Box display={'flex'} flexDirection={'column'} onClick={() => {
+                        navigate('../legalcrimeresources/physicalassault')
+                    }}>
+                        <Box m={'4px'} alignSelf='center' width={'65px'} height={'65px'} sx={{ border: 1, backgroundColor: '#D9D9D9' }} borderColor={'black'} borderRadius='15px'>
+                            <img src={physicalassault} className='lawyerimage' alt='lawyer' >
+                            </img>
+                        </Box>
+                        <Typography m={'4px'} align='center' color='black' fontSize={'11px'}>Physical Assault</Typography>
+                    </Box>
+                </Box>
             </Box>
             <Box>
                 <Typography fontWeight='bold' m='15px'>

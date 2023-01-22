@@ -54,7 +54,7 @@ const LegalResourcesLawyerPage = () => {
             </Box>
             <Box>
                 <Typography fontWeight='bold' m='15px'>
-                    When do you engage with a lawyer:
+                    How do I pay for my lawyer:
                 </Typography>
                 <Divider sx={{ margin: '10px' }} />
                 <Box display={'flex'} flexDirection='row' paddingLeft={'20px'} paddingRight={'20px'}>

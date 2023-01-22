@@ -52,7 +52,7 @@ const NavBar = () => {
                                 </div> */}
                                 <Divider className="menuDivider"/>
                                 <div className="buttonPadding">
-                                    <Link href='../lilo/reportcrime' color='secondary' underline='none'>
+                                    <Link href='../../lilo/reportcrime' color='secondary' underline='none'>
                                         Reporting Crime & What To Do
                                     </Link>
                                 </div>
@@ -75,7 +75,7 @@ const NavBar = () => {
                                 </div> */}
                                 <Divider className={"menuDivider"}/>
                                 <div className="buttonPadding">
-                                    <Link href='../lilo/legalresources' color='secondary' underline='none'>
+                                    <Link href='../../lilo/legalresources' color='secondary' underline='none'>
                                         Local Laws
                                     </Link>
                                 </div>
@@ -92,7 +92,7 @@ const NavBar = () => {
                             </AccordionSummary>
                             <AccordionDetails sx={{ backgroundColor: 'white', padding: "0" }}>
                                 <div className="buttonPadding">
-                                    <Link href='../lilo/communityresources' color='secondary' underline='none'>
+                                    <Link href='../../lilo/communityresources' color='secondary' underline='none'>
                                         Support Groups & Hotlines
                                     </Link>
                                 </div>

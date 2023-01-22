@@ -17,15 +17,17 @@ import court from '../../assets/court.svg';
 import coins from '../../assets/coins.svg';
 import benefit from '../../assets/benefit.svg';
 import loan from '../../assets/loan.svg';
+import { useTranslation } from 'react-i18next';
 
 const ProceduresPage = () => {
 
+    const { t, i18n } = useTranslation();
     let { key } = useParams();
     console.log(key);
 
     return (
         <Box>
-            <ResourcesBar innerRef='/lilo/reportcrime' name='Reporting Crime & What To Do'></ResourcesBar>
+            <ResourcesBar innerRef='/lilo/reportcrime' name={t('resourcesbar.law')}></ResourcesBar>
             <Box display={'flex'} height='20%' marginLeft='10px' marginRight='8px' mt={'10px'} mb='10px' sx={{ justifyContent: 'start' }}>
                 <Box height={'10%'} alignSelf='center' justifyContent={'center'}>
                     <img src={sexualharassment} className='communityfriendimage' alt='intro' />

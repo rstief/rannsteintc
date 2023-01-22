@@ -4,6 +4,7 @@ import communityfriendship from '../../assets/communityfriendship.svg'
 import { useNavigate } from 'react-router-dom';
 import organisationList from '../../data/organizations.json'
 import { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 
 interface org {
     id: String
@@ -24,18 +25,15 @@ interface org {
 const CommunityPage = () => {
 
     const [filter, setFilter] = useState("All");
-
+    const { t, i18n } = useTranslation();
     const tags: string[] = ["All", "Right-Wing", "Racist", "Antisemitic Violence"];
 
     return (
         <Box display={'flex'} flexDirection='column' justifyContent='center' >
-            <ResourcesBar name='Community Resources' innerRef='/lilo/assessment'></ResourcesBar>
+            <ResourcesBar name={t('resourcesbar.community')} innerRef=''></ResourcesBar>
             <Box display={'flex'} height='125px' borderRadius='20px' borderColor='secondary.main' marginLeft='8px' marginRight='8px' mt='10px' mb='20px' sx={{ border: 1, justifyContent: 'space-between' }}>
                 <Typography m='8px' fontSize='13px'>
-                    It’s not always easy to seek out police and legal help,
-                    there are always other support
-                    groups and organisations that
-                    are here for you!
+                    {t('communityexp')}
                 </Typography>
                 <img src={communityfriendship} className='intropageimages' alt='intro' />
             </Box>
@@ -44,7 +42,7 @@ const CommunityPage = () => {
                     setFilter('All')
                 }} /> */}
                 {tags.map(
-                    (item: string, index, array) => <Chip sx={{m:'2px'}} label={item} size={"small"} onClick={() => {
+                    (item: string, index, array) => <Chip key={index} sx={{m:'2px'}} label={item} size={"small"} onClick={() => {
                         setFilter(item)
                     }
                     } />
@@ -102,7 +100,7 @@ const CommunityItem = (props: any) => {
                     {
                         <div>
                             {tags.map(
-                                (item, index, array) => <Chip sx={{ ml: '2px', mr: '2px' }} size='small' label={item} />
+                                (item, index, array) => <Chip key={index} sx={{ ml: '2px', mr: '2px' }} size='small' label={item} />
                             )}
                         </div>
                     }

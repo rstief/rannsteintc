@@ -9,9 +9,11 @@ import physicalassault from '../../assets/physicalassault.svg'
 import cybercrime from '../../assets/cybercrime.svg'
 import { useNavigate } from 'react-router-dom';
 import { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 
 const LegalResourcesPage = () => {
     const navigate = useNavigate();
+    const { t, i18n } = useTranslation();
 
     const [filter, setFilter] = useState("All");
 
@@ -19,27 +21,27 @@ const LegalResourcesPage = () => {
 
     return (
         <Box display={'flex'} flexDirection='column' justifyContent='center' >
-            <ResourcesBar name='Local Laws' innerRef='/lilo/assessment'></ResourcesBar>
+            <ResourcesBar name={t('resourcesbar.law')} innerRef=''></ResourcesBar>
             <Box onClick={() => {
                 navigate('../legalresourceslawyer')
             }}
                 display={'flex'} height='125px' borderRadius='20px' borderColor='secondary.main' marginLeft='8px' marginRight='8px' mt='10px' mb='10px' sx={{ border: 1, justifyContent: 'space-between', backgroundColor: '#348DAA' }}>
                 <Typography m='8px' fontSize='20px' color={'white'}>
-                    Hiring a Lawyer & Prosecuting
+                {t('resources.law.imgexp')}
                 </Typography>
                 <img src={lawyerimage} className='intropageimages' alt='intro' />
             </Box>
             <Box>
                 <Typography fontWeight='bold' m='15px'>
-                    Categories
+                    {t('categories')}
                 </Typography>
                 <Typography m='9px' fontStyle={'italic'}>
-                    View the local law definition & actions that a victim can take to compensate from their perpetrator
+                {t('resources.law.catexp')}
                 </Typography>
             </Box>
             <Box>
                 <Typography fontWeight='bold' m='15px'>
-                    Sensitive Crimes
+                {t('sensitive')}
                 </Typography>
                 <Box display={'flex'} flexWrap='wrap' flexDirection='row' justifyContent={'space-evenly'}>
                     <Box display={'flex'} flexDirection={'column'} onClick={() => {
@@ -49,7 +51,7 @@ const LegalResourcesPage = () => {
                             <img src={sexualassault} className='lawyerimage' alt='lawyer' >
                             </img>
                         </Box>
-                        <Typography m={'4px'} align='center' color='black' fontSize={'11px'}>Sexual Assault</Typography>
+                        <Typography m={'4px'} align='center' color='black' fontSize={'11px'}>{t('crimes.sa')}</Typography>
                     </Box>
                     <Box display={'flex'} flexDirection={'column'} onClick={() => {
                         navigate('../legalcrimeresources/sexualharassment')
@@ -58,7 +60,7 @@ const LegalResourcesPage = () => {
                             <img src={sexualharassment} className='lawyerimage' alt='lawyer' >
                             </img>
                         </Box>
-                        <Typography m={'4px'} align='center' color='black' fontSize={'11px'}>Sexual Harassment</Typography>
+                        <Typography m={'4px'} align='center' color='black' fontSize={'11px'}>{t('crimes.sh')}</Typography>
                     </Box>
                     <Box display={'flex'} flexDirection={'column'} onClick={() => {
                         navigate('../legalcrimeresources/physicalassault')
@@ -67,13 +69,13 @@ const LegalResourcesPage = () => {
                             <img src={physicalassault} className='lawyerimage' alt='lawyer' >
                             </img>
                         </Box>
-                        <Typography m={'4px'} align='center' color='black' fontSize={'11px'}>Physical Assault</Typography>
+                        <Typography m={'4px'} align='center' color='black' fontSize={'11px'}>{t('crimes.pa')}</Typography>
                     </Box>
                 </Box>
             </Box>
             <Box>
                 <Typography fontWeight='bold' m='15px'>
-                    Common Crimes:
+                {t('common')}
                 </Typography>
 
                 <Box display={'flex'} flexWrap='wrap' flexDirection='row' justifyContent={'space-evenly'}>
@@ -84,7 +86,7 @@ const LegalResourcesPage = () => {
                             <img src={cybercrime} className='lawyerimage' alt='lawyer' >
                             </img>
                         </Box>
-                        <Typography m={'4px'} align='center' color='black' fontSize={'11px'}>Cyber Crime</Typography>
+                        <Typography m={'4px'} align='center' color='black' fontSize={'11px'}>{t('crimes.cc')}</Typography>
                     </Box>
                     <Box display={'flex'} flexDirection={'column'} onClick={() => {
                         navigate('../legalcrimeresources/fraud')
@@ -93,16 +95,16 @@ const LegalResourcesPage = () => {
                             <img src={fraud} className='lawyerimage' alt='lawyer' >
                             </img>
                         </Box>
-                        <Typography m={'4px'} align='center' color='black' fontSize={'11px'}>Fraud</Typography>
+                        <Typography m={'4px'} align='center' color='black' fontSize={'11px'}>{t('crimes.f')}</Typography>
                     </Box>
                     <Box display={'flex'} flexDirection={'column'} onClick={() => {
                         navigate('../legalcrimeresources/theft')
                     }}>
-                        <Box m={'4px'} p='5px' alignSelf='center' width={'65px'} height={'65px'} overflow='clip' overflow-clip-margin='content-box' sx={{ border: 1, backgroundColor: '#D9D9D9' }} borderColor={'black'} borderRadius='15px'>
+                        <Box m={'4px'} alignSelf='center' width={'65px'} height={'65px'} overflow='clip' overflow-clip-margin='content-box' sx={{ border: 1, backgroundColor: '#D9D9D9' }} borderColor={'black'} borderRadius='15px'>
                             <img src={theft} className='lawyerimage' alt='lawyer' >
                             </img>
                         </Box>
-                        <Typography m={'4px'} align='center' color='black' fontSize={'11px'}>Theft</Typography>
+                        <Typography m={'4px'} align='center' color='black' fontSize={'11px'}>{t('crimes.t')}</Typography>
                     </Box>
                 </Box>
             </Box>

@@ -2,12 +2,48 @@
   "translation": {
     "yes": "ja",
     "no": "nein",
+    "back": "Zurück",
     "states": {
       "bayern": "Bayern",
       "hamburg": "Hamburg",
       "berlin": "Berlin"
     },
-    "navbar":{
+    "crimes": {
+      "sa": "Sexueller Angriff",
+      "sh": "Sexuelle Belästigung",
+      "pa": "Körperliche Gewalt",
+      "cc": "Cyberkriminalität",
+      "f": "Betrug",
+      "t": "Diebstahl"
+    },
+    "communityexp": "Es ist nicht immer einfach, Hilfe in Anspruch zu nehmen, aber es gibt Selbsthilfegruppen und Organisationen, die für Sie da sind!",
+    "infopageexp":"Chatten sie mit Lilo, unserer KI-Expertin für Recht, oder sehen Sie sich unsere anderen Ressourcen an",
+    "resourcesbar": {
+      "police": "Verbrechen melden und weiteres vorgehen",
+      "law": "Lokales Recht",
+      "community": "Gemeinschaftliche Ressourcen"
+    },
+    "categories": "Kategorien",
+    "sensitive": "Harte Verbrechen",
+    "common": "Häufige Verbrechen",
+    "resources":{
+      "report": {
+        "catexp": "Sehen Sie sich die örtlichen polizeilichen Verfahren für die verschiedenen Arten von Straftaten an",
+        "file": "Eine offizielle Strafanzeige einreichen",
+        "insurance": "*Kann für Versicherungen verwendet werden",
+        "template": "Vorlage für Anzeige",
+        "store": "*Um ein schnelles speichern der information zu ermöglichen"
+      },
+      "law": {
+        "catexp": "Sehen Sie sich die örtlichen Gesetze und die Maßnahmen an, die ein Opfer ergreifen kann, um von den Täter zur Rechenschaft zu ziehen",
+        "imgexp": "Beauftragung eines Anwalts & Anklageerhebung"
+      }
+    },
+    "interactionbar": {
+      "redo": "Chat neu starten",
+      "export": "Chat als PDF exportieren"
+    },
+    "navbar": {
       "police": {
         "key": "POLIZEI RESOURCEN",
         "l1": "Nächste Polizeiwache",
@@ -158,7 +194,7 @@
         "forward": "In Ordnung, ich leite Sie an eine Informationsseite zu diesem Thema weiter. Wenn Sie mich wieder brauchen, bin ich hier."
       }
     },
-    "introPages" : {
+    "introPages": {
       "page1": {
         "hello": "Hallo, ich bin Lilo, deine digitale Rechtsexpertin!"
       },

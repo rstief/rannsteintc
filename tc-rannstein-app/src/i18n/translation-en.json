@@ -2,10 +2,46 @@
   "translation": {
     "yes": "yes",
     "no": "no",
+    "back": "Back",
     "states": {
       "bayern": "Bavaria",
       "hamburg": "Hamburg",
       "berlin": "Berlin"
+    },
+    "crimes":{
+      "sa": "Sexual Assault",
+      "sh": "Sexual Harassment",
+      "pa": "Physical Assault",
+      "cc": "Cyber Crime",
+      "f": "Fraud",
+      "t": "Theft"
+    },
+    "communityexp": "It's not always easy to seek out police and legal help, there are always other supportgroups and organisations that are here for you!",
+    "infopageexp":"Chat with Lilo, our A.I. Law Expert or view our other Resources",
+    "resourcesbar": {
+      "police": "Reporting Crime & What To Do",
+      "law": "Local Law",
+      "community": "Community Resources"
+    },
+    "categories": "Categories",
+    "sensitive": "Sensitive Crimes",
+    "common": "Common Crimes",
+    "resources":{
+      "report": {
+        "catexp": "View the local law procedures taken by the police for the different types of crimes",
+        "file": "File an Official Criminal Complaint",
+        "insurance": "*Can be used for Insurance",
+        "template": "Crime Reporting Template",
+        "store": "*To store first-hand witness account"
+      },
+      "law": {
+        "catexp": "View the local law definition & actions that a victim can take to compensate from their perpetrator",
+        "imgexp": "Hiring a Lawyer & Prosecuting"
+      }
+    },
+    "interactionbar": {
+      "redo": "Redo Chat",
+      "export": "Export as PDF"
     },
     "navbar":{
       "police": {

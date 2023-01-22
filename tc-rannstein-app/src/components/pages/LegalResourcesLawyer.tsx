@@ -7,12 +7,14 @@ import court from '../../assets/court.svg';
 import coins from '../../assets/coins.svg';
 import benefit from '../../assets/benefit.svg';
 import loan from '../../assets/loan.svg';
+import { useTranslation } from 'react-i18next';
 
 const LegalResourcesLawyerPage = () => {
+    const { t, i18n } = useTranslation();
 
     return (
         <Box display={'flex'} flexDirection='column' justifyContent='center' >
-            <ResourcesBar name='Local Laws' innerRef='/lilo/legalresources'></ResourcesBar>
+            <ResourcesBar name={t('resourcesbar.law')} innerRef='/lilo/legalresources'></ResourcesBar>
             <Box display={'flex'} height='100px' borderRadius='20px' borderColor='secondary.main' marginLeft='8px' marginRight='8px' mt='10px' mb='10px' sx={{ border: 1, justifyContent: 'space-between', backgroundColor: '#348DAA' }}>
                 <Typography m='8px' fontSize='20px' color={'white'}>
                     Hiring a Lawyer & Prosecuting

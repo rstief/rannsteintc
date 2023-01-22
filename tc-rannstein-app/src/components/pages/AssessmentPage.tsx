@@ -6,9 +6,9 @@ import {preliminaryFlow} from "../../chatbot-flow/flow";
 
 const AssessmentPage = () => {
   return (
-    <Box>
+    <Box sx={{display: 'flex', flexDirection: 'column', height:'calc(100% - 56px)'}}>
       <InfoBar />
-        <ConfiguredChatBot steps={preliminaryFlow} width="100%" height="600px"/>
+        <ConfiguredChatBot steps={preliminaryFlow} width="100%" height="100%"/>
     </Box>
   )
 }

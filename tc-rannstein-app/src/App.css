@@ -50,3 +50,15 @@
 .buttonPadding {
   padding: 8px;
 }
+
+/* General Layout */
+
+#root {
+  height: 100vh;
+}
+
+.chatbotContainer {
+  height: 100%
+}
+
+

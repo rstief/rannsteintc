@@ -10,7 +10,7 @@ const font: string = 'Raleway';
 
 const config = {
     //functional
-    cache: false, //todo: can be used, bugs out when you refresh between bot steps
+    cache: true, //todo: can be used, bugs out when you refresh between bot steps
     //delays
     botDelay: 1000,
     customDelay: 1000, //1k
@@ -26,8 +26,9 @@ const config = {
     placeholder: i18n.t('chatbot.messagePlaceholder'),
     //layout
     headerComponent: <div style={{height: '10px'}}/>,
-    contentStyle: {height: '100%'}, //chatbot scrollable part fills remaining space in flex layout
+    contentStyle: {flexGrow:'1'}, //chatbot scrollable part fills remaining space in flex layout
     style: {display: 'flex', flexDirection: 'column'},
+    className: 'chatbotContainer'
 }
 
 const theme = {

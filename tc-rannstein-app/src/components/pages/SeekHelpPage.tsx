@@ -7,11 +7,9 @@ import {seekHelpFlow} from "../../chatbot-flow/flow";
 
 const SeekHelpPage = () => {
   return (
-      <Box>
-        <InteractionBar />
-        <Box>
-            <ConfiguredChatBot steps={seekHelpFlow} width="100%" height="600px"/>
-        </Box>
+      <Box sx={{display: 'flex', flexDirection: 'column', height:'calc(100% - 56px)'}}>
+          <InteractionBar />
+          <ConfiguredChatBot steps={seekHelpFlow} width="100%" height="100%"/>
       </Box>
   )
 }

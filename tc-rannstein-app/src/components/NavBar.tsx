@@ -45,14 +45,14 @@ const NavBar = () => {
                                 <Typography color='primary' fontWeight='bold' fontSize='14px'>POLICE RESOURCES</Typography>
                             </AccordionSummary>
                             <AccordionDetails sx={{ backgroundColor: 'white', padding: "0" }}>
-                                <div className="buttonPadding">
+                                {/* <div className="buttonPadding">
                                     <Link href='../lilo/infopage' color='secondary' underline='none'>
                                         Closest Police Station
                                     </Link>
-                                </div>
+                                </div> */}
                                 <Divider className="menuDivider"/>
                                 <div className="buttonPadding">
-                                    <Link href='../lilo/infopage' color='secondary' underline='none'>
+                                    <Link href='../lilo/reportcrime' color='secondary' underline='none'>
                                         Reporting Crime & What To Do
                                     </Link>
                                 </div>
@@ -68,11 +68,11 @@ const NavBar = () => {
                                 <Typography color='primary' fontWeight='bold' fontSize='14px'>LEGAL RESOURCES</Typography>
                             </AccordionSummary>
                             <AccordionDetails sx={{ backgroundColor: 'white', padding: "0" }}>
-                                <div className="buttonPadding">
+                                {/* <div className="buttonPadding">
                                     <Link href='../lilo/infopage' color='secondary' underline='none'>
                                         Closest Legal Aid and Lawyers
                                     </Link>
-                                </div>
+                                </div> */}
                                 <Divider className={"menuDivider"}/>
                                 <div className="buttonPadding">
                                     <Link href='../lilo/legalresources' color='secondary' underline='none'>

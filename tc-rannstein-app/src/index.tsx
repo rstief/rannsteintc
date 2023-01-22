@@ -16,6 +16,7 @@ import CommunityOrgPage from './components/pages/CommunityOrgPage';
 import LegalResourcesPage from './components/pages/LegalResources';
 import LegalResourcesLawyerPage from './components/pages/LegalResourcesLawyer';
 import LegalResourcesCrimePage from './components/pages/LegalResourcesCrimePage';
+import ReportingCrime from './components/pages/ReportingCrime';
 
 const theme = createTheme({
   palette: {
@@ -85,6 +86,10 @@ const router = createBrowserRouter([
       {
         path: "legalresourceslawyer",
         element: <LegalResourcesLawyerPage />,
+      },
+      {
+        path: "reportcrime",
+        element: <ReportingCrime/>
       }
     ],
   },

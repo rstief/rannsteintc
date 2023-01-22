@@ -13,6 +13,9 @@ import ImageIntroPage from './components/pages/ImageIntroPage';
 import CommunityPage from './components/pages/CommunityPage';
 import './i18n/i18n';
 import CommunityOrgPage from './components/pages/CommunityOrgPage';
+import LegalResourcesPage from './components/pages/LegalResources';
+import LegalResourcesLawyerPage from './components/pages/LegalResourcesLawyer';
+import LegalResourcesCrimePage from './components/pages/LegalResourcesCrimePage';
 
 const theme = createTheme({
   palette: {
@@ -70,6 +73,18 @@ const router = createBrowserRouter([
       {
         path: "communityorg/:orgId",
         element: <CommunityOrgPage />,
+      },
+      {
+        path: "legalresources",
+        element: <LegalResourcesPage />,
+      },
+      {
+        path: "legalcrimeresources/:crime",
+        element: <LegalResourcesCrimePage/>
+      },
+      {
+        path: "legalresourceslawyer",
+        element: <LegalResourcesLawyerPage />,
       }
     ],
   },

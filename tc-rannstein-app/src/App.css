@@ -20,6 +20,11 @@
   object-fit: cover;
 }
 
+.lawyerimage {
+  height: 100%;
+  object-fit:scale-down;
+}
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;

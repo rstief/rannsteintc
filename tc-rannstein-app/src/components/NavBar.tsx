@@ -75,7 +75,7 @@ const NavBar = () => {
                                 </div>
                                 <Divider className={"menuDivider"}/>
                                 <div className="buttonPadding">
-                                    <Link href='../lilo/infopage' color='secondary' underline='none'>
+                                    <Link href='../lilo/legalresources' color='secondary' underline='none'>
                                         Local Laws
                                     </Link>
                                 </div>

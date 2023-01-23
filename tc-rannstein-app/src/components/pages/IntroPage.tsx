@@ -1,3 +1,6 @@
+// noinspection HtmlUnknownTarget
+// So no warning for routing links
+
 import {
     AppBar,
     Box,
@@ -6,7 +9,6 @@ import {
     Link,
     IconButton,
     FormControl,
-    InputLabel,
     MenuItem,
     Select,
     SelectChangeEvent

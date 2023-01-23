@@ -215,7 +215,7 @@ const flow: any[] = [
             {value:1, label: i18n.t('chatbot.seekHelp.sexual5Answer.yes'), trigger: 'seekHelp.sexual6'},
             {value:2, label: i18n.t('chatbot.seekHelp.sexual5Answer.no'), trigger: 'seekHelp.sexual6'},
         ],
-        //todo idk what to write metadata: {'indications': {1: 'u18'}}
+        //todo not for prototype: {'indications': {1: 'u18'}}
     },
     {
         id: 'seekHelp.sexual6',

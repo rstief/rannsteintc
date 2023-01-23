@@ -17,6 +17,9 @@ import logo from '../../assets/logoWithName.svg'
 import introassessment from '../../assets/introassessment.svg'
 import introexplore from '../../assets/introexplore.svg'
 import introseekhelp from '../../assets/introseekhelp.svg'
+import introassessmentDe from '../../assets/introassessment_de.svg'
+import introexploreDe from '../../assets/introexplore_de.svg'
+import introseekhelpDe from '../../assets/introseekhelp_de.svg'
 import {useTranslation} from "react-i18next";
 import {useState} from 'react';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
@@ -164,19 +167,19 @@ const IntroPage = () => {
 
 function AssessmentImage() {
     return (
-        <img src={introassessment} className='intropageimages' alt='assessment'/>
+        <img src={localStorage.getItem("language") === "de" ? introassessmentDe : introassessment} className='intropageimages' alt='assessment'/>
     )
 }
 
 function ExploreImage() {
     return (
-        <img src={introexplore} className='intropageimages' alt='explore'/>
+        <img src={localStorage.getItem("language") === "de" ? introexploreDe : introexplore} className='intropageimages' alt='explore'/>
     )
 }
 
 function SeekhelpImage() {
     return (
-        <img src={introseekhelp} className='intropageimages' alt='seekhelp'/>
+        <img src={localStorage.getItem("language") === "de" ? introseekhelpDe : introseekhelp} className='intropageimages' alt='seekhelp'/>
     )
 }
 

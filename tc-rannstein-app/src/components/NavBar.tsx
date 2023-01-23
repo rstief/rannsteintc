@@ -38,7 +38,7 @@ const NavBar = () => {
     };
 
     return (
-        <AppBar elevation={0} position='static' sx={{}}>
+        <AppBar elevation={0} position='static' sx={{height:'56px'}}>
             <Toolbar sx={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
                 <Box sx={{ flexDirection: 'row', flexWrap: 'nowrap', display: 'flex' }}>
                     <img src={logo} alt='logo' />

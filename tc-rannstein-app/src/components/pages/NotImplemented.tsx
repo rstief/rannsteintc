@@ -1,9 +1,9 @@
 import { Box, Typography } from '@mui/material';
 import { useNavigate } from 'react-router-dom';
+import i18n from '../../i18n/i18n';
 
 const NotImplementedPage = () => {
     const navigate = useNavigate();
-    const backText = '< Back'
     return (
         <Box>
             <Box display={'flex'} sx={{ justifyContent: 'start', backgroundColor: '#F7F8F9', borderRadius: '8px' }}>
@@ -11,11 +11,11 @@ const NotImplementedPage = () => {
                     navigate(-1)
                 }} alignSelf='center' ml='8px'>
                     <Typography color={'black'}>
-                        {backText}
+                        {"< " + i18n.t("back")}
                     </Typography>
                 </Box>
                 <Typography fontWeight={'bold'} textAlign='center' ml='50px' mt='5px'>
-                    Not Implemented
+                    {i18n.t("notImplemented")}
                 </Typography>
             </Box>
         </Box>

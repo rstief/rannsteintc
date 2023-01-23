@@ -3,6 +3,7 @@
     "yes": "ja",
     "no": "nein",
     "back": "Zurück",
+    "notImplemented": "Nicht Implementiert",
     "states": {
       "BW": "Baden-Württemberg",
       "BY": "Bayern",
@@ -22,7 +23,7 @@
       "TH": "Thüringen"
     },
     "crimes": {
-      "sa": "Sexueller Angriff",
+      "sa": "Sexueller Übergriff",
       "sh": "Sexuelle Belästigung",
       "pa": "Körperliche Gewalt",
       "cc": "Cyberkriminalität",
@@ -32,9 +33,9 @@
     "communityexp": "Es ist nicht immer einfach, Hilfe in Anspruch zu nehmen, aber es gibt Selbsthilfegruppen und Organisationen, die für Sie da sind!",
     "infopageexp":"Chatten sie mit Lilo, unserer KI-Expertin für Recht, oder sehen Sie sich unsere anderen Ressourcen an",
     "resourcesbar": {
-      "police": "Verbrechen melden und weiteres vorgehen",
-      "law": "Lokales Recht",
-      "community": "Gemeinschaftliche Ressourcen"
+      "police": "Anzeige erstatten & Weiteres",
+      "law": "Örtliches Recht",
+      "community": "Community Ressourcen"
     },
     "categories": "Kategorien",
     "sensitive": "Harte Verbrechen",
@@ -45,7 +46,7 @@
         "file": "Eine offizielle Strafanzeige einreichen",
         "insurance": "*Kann für Versicherungen verwendet werden",
         "template": "Vorlage für Anzeige",
-        "store": "*Um ein schnelles speichern der information zu ermöglichen"
+        "store": "*Um ein schnelles Speichern der Information zu ermöglichen"
       },
       "law": {
         "catexp": "Sehen Sie sich die örtlichen Gesetze und die Maßnahmen an, die ein Opfer ergreifen kann, um von den Täter zur Rechenschaft zu ziehen",
@@ -60,16 +61,16 @@
       "police": {
         "key": "POLIZEI RESOURCEN",
         "l1": "Nächste Polizeiwache",
-        "l2": "Verbrechen melden und Was tun"
+        "l2": "Anzeige erstatten & Weiteres"
       },
       "legal": {
         "key": "JURISTISCHE RESSOURCEN",
         "l1": "Nächstgelegene Rechtshilfe und Anwälte",
-        "l2": "Lokales Recht"
+        "l2": "Örtliches Recht"
       },
       "community": {
-        "key": "GEMEINSCHAFTLICHE RESSOURCEN",
-        "l1": "Selbsthilfegruppen und Hotlines"
+        "key": "COMMUNITY RESSOURCEN",
+        "l1": "Hilfsorganisationen und Hotlines"
       },
       "lilo": {
         "key": "LILO",
@@ -89,14 +90,14 @@
     },
     "chatbot": {
       "messagePlaceholder": "Nachricht eingeben...",
-      "errorMessage": "Es tut mir leid, ich kann das noch nicht tun. Wenn Sie versuchen möchten, einige andere Optionen auszuwählen, aktualisieren Sie bitte die Seite.",
+      "errorMessage": "Es tut mir leid, ich kann das noch nicht. Wenn Sie etwas anderes ausprobieren möchten, aktualisieren Sie bitte die Seite.",
       "seekHelp": {
         "hello1": "Hallo, ich bin Lilo! Dies ist ein sicherer und anonymer Raum und ich bin hier, um Ihnen zu helfen.",
-        "hello2": "Sie können mich alles fragen, ein Thema unten auswählen oder die Crime-Voruntersuchung mit mir machen.",
+        "hello2": "Sie können mich alles fragen, ein Thema unten auswählen oder die Straftateinschätzung mit mir machen.",
         "helloAnswer": {
           "preliminary": {
-            "header": "Crime-Voruntersuchung",
-            "text": "Beantworten Sie ein paar schnelle Fragen, um auf den bestimmten Verbrechen einzugrenzen und passende empfohlene Hilfe zu erhalten"
+            "header": "Straftateinschätzung",
+            "text": "Beantworten Sie ein paar kurze Fragen, damit wir das spezifische Verbrechen und die empfohlene Hilfe eingrenzen können"
           },
           "crime": {
             "header": "Es hat ein Verbrechen stattgefunden...",
@@ -111,15 +112,65 @@
             "text": "sexuell belästigt"
           }
         },
-        "preliminary": "Voruntersuchung",
+        "preliminary": "Straftateinschätzung",
         "crime": "Es hat ein Verbrechen stattgefunden und ich weiß nicht, was ich tun soll",
+        "crime1-1": "Jede Straftat ist eine Anzeige wert, egal wie schwerwiegend sie im Moment erscheinen mag.",
+        "crime1-2": "Hier finden Sie einen Guide, der Ihnen Schritt für Schritt erklärt, was Sie tun können, wenn Sie Opfer einer Straftat geworden sind.",
+        "crimeGuide": "Was tun nach einem Verbrechen?",
+        "crime3": "Benötigen Sie zusätzliche Ressourcen oder möchten Sie einfach nur reden?",
+        "crime3Answer": {
+          "resources": "Zusätzliche Ressourcen",
+          "talk": "Mit Lilo Reden"
+        },
+        "crime3Resources": "Alles klar! Welche Art von Hilfe brauchen Sie?",
         "physicalAssault": "Ich wurde körperlich angegriffen",
-        "sexualAssault": "Ich wurde sexuell belästigt"
+        "sexualAssault": "Ich wurde sexuell belästigt",
+        "sexual1-1": "Wenn Sie Opfer eines sexuellen Übergriffs geworden sind, ist es wichtig, sich daran zu erinnern, dass es nicht Ihre Schuld war. Vergewaltigung und sexuelle Übergriffe sind immer falsch - unabhängig davon, wer sie begeht oder wo sie geschehen.",
+        "sexual1-2": "Ich werde Ihnen nun einige Fragen stellen um Ihnen passende nächste Schritte und Hilfe anbieten zu können.",
+        "sexual2": "Diese Fragen sind vielleicht etwas schwierig zu beantworten, aber ich bin bei Ihnen, um Ihnen die Unterstütung zu vermitteln, die sie brauche.",
+        "sexual3": "Ist die Tat kürzlich passiert (in den letzten 24 Stunden)?",
+        "sexual3Answer": {
+          "yes": "Ja, ist sie",
+          "no": "Nein, ist sie nicht "
+        },
+        "sexual4": "War der Täter ein Fremder oder ein Bekannter?",
+        "sexual4Answer": {
+          "stranger": "Ein Fremder",
+          "know": "Ein Bekannter"
+        },
+        "sexual5": "Sind sie 18 oder jünger?",
+        "sexual5Answer": {
+          "yes": "Ja, ich bin unter 18",
+          "no": "Nein, ich bin über 18"
+        },
+        "sexual6": "Sind sie an einem sicheren Ort?",
+        "sexual6Answer": {
+          "yes": "Ja, bin ich",
+          "no": "Nein, bin ich nicht"
+        },
+        "sexual7": "Haben Sie jemanden, dem Sie sich anvertrauen können und der Sie unterstützt?",
+        "sexual7Answer": {
+          "yes": "Ja, habe ich",
+          "no": "Nein, habe ich nicht"
+        },
+        "sexual8": "Danke für Ihre Antworten. Das war sicher nicht leicht, aber Sie sind wirklich tapfer..",
+        "sexual10": "Wenn Sie glauben, dass nichts davon zutrifft, oder wenn Sie einfach nur reden wollen: Ich bin für Sie da.",
+        "sexualAssaultResult": {
+            "intro": "Dies sind einige Schritte, die ich empfehlen würde:",
+          "1": "Wenn Sie sich gut genug fühlen, gehen Sie zur Polizei und erstatten Sie eine offizielle Anzeige. Auch wenn Sie glauben, dass Sie keine Beweise haben oder die Chancen gering sind, ist es immer besser, das Verbrechen anzuzeigen.",
+          "2": "Wenn Sie eine offizielle Anzeige erstatten, können Sie den richtigen juristischen Beistand und möglicherweise auch finanzielle Unterstützung beantragen.",
+          "u18": "Sexuelle Übergriffe auf Minderjährige sind ein besonders schweres Vergehen.",
+          "know": "Vergewissern Sie sich, dass Sie in Sicherheit sind und der Täter nicht in der Lage ist, Ihnen erneut zu schaden. Wenn Sie in der selben Wohnung wohnen, können Sie versuchen, vorübergehend bei einer Bekannten unterzukommen oder eine der empfohlenen Opferunterkünfte anzurufen.",
+          "recent": "Suchen Sie einen Arzt/Gynäkologen auf, falls Sie Verletzungen haben und um Beweise für den Übergriff zu sichern. Bitten Sie unbedingt darum, dass die Untersuchung dokumentiert wird, damit Sie leichter Anzeige erstatten können. Bewahren Sie außerdem alle Kleidungsstücke, Unterwäsche und/oder Gegenstände auf, die als Beweismittel verwendet werden könnten.",
+          "nobody": "Überlegen Sie, ob Sie Freunde oder Familienmitglieder haben, denen Sie sich anvertrauen können. Wenn nicht, können Sie eine der von mir empfohlenen Krisen-Hotlines anrufen.",
+          "unsafe": "Ihre Sicherheit ist sehr wichtig. Versuchen Sie wenn möglich, sich so weit zu entfernen, dass Sie jemanden um Hilfe bitten können, z. B. ein Krisencenter oder einen Bekannten.."
+        },
+        "talk": "Mit Lilo Reden"
       },
       "preliminary": {
         "hello1": "Hallo, ich bin Lilo! Dies ist ein sicherer und anonymer Raum und ich bin hier, um Sie durch diesen Prozess zu führen.",
-        "hello2": "Es wird eine Reihe von Fragen geben, bei denen Sie entweder eine Option auswählen oder Ihre Nachricht eingeben können.",
-        "hello3": "Am Ende wird es eine Liste aller möglichen Verbrechen geben, die in Frage kommen könnten, und Sie können sie exportieren und als PDF speichern.",
+        "hello2": "Ich werde Ihnen eine Reihe von Fragen stellen, bei denen Sie entweder eine Option auswählen oder Ihre Nachricht eingeben können.",
+        "hello3": "Am Ende werde ich Ihnen eine Liste aller Verbrechen geben, die in Frage kommen könnten, und Sie können sie als PDF exportieren.",
         "helloAnswer": "Lass uns anfangen!",
         "start": "Wurden Sie verletzt oder wurde etwas beschädigt/gestohlen?",
         "startAnswer": {
@@ -131,7 +182,7 @@
         "stolen1Answer": {
           "hurt": "verletzt",
           "threatened": "bedroht",
-          "none": "keine dieser"
+          "none": "keines davon"
         },
         "stolen2-2": "Hatte der Täter eine Waffe?",
         "stolen2-3": "Wurden Sie ausgeraubt oder betrogen?",
@@ -139,14 +190,14 @@
           "robbed": "ausgeraubt",
           "scammed": "betrogen"
         },
-        "stolen3-1": "Wurde Ihr Haus eingebrochen?",
+        "stolen3-1": "Wurde in ihre Wohnung eingebrochen?",
         "damaged1": "Wurden Sie verletzt oder wurde etwas gestohlen?",
         "damaged1Answer": {
           "hurt": "verletzt",
           "stolen": "gestohlen",
-          "none": "keine dieser"
+          "none": "keines davon"
         },
-        "damaged2-2": "Wurde Ihr Haus eingebrochen?",
+        "damaged2-2": "Wurde in ihre Wohnung eingebrochen?",
         "harmed1": "Wie wurden Sie verletzt?",
         "harmed1Answer": {
           "physically": "körperlich",
@@ -157,70 +208,76 @@
         "harmed2-1Answer": {
           "damaged": "beschädigt",
           "stolen": "gestohlen",
-          "none": "keine dieser"
+          "none": "keines davon"
         },
-        "harmed2-2": "Wurden Sie auf eine andere Weise auch verletzt?",
-        "harmed2-3": "War es persönlich oder durch das Internet?",
+        "harmed2-2": "Wurden Sie auch auf eine andere Weise verletzt?",
+        "harmed2-3": "War es persönlich oder im Internet?",
         "harmed2-3Answer": {
           "in-person": "persönlich",
           "online": "online"
         },
         "harmed3-1": "Hat der Täter eine Waffe benutzt?",
         "harmed3-2": "Hat der Täter eine Waffe benutzt?",
-        "harmed3-3": "Wurden Sie beleidigt, bedroht oder wurde Ihr Ruf beschädigt?",
+        "harmed3-3": "Wurden Sie beleidigt, bedroht oder wurde Ihr Ruf geschädigt?",
         "harmed3-3Answer": {
           "insulted": "beleidigt",
           "threatened": "bedroht",
-          "reputation": "Ruf beschädigt"
+          "reputation": "Ruf geschädigt"
         },
         "harmed4-1": "Gab es mehrere Täter?",
         "harmed4-2": "Gab es mehrere Täter?",
         "done": {
           "1": "Vielen Dank für Ihre Antwort. Ich habe ein paar Möglichkeiten eingegrenzt, die das Verbrechen sein könnten. ",
           "2": "Jedes Ergebnis enthält angepasste Ressourcen, auf die Sie zugreifen können.",
-          "3": "Diese Ergebnisse können auch als PDF exportiert werden, zu Ihrer Referenz.",
+          "3": "Diese Ergebnisse können auch als PDF exportiert werden.",
           "4": "Wenn es noch etwas gibt, zögern Sie bitte nicht, mit mir zu sprechen oder unsere anderen Ressourcen zu erkunden.",
-          "5": "Wünsche Ihnen alles Gute und bleiben Sie sicher!"
+          "5": "Ich wünsche Ihnen alles Gute und bleiben Sie sicher!"
         },
         "resultNote": {
           "1": "Diese Ergebnisse beziehen sich auf das deutsche Strafgesetzbuch. Für weitere Details besuchen Sie bitte:",
-          "2": "https://www.gesetze-im-internet.de/englisch_stgb/"
+          "2": "https://www.gesetze-im-internet.de/"
         },
-        "retry": "wenn Sie denken, dass keines dieser Ergebnisse auf Sie zutrifft, können Sie die Untersuchung erneut versuchen oder wenn Sie sich nicht sicher sind, was Sie tun sollen, sprechen Sie mit mir, damit ich Ihnen helfen kann.",
+        "retry": "Wenn Sie denken, dass keines dieser Ergebnisse auf Sie zutrifft, können Sie die Untersuchung erneut versuchen oder wenn Sie sich nicht sicher sind, was Sie tun sollen, sprechen Sie mit mir, damit ich Ihnen helfen kann.",
         "retryAnswer": {
           "redo": "Untersuchung wiederholen",
           "talk": "Mit Lilo sprechen"
         },
-        "divider": "Beginn der Voruntersuchung"
+        "divider": "Beginn der Straftateinschätzung"
       },
       "information": {
         "hello1": "Hallo, ich bin Lilo! Dies ist ein sicherer und anonymer Raum und ich bin hier, um Ihnen zu helfen.",
-        "hello2": "Sie können mir alles fragen, ein Thema unten auswählen oder die Crime-Voruntersuchung mit mir machen.",
+        "hello2": "Sie können mir alles fragen, ein Thema unten auswählen oder die Straftateinschätzung mit mir machen.",
         "helloAnswer": {
           "preliminary": {
-            "header": "Crime-Voruntersuchung",
-            "text": "Beantworten Sie ein paar schnelle Fragen, um auf den bestimmten Verbrechen einzugrenzen und passende empfohlene Hilfe zu erhalten"
+            "header": "Straftateinschätzung",
+            "text": "Beantworten Sie ein paar kurze Fragen, damit wir das spezifische Verbrechen und die empfohlene Hilfe eingrenzen können"
           },
           "police": {
             "header": "Polizei Ressourcen"
           },
           "legal": {
-            "header": "Rechts-Ressourcen"
+            "header": "Juristische Ressourcen"
           },
           "community": {
             "header": "Community-Ressourcen"
           }
         },
-        "preliminary": "Crime-Voruntersuchung",
+        "preliminary": "Straftateinschätzung",
         "police": "Polizei Ressourcen",
         "legal": "Rechtsressourcen",
         "community": "Community-Ressourcen",
-        "forward": "In Ordnung, ich leite Sie an eine Informationsseite zu diesem Thema weiter. Wenn Sie mich wieder brauchen, bin ich hier."
+        "forward": "Alles klar, ich leite Sie an eine Informationsseite zu diesem Thema weiter. Wenn Sie mich wieder brauchen, bin ich hier."
+      },
+      "resourcesAccordion": {
+        "sorryLegal": "Entschuldigung. Ich bin noch nicht in der Lage, maßgeschneiderte Juristische Ressourcen zur Verfügung zu stellen. Hier sind einige allgemeine Informationen:",
+        "sorryPolice": "Entschuldigung. Ich bin noch nicht in der Lage, maßgeschneiderte Polizei Ressourcen zur Verfügung zu stellen. Hier sind einige allgemeine Informationen:",
+          "orgsHit": "Für dieses spezifische Verbrechen würde ich vorschlagen, eine der folgenden Organisationen zu kontaktieren:",
+        "orgsMiss": "Leider konnte ich keine Organisationen finden, die sich auf dieses Verbrechen spezialisiert haben. Hier sind einige, die dennoch nützlich sein könnten:"
       }
     },
     "introPages": {
       "page1": {
-        "hello": "Hallo, ich bin Lilo, deine digitale Rechtsexpertin!"
+        "hello": "Hallo, ich bin Lilo, Ihre digitale Rechtsexpertin!"
       },
       "page2": {
         "header": "Für möglichst genaue Informtionen geben Sie bitte ihr Bundesland und Ihre Sprache an",
@@ -229,6 +286,53 @@
       },
       "page3": {
         "header": "Wählen sie eine Option:"
+      }
+    },
+    "paragraphs": {
+      "177": {
+        "title": "§ 177 Sexueller Übergriff; sexuelle Nötigung; Vergewaltigung"
+      },
+      "184i": {
+        "title": "§ 184i Sexuelle Belästigung"
+      },
+      "185": {
+        "title": "§ 185 Beleidigung"
+      },
+      "186": {
+        "title": "§ 186 Üble Nachrede"
+      },
+      "187": {
+        "title": "§ 187 Verleumdung"
+      },
+      "223": {
+        "title": "§ 223 Körperverletzung"
+      },
+      "224": {
+        "title": "§ 224 Gefährliche Körperverletzung"
+      },
+      "241": {
+        "title": "§ 241 Bedrohung"
+      },
+      "242": {
+        "title": "§ 242 Diebstahl"
+      },
+      "244-1": {
+        "title": "§ 244 Diebstahl mit Waffen"
+      },
+      "244-3": {
+        "title": "§ 244 Wohnungseinbruchdiebstahl"
+      },
+      "249": {
+        "title": "§ 249 Raub"
+      },
+      "250": {
+        "title": "§ 250 Schwerer Raub"
+      },
+      "263": {
+        "title": "§ 263 Betrug"
+      },
+      "303": {
+        "title": "§ 303 Sachbeschädigung"
       }
     }
   }

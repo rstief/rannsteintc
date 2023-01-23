@@ -3,6 +3,7 @@
     "yes": "yes",
     "no": "no",
     "back": "Back",
+    "notImplemented": "Not Implemented",
     "states": {
       "BW": "Baden-Württemberg",
       "BY": "Bavaria",
@@ -237,7 +238,7 @@
           "1": "These results reference the German Criminal Code. For more details, please visit:",
           "2": "https://www.gesetze-im-internet.de/englisch_stgb/"
         },
-        "retry": "if you think none of these apply to you, you can try the assessment again or if you’re not sure what to do, talk to me so I can help you.",
+        "retry": "If you think none of these apply to you, you can try the assessment again or if you’re not sure what to do, talk to me so I can help you.",
         "retryAnswer": {
           "redo": "Redo Assessment",
           "talk": "Talk to Lilo"

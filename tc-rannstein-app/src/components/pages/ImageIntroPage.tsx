@@ -1,5 +1,5 @@
-import { Box, Typography } from "@mui/material"
-import { useNavigate } from "react-router-dom";
+import {Box, Typography} from "@mui/material"
+import {useNavigate} from "react-router-dom";
 import introimage from '../../assets/introimage.svg'
 // import { setTimeout } from 'timers/promises';
 import {useTranslation} from "react-i18next";

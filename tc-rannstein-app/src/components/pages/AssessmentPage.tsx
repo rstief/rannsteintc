@@ -1,4 +1,4 @@
-import { Box } from '@mui/material';
+import {Box} from '@mui/material';
 // @ts-ignore
 import InfoBar from '../InfoBar';
 import ConfiguredChatBot from "../ConfiguredChatBot";

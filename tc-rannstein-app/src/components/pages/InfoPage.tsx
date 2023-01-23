@@ -1,11 +1,11 @@
-import { Box, Typography } from "@mui/material"
+import {Box, Typography} from "@mui/material"
 import ConfiguredChatBot from "../ConfiguredChatBot";
 import {informationFlow} from "../../chatbot-flow/flow";
-import { useTranslation } from "react-i18next";
+import {useTranslation} from "react-i18next";
 
 
 const InfoPage = () => {
-    const { t, i18n } = useTranslation();
+    const { t } = useTranslation();
     
     return(
         <Box sx={{display: 'flex', flexDirection: 'column', height:'calc(100% - 56px)'}}>

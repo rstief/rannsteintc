@@ -1,33 +1,22 @@
-import { Box, Chip, Typography } from '@mui/material';
+import {Box, Chip, Typography} from '@mui/material';
 import ResourcesBar from '../ResourcesBar';
-import { useParams } from 'react-router-dom';
+import {useParams} from 'react-router-dom';
 import Divider from '@mui/material/Divider';
-import theft from '../../assets/theft.svg'
-import fraud from '../../assets/fraud.svg'
 import sexualharassment from '../../assets/sexualharassment.svg'
-import sexualassault from '../../assets/sexualassault.svg'
-import physicalassault from '../../assets/physicalassault.svg'
-import cybercrime from '../../assets/cybercrime.svg'
-import CallIcon from '@mui/icons-material/Call';
-import LocationOnIcon from '@mui/icons-material/LocationOn';
-import LanguageIcon from '@mui/icons-material/Language';
 import lawyer1 from '../../assets/lawyer1.svg';
 import lawyer2 from '../../assets/lawyer2.svg';
 import court from '../../assets/court.svg';
-import coins from '../../assets/coins.svg';
-import benefit from '../../assets/benefit.svg';
-import loan from '../../assets/loan.svg';
-import { useTranslation } from 'react-i18next';
+import {useTranslation} from 'react-i18next';
 
 const ProceduresPage = () => {
 
-    const { t, i18n } = useTranslation();
+    const { t } = useTranslation();
     let { key } = useParams();
     console.log(key);
 
     return (
         <Box>
-            <ResourcesBar innerRef='/lilo/reportcrime' name={t('resourcesbar.law')}></ResourcesBar>
+            <ResourcesBar innerRef='/lilo/reportcrime' name={t('resourcesbar.law')}/>
             <Box display={'flex'} height='20%' marginLeft='10px' marginRight='8px' mt={'10px'} mb='10px' sx={{ justifyContent: 'start' }}>
                 <Box height={'10%'} alignSelf='center' justifyContent={'center'}>
                     <img src={sexualharassment} className='communityfriendimage' alt='intro' />

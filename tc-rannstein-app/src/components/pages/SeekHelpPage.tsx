@@ -1,4 +1,4 @@
-import { Box } from '@mui/material';
+import {Box} from '@mui/material';
 // @ts-ignore
 import ChatBot from 'react-simple-chatbot';
 import InteractionBar from '../InteractionBar';

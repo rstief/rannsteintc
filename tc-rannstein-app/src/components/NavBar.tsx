@@ -1,17 +1,20 @@
+// noinspection HtmlUnknownTarget
+// So no warning for routing links
+
 import {
     Accordion,
     AccordionDetails,
     AccordionSummary,
     AppBar,
     Box,
-    Button,
-    Divider, FormControl,
+    Divider,
+    FormControl,
     IconButton,
     Link,
     Menu,
     MenuItem,
-    Select, SelectChangeEvent,
-    Stack,
+    Select,
+    SelectChangeEvent,
     Toolbar,
     Typography
 } from '@mui/material'
@@ -20,11 +23,11 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
 import logo from '../assets/logoWithName.svg'
 import React, {useState} from 'react';
-import { useTranslation } from 'react-i18next';
+import {useTranslation} from 'react-i18next';
 import states from "../data/states.json";
 
 const NavBar = () => {
-    const { t, i18n } = useTranslation();
+    const { t } = useTranslation();
 
     const [gerState, setGerState] = useState(localStorage.getItem("state") ?? 'BY');
     const [language, setLanguage] = useState(localStorage.getItem("language") ?? 'en');

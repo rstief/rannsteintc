@@ -1,5 +1,5 @@
-import { Box, Typography } from '@mui/material';
-import { useNavigate } from 'react-router-dom';
+import {Box, Typography} from '@mui/material';
+import {useNavigate} from 'react-router-dom';
 import i18n from '../../i18n/i18n';
 
 const NotImplementedPage = () => {

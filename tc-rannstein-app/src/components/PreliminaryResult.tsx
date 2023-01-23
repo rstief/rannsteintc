@@ -1,16 +1,9 @@
+// noinspection HtmlUnknownTarget,JSUnfilteredForInLoop
+// So no warning for routing links
 import React, {useEffect, useState} from "react";
 import i18n from "../i18n/i18n";
 import organisationList from '../data/organizations.json'
-import {
-    Accordion,
-    AccordionDetails,
-    AccordionSummary,
-    Divider,
-    FormControl,
-    Link,
-    MenuItem, Select, SelectChangeEvent,
-    Typography
-} from "@mui/material";
+import {Accordion, AccordionDetails, AccordionSummary, Divider, Link, Typography} from "@mui/material";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import ArrowIcon from '@mui/icons-material/KeyboardArrowRight';
 
@@ -139,7 +132,7 @@ function CommunityContent(props:any) {
             </div>
             <Divider sx={{borderBottomWidth: 1.5, background:'#FFF'}}/>
             {getResources(filter(props.paragraph)).map((org, index) => {
-                return <Link href={`../../lilo/communityorg/${org.id}`} target="_blank" color='#FFF' underline='none'>
+                return <Link key={index} href={`../../lilo/communityorg/${org.id}`} target="_blank" color='#FFF' underline='none'>
                     <div className="buttonPadding" style={{display:"flex", alignItems:"center" }}>
                         <div >
                             {org.fullName}

@@ -1,7 +1,7 @@
 import React from "react";
 // @ts-ignore
 import ChatBot from 'react-simple-chatbot';
-import { ThemeProvider } from 'styled-components';
+import {ThemeProvider} from 'styled-components';
 
 import botAvatar from "../assets/botAvatar.svg";
 import i18n from "i18next";

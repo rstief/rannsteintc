@@ -1,13 +1,12 @@
-import {Box, Chip, Link, Typography} from '@mui/material';
+import {Box, Chip, Typography} from '@mui/material';
 import ResourcesBar from '../ResourcesBar';
 import communityfriendship from '../../assets/communityfriendship.svg'
-import { useParams } from 'react-router-dom';
+import {useParams} from 'react-router-dom';
 import Divider from '@mui/material/Divider';
 import organisationList from '../../data/organizations.json'
 import CallIcon from '@mui/icons-material/Call';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import LanguageIcon from '@mui/icons-material/Language';
-import { width } from '@mui/system';
 import i18n from "../../i18n/i18n";
 
 interface org {
@@ -34,7 +33,7 @@ const CommunityOrgPage = () => {
     console.log(orgId);
     return (
         <Box >
-            <ResourcesBar innerRef='/lilo/communityresources' name={i18n.t('resourcesbar.community')}></ResourcesBar>
+            <ResourcesBar innerRef='/lilo/communityresources' name={i18n.t('resourcesbar.community')}/>
             <Box key={1} display={'flex'} height='20%' marginLeft='30px' marginRight='30px' mt='10px' mb='10px' sx={{ justifyContent: 'space-between', alignItems: 'center'}}>
                 <img src={detailOrg.image !== "" ? detailOrg.image : communityfriendship} className='communityfriendimage' alt='Organization Image' style={{width:'30%', maxWidth:'30%'}}/>
                 <Typography width='70%' m='8px' fontSize='13px' fontWeight={'bold'}>
@@ -72,7 +71,7 @@ const CommunityOrgPage = () => {
                 {
                     <Box display={'flex'} flexWrap='wrap' flexDirection='row' justifyContent={'center'}>
                         {detailOrg.services.map(
-                            (item: string[], index: any, array: org[]) => 
+                            (item: string[], index: any) =>
                             <Box key={index} m={'4px'} width={'100px'} height={'100px'} sx={{ border: 1, backgroundColor: '#38768A', overflowWrap:'break-word'}} borderColor={'black'} borderRadius='15px' >
                                 <Typography m={'4px'} color='white'>{item}</Typography>
                             </Box>

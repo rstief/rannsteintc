@@ -1,18 +1,7 @@
+// noinspection JSUnfilteredForInLoop
+
 import React, {useEffect, useState} from "react";
 import i18n from "../i18n/i18n";
-import organisationList from '../data/organizations.json'
-import {
-    Accordion,
-    AccordionDetails,
-    AccordionSummary,
-    Divider,
-    FormControl,
-    Link,
-    MenuItem, Select, SelectChangeEvent,
-    Typography
-} from "@mui/material";
-import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
-import ArrowIcon from '@mui/icons-material/KeyboardArrowRight';
 
 
 function SexualAssaultResult(props: any) {

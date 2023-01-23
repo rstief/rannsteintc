@@ -1,19 +1,11 @@
+// noinspection HtmlUnknownTarget
+// So no warning for routing links
 import React from "react";
-import {
-    Accordion,
-    AccordionDetails,
-    AccordionSummary,
-    Divider,
-    FormControl,
-    Link,
-    MenuItem, Select, SelectChangeEvent,
-    Typography
-} from "@mui/material";
+import {Accordion, AccordionDetails, AccordionSummary, Divider, Link, Typography} from "@mui/material";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
-import states from "../data/states.json";
 import i18n from "../i18n/i18n";
 
-function ResourcesAccordion(props: any) {
+function ResourcesAccordion() {
     return (
         <div>
             <div>

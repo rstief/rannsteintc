@@ -1,10 +1,10 @@
-import { Box, Chip, Typography } from '@mui/material';
+import {Box, Chip, Typography} from '@mui/material';
 import ResourcesBar from '../ResourcesBar';
 import communityfriendship from '../../assets/communityfriendship.svg'
-import { useNavigate } from 'react-router-dom';
+import {useNavigate} from 'react-router-dom';
 import organisationList from '../../data/organizations.json'
-import { useState } from 'react';
-import { useTranslation } from 'react-i18next';
+import {useState} from 'react';
+import {useTranslation} from 'react-i18next';
 
 interface org {
     id: String
@@ -26,12 +26,12 @@ interface org {
 const CommunityPage = () => {
 
     const [filter, setFilter] = useState("All");
-    const { t, i18n } = useTranslation();
+    const { t } = useTranslation();
     const tags: string[] = ["All", "Physical Violence", "Sexual Violence", "Domestic Violence", "Racially Motivated Violence"];
 
     return (
         <Box display={'flex'} flexDirection='column' justifyContent='center' >
-            <ResourcesBar name={t('resourcesbar.community')} innerRef=''></ResourcesBar>
+            <ResourcesBar name={t('resourcesbar.community')} innerRef=''/>
             <Box display={'flex'} height='125px' borderRadius='20px' borderColor='secondary.main' marginLeft='8px' marginRight='8px' mt='10px' mb='20px' sx={{ border: 1, justifyContent: 'space-between' }}>
                 <Typography m='8px' fontSize='13px'>
                     {t('communityexp')}
@@ -43,14 +43,14 @@ const CommunityPage = () => {
                     setFilter('All')
                 }} /> */}
                 {tags.map(
-                    (item: string, index, array) => <Chip key={index} sx={{m:'2px'}} label={item} size={"small"} onClick={() => {
+                    (item: string, index) => <Chip key={index} sx={{m:'2px'}} label={item} size={"small"} onClick={() => {
                         setFilter(item)
                     }
                     } />
                 )}
             </Box>
             {organisationList.map(
-                (item: org, index, array: org[]) => {
+                (item: org) => {
                     if (item.tags.includes(filter) || filter === 'All') {
                         return <CommunityItem key={item.id} id={item.id} />;
                     }
@@ -101,7 +101,7 @@ const CommunityItem = (props: any) => {
                     {
                         <div>
                             {tags.map(
-                                (item, index, array) => <Chip key={index} sx={{ ml: '2px', mr: '2px' }} size='small' label={item} />
+                                (item, index) => <Chip key={index} sx={{ ml: '2px', mr: '2px' }} size='small' label={item} />
                             )}
                         </div>
                     }

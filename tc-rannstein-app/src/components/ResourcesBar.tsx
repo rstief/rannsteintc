@@ -1,10 +1,10 @@
-import { Box, Button, Link, Typography } from '@mui/material';
-import { useTranslation } from 'react-i18next';
-import { useNavigate } from 'react-router-dom';
+import {Box, Typography} from '@mui/material';
+import {useTranslation} from 'react-i18next';
+import {useNavigate} from 'react-router-dom';
 
 
 const ResourcesBar = (props: any) => {
-    const { t, i18n } = useTranslation();
+    const { t } = useTranslation();
     const backText = '< ' + t('back')
     const navigate = useNavigate();
 

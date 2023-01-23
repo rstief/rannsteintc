@@ -1,4 +1,4 @@
-import { Box, Typography } from '@mui/material';
+import {Box, Typography} from '@mui/material';
 import ResourcesBar from '../ResourcesBar';
 import lawyerimage from '../../assets/lawyer.svg'
 import theft from '../../assets/theft.svg'
@@ -7,21 +7,16 @@ import sexualharassment from '../../assets/sexualharassment.svg'
 import sexualassault from '../../assets/sexualassault.svg'
 import physicalassault from '../../assets/physicalassault.svg'
 import cybercrime from '../../assets/cybercrime.svg'
-import { useNavigate } from 'react-router-dom';
-import { useState } from 'react';
-import { useTranslation } from 'react-i18next';
+import {useNavigate} from 'react-router-dom';
+import {useTranslation} from 'react-i18next';
 
 const LegalResourcesPage = () => {
     const navigate = useNavigate();
-    const { t, i18n } = useTranslation();
-
-    const [filter, setFilter] = useState("All");
-
-    const tags: string[] = ["All", "Right-Wing", "Racist", "Antisemitic Violence"];
+    const { t, } = useTranslation();
 
     return (
         <Box display={'flex'} flexDirection='column' justifyContent='center' >
-            <ResourcesBar name={t('resourcesbar.law')} innerRef=''></ResourcesBar>
+            <ResourcesBar name={t('resourcesbar.law')} innerRef=''/>
             <Box onClick={() => {
                 navigate('../legalresourceslawyer')
             }}

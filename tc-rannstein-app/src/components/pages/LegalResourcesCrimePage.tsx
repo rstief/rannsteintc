@@ -1,18 +1,18 @@
-import { Box, Typography } from '@mui/material';
+import {Box, Typography} from '@mui/material';
 import ResourcesBar from '../ResourcesBar';
 import sexualharassment from '../../assets/sexualharassment.svg'
-import { useParams } from 'react-router-dom';
+import {useParams} from 'react-router-dom';
 import Divider from '@mui/material/Divider';
-import { useTranslation } from 'react-i18next';
+import {useTranslation} from 'react-i18next';
 
 const LegalResourcesCrimePage = () => {
-    const { t, i18n } = useTranslation();
+    const { t } = useTranslation();
     let { crime } = useParams();
     console.log(crime);
 
     return (
         <Box>
-            <ResourcesBar innerRef='/lilo/legalresources' name={t('resourcesbar.law')}></ResourcesBar>
+            <ResourcesBar innerRef='/lilo/legalresources' name={t('resourcesbar.law')}/>
             <Box display={'flex'} height='20%' marginLeft='8px' marginRight='8px' mt={'10px'} mb='10px' sx={{ justifyContent: 'start' }}>
                 <Box height={'10%'} alignSelf='center' justifyContent={'center'}>
                     <img src={sexualharassment} className='communityfriendimage' alt='intro' />

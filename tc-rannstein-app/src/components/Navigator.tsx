@@ -1,5 +1,5 @@
 import React, {useEffect} from "react";
-import {useNavigate, useLocation} from "react-router-dom";
+import {useLocation, useNavigate} from "react-router-dom";
 
 //used to break out of the chatbot flow and navigate to another page
 function Navigator(props: any) {

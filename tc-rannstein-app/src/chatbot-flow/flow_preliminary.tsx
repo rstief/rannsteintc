@@ -3,6 +3,7 @@ import i18n from "../i18n/i18n";
 import PreliminaryResult from "../components/PreliminaryResult";
 import DividerBubble from "../components/DividerBubble";
 import Navigator from "../components/Navigator";
+import ResourcesAccordion from "../components/ResourcesAccordion";
 
 const flow: any[] = [
     {

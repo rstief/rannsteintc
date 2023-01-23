@@ -10,6 +10,8 @@ import crimeGuideDe from "../resources/Guide_de.pdf";
 import UserBubble from "../components/UserBubble";
 import Navigator from "../components/Navigator";
 import {Link, Typography} from "@mui/material";
+import ResourcesAccordion from "../components/ResourcesAccordion";
+import SexualAssaultResult from "../components/SexualAssaultResult";
 
 const language = localStorage.getItem("language") ?? "en";
 const crimeGuidePdf = language === "en" ? crimeGuideEn : crimeGuideDe;
@@ -60,6 +62,8 @@ function Sexual1Bubble() {
         </div>
     );
 }
+
+
 
 function PdfBubble() {
     return(
@@ -141,9 +145,15 @@ const flow: any[] = [
     {
         id: 'seekHelp.crime3Answer',
         options: [
-            {value:1, label: i18n.t('chatbot.seekHelp.crime3Answer.resources'), trigger: 'error'}, //TODO: resources dropdown!
+            {value:1, label: i18n.t('chatbot.seekHelp.crime3Answer.resources'), trigger: 'seekHelp.crimeHelp'},
             {value:2, label: i18n.t('chatbot.seekHelp.crime3Answer.talk'), trigger: 'error'}, //todo: not for prototype
         ],
+    },
+    {
+        id: 'seekHelp.crimeHelp',
+        component: <ResourcesAccordion/>,
+        asMessage: true,
+        trigger: 'seekHelp.talk'
     },
     {
         id: 'seekHelp.physicalAssault',
@@ -179,6 +189,7 @@ const flow: any[] = [
             {value:1, label: i18n.t('chatbot.seekHelp.sexual3Answer.yes'), trigger: 'seekHelp.sexual4'},
             {value:2, label: i18n.t('chatbot.seekHelp.sexual3Answer.no'), trigger: 'seekHelp.sexual4'},
         ],
+        metadata: {'indications': {1: 'recent'}}
     },
     {
         id: 'seekHelp.sexual4',
@@ -191,6 +202,7 @@ const flow: any[] = [
             {value:1, label: i18n.t('chatbot.seekHelp.sexual4Answer.stranger'), trigger: 'seekHelp.sexual5'},
             {value:2, label: i18n.t('chatbot.seekHelp.sexual4Answer.know'), trigger: 'seekHelp.sexual5'},
         ],
+        metadata: {'indications': {2: 'know'}}
     },
     {
         id: 'seekHelp.sexual5',
@@ -203,6 +215,7 @@ const flow: any[] = [
             {value:1, label: i18n.t('chatbot.seekHelp.sexual5Answer.yes'), trigger: 'seekHelp.sexual6'},
             {value:2, label: i18n.t('chatbot.seekHelp.sexual5Answer.no'), trigger: 'seekHelp.sexual6'},
         ],
+        //todo idk what to write metadata: {'indications': {1: 'u18'}}
     },
     {
         id: 'seekHelp.sexual6',
@@ -215,6 +228,7 @@ const flow: any[] = [
             {value:1, label: i18n.t('chatbot.seekHelp.sexual6Answer.yes'), trigger: 'seekHelp.sexual7'},
             {value:2, label: i18n.t('chatbot.seekHelp.sexual6Answer.no'), trigger: 'seekHelp.sexual7'},
         ],
+        metadata: {'indications': {2: 'unsafe'}}
     },
     {
         id: 'seekHelp.sexual7',
@@ -227,24 +241,33 @@ const flow: any[] = [
             {value:1, label: i18n.t('chatbot.seekHelp.sexual7Answer.yes'), trigger: 'seekHelp.sexual8'},
             {value:2, label: i18n.t('chatbot.seekHelp.sexual7Answer.no'), trigger: 'seekHelp.sexual8'},
         ],
+        metadata: {'indications': {2: 'nobody'}}
     },
     {
         id: 'seekHelp.sexual8',
         message: i18n.t('chatbot.seekHelp.sexual8'),
-        trigger: "seekHelp.sexual9"
+        trigger: "seekHelp.sexualAssaultResult"
     },
     {
-        id: 'seekHelp.sexual9',
-        message: "todo: resources component", //todo: resources
-        trigger: "seekHelp.sexual10"
+        id: 'seekHelp.sexualAssaultResult',
+        component: <SexualAssaultResult/>,
+        asMessage: true,
+        delay: 2000,
+        trigger: 'seekHelp.sexualAssaultResources'
+    },
+    {
+        id: 'seekHelp.sexualAssaultResources',
+        component: <ResourcesAccordion/>,
+        asMessage: true,
+        trigger: 'seekHelp.sexual10'
     },
     {
         id: 'seekHelp.sexual10',
         message: i18n.t('chatbot.seekHelp.sexual10'),
-        trigger: "seekHelp.sexual10Answer"
+        trigger: "seekHelp.talk"
     },
     {
-        id: 'seekHelp.sexual10Answer',
+        id: 'seekHelp.talk',
         options: [
             {value:1, label: i18n.t('chatbot.seekHelp.talk'), trigger: 'error'},
         ],

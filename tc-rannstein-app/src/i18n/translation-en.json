@@ -155,6 +155,16 @@
         },
         "sexual8": "Thank you for answering those questions, it must not have been easy but it is really brave of you.",
         "sexual10": "If you think none of these apply or if you just want to talk, I'll be here.",
+        "sexualAssaultResult": {
+          "intro": "These are some steps I would recommend taking:",
+          "1": "If you feel well enough, go to a police station to lodge a formal report in order to persecute your perpetrator. Even if you think you do not have evidence, or that the chances are slim, it is always better to report the crime.",
+          "2": "By launching a formal report, you would be able to seek the right legal support with possible financial support as well.",
+          "u18": "Sexual Assault of minors is an especially severe offense.",
+          "know": "Make sure that you are safe and the perpetrator is not in a position to hurt you again. If you live in the same place, you could try to temporarily stay at a friend's place or call one of the recommended victim's shelters.",
+          "recent": "Seek out a doctor/gynaecologist in case you have any injuries and to gather physical evidence of the assault. Make sure to request for the medical examination to be documented for easier reporting. Also, keep any clothing, underwear and/or objects that may be used as evidence",
+          "nobody": "Consider if you have a friend or family member you could confide in. If not, you could call one of the crisis hotlines I recommended.",
+          "unsafe": "Your Safety is very important. If possible, try to distance yourself to such a degree that you can call somebody for help, e.g. a crisis center or a friend."
+        },
         "talk": "Talk to Lilo"
       },
       "preliminary": {
@@ -257,6 +267,12 @@
         "legal": "Legal Resources",
         "community": "Community Resources",
         "forward": "Alright, I'll forward you to an information page about that topic. If you need me again, I'll be here."
+      },
+      "resourcesAccordion": {
+        "sorryLegal": "I'm sorry. I'm not yet able to provide tailored legal resources. Here are some general ones:",
+        "sorryPolice": "I'm sorry. I'm not yet able to provide tailored police resources. Here are some general ones:",
+        "orgsHit": "For this specific crime I would suggest contacting one of these organizations:",
+        "orgsMiss": "Sadly I was not able to find organizations that specialize in this crime. Here are some that may be useful nonetheless:"
       }
     },
     "introPages": {

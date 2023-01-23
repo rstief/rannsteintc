@@ -98,13 +98,13 @@ const flow: any[] = [
         trigger: "information.routeCommunity"
     },
     {
-        id: 'information.routePolice', //todo: add real route
-        component: <Navigator route="/lilo/policeresources"/>,
+        id: 'information.routePolice',
+        component: <Navigator route="/lilo/reportcrime"/>,
         delay: 2000,
         end: true
     },
     {
-        id: 'information.routeLegal', //todo: add real route
+        id: 'information.routeLegal',
         component: <Navigator route="/lilo/legalresources"/>,
         delay: 2000,
         end: true

@@ -10,6 +10,7 @@ interface org {
     id: String
     shortName: string,
     fullName: string,
+    image: string,
     description: string,
     state: string,
     address: {
@@ -26,7 +27,7 @@ const CommunityPage = () => {
 
     const [filter, setFilter] = useState("All");
     const { t, i18n } = useTranslation();
-    const tags: string[] = ["All", "Right-Wing", "Racist", "Antisemitic Violence"];
+    const tags: string[] = ["All", "Physical Violence", "Sexual Violence", "Domestic Violence", "Racially Motivated Violence"];
 
     return (
         <Box display={'flex'} flexDirection='column' justifyContent='center' >
@@ -37,7 +38,7 @@ const CommunityPage = () => {
                 </Typography>
                 <img src={communityfriendship} className='intropageimages' alt='intro' />
             </Box>
-            <Box display={'flex'} flexDirection='row' alignSelf='center' justifySelf='center' width='80%' height={'30px'}>
+            <Box display={'flex'} flexDirection='row' alignSelf='center' justifySelf='center' marginLeft='20px' marginRight='20px' height='100%' flexWrap={"wrap"} >
                 {/* <Chip label="All" size={"small"} onClick={() => {
                     setFilter('All')
                 }} /> */}
@@ -93,7 +94,7 @@ const CommunityItem = (props: any) => {
         }} display={'flex'} height='100px' borderRadius='20px' marginLeft='20px' marginRight='20px' mt='10px'
             sx={{ border: 1, justifyContent: 'space-between', boxShadow: 3, borderColor: 'white', overflow: 'hidden', textOverflow: 'ellipsis' }}>
             <Box height={'100px'} width={'35%'}>
-                <img src={communityfriendship} className='communityfriendimage' alt='intro' />
+                <img src={detailOrg.image !== "" ? detailOrg.image : communityfriendship} className='communityfriendimage' alt='intro' style={{objectFit:"contain"}}/>
             </Box>
             <Box pl={'10px'} pt='10px' height='100px' width={'65%'} >
                 <Box pb='10px' height='15%' overflow={'hidden'}>

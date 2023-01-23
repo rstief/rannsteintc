@@ -3,6 +3,7 @@
     "id": "1",
     "shortName": "Seehaus e.V",
     "fullName": "Seehaus e.V",
+    "image": "https://seehaus-ev.de/wp-content/uploads/2012/10/Seehaus_Logo_WEB.png",
     "description": "We support the victims in dealing with and working through their traumatic experience. We transparently point out ways how to react in a healthy and healing way to what has happened and accompany / assist the clients in going them.",
     "state": "Baden-Württemberg",
     "address": {
@@ -10,7 +11,7 @@
       "city": "71229 Leonberg"
     },
     "phone": "(07152) 331 23 304",
-    "link": "www.seehaus-ev.de",
+    "link": "https://www.seehaus-ev.de",
     "tags": ["All"],
     "services": ["Personal counselling", "Online counselling", "Phone counselling", "Self-help groups", "Victims and offenders in conversation"]
   },
@@ -18,45 +19,224 @@
     "id": "2",
     "shortName": "Weisser Ring e.V.",
     "fullName": "Weisser Ring e.V.",
+    "image": "https://weisser-ring.de/sites/all/themes/dreist/images/logo.svg",
     "description": "Victim support organisation that is active nationwide, the victim helpline is available daily between 7 a.m. and 10 p.m. They know which services can be obtained through other service providers and can point out the way to find the right ones.",
-    "state": "National",
+    "state": "All",
     "address": {
       "street": "Weberstraße 16",
       "city": "55130 Mainz"
     },
     "phone": "+49 6131 830 30",
-    "link": " https://weisser-ring.de/english",
+    "link": "https://weisser-ring.de/english",
     "tags": ["All"],
-    "services": ["Helpline: 116 006", "Personal helpdesks", " Quick and professional assistance ", "Accompanying the victim to court", "Assistance in dealing with paperwork and other official matter"]
+    "services": ["Helpline: 116 006", "Personal helpdesks", "Accompanying to court", "Assistance in dealing with legal paperwork"]
   },
   {
     "id": "3",
-    "shortName": "ado",
-    "fullName": "Arbeitskreis der Opferhilfen in Deutschland e.V.",
-    "description": " An umbrella organisation for a range of professional victim support organisations operating at the regional level. Der gemeinnützige Verein dient der ideellen und finanziellen Unterstützung der ado-Mitglieder.",
-    "state": "National",
+    "shortName": "Opferhilfen",
+    "fullName": "Opferhilfen",
+    "image": "https://image.jimcdn.com/app/cms/image/transf/dimension=629x10000:format=png/path/sa11949370178fc08/image/i7efc3160e60d27af/version/1592229106/image.png",
+    "description": "An umbrella organisation for a range of professional victim support organisations operating at the regional level.",
+    "state": "All",
     "address": {
-      "street": " Oldenburger Str. 38",
+      "street": "Oldenburger Str. 38",
       "city": "10551 Berlin"
     },
     "phone": "+49 (0)176 - 60357576",
-    "link": "https://www.opferhilfen.de/",
+    "link": "https://www.beratungsstellen-opferhilfen.de/",
     "tags": ["All"],
-    "services": ["Advice", "Counseling centers", "Court Preparation"]
+    "services": ["Advice", "Counseling Centers", "Court Preparation"]
   },
   {
     "id": "4",
     "shortName": "VBRG",
     "fullName": "Association of Counseling Centers for Victims of Right-Wing, Racist and Antisemitic Violence in Germany",
+    "image": "https://verband-brg.de/wp-content/uploads/2021/10/Logo_VBRG_small_eng_2021_web_96dpi.png",
     "description": "VBRG is committed to providing victims of right-wing, racist and antisemitic violence across Germany with access to counselling and support. ",
-    "state": "National",
+    "state": "All",
     "address": {
-      "street": " Schlesische Straße 20 ",
-      "city": " 10997 Berlin"
+      "street": "Schlesische Straße 20 ",
+      "city": "10997 Berlin"
     },
-    "phone": " 030 – 33 85 97 77",
-    "link": " https://verband-brg.de/ ",
-    "tags": ["Right-Wing", "Racist", "Antisemitic Violence"],
-    "services": ["Counseling Center"]
+    "phone": "030 – 33 85 97 77",
+    "link": "https://verband-brg.de/ ",
+    "tags": ["Racially Motivated Violence", "Physical Violence"],
+    "services": ["Counseling Centers", "Help finding Lawyers", "Accompanying to court"]
+  },
+  {
+    "id": "5",
+    "shortName": "bff",
+    "fullName": "Bundesverband Frauenberatungsstellen und Frauennotrufe - Frauen Gegen Gewalt e.V.",
+    "image": "https://www.frauen-gegen-gewalt.de/files/assets/images/bff_frauen-gegen-gewalt.svg",
+    "description": "The bff is the federal association of rape crisis centres and women’s counselling centres in Germany.",
+    "state": "All",
+    "address": {
+      "street": "Petersburgerstraße 94",
+      "city": "10247 Berlin"
+    },
+    "phone": "030 322 99 500",
+    "link": "https://www.frauen-gegen-gewalt.de/en/the-federal-association.html",
+    "tags": ["Sexual Violence", "Physical Violence", "Stalking", "Domestic Violence"],
+    "services": ["Helpline: 08000 116 016", "Counseling Centers"]
+  },
+  {
+    "id": "6",
+    "shortName": "Frauen- und Kinderschutzhaus Kreis Waldshut e.V.",
+    "fullName": "Frauen- und Kinderschutzhaus Kreis Waldshut e.V.",
+    "image": "https://www.frauenhaus-wt.de/theme/public/assets/logo.png?ts=1540462212",
+    "description": "Frauenberatungsstelle COURAGE - spezialisierte Fachberatungsstelle für Frauen und Mädchen bei häuslicher und sexualisierter Gewalt. Wir bieten für Frauen und Mädchen 14-tägig auch Beratung in den Räumen der Caritas Bad Säckingen an. Online-Beratungen können Frauen und Mädchen aus Bonndorf vom Rathaus Bonndorf ausbekommen.",
+    "state": "Baden-Württemberg",
+    "address": {
+      "street": "Hauptstraße 42b",
+      "city": "79787 Lauchringen"
+    },
+    "phone": "07741 – 808 22 77 ",
+    "link": "https://www.frauenhaus-wt.de ",
+    "tags": ["Domestic Violence", "Sexual Violence", "Stalking"],
+    "services": ["email: courage@frauenhaus-wt.de ", "email: beratung@frauenhaus-wt.de", "Telefonische Terminvereinbarung bei der Courage unter 07741 – 808 22 77", "Begleiten Sie auf Ihrer Suche nach geeigneten TherapeutInnen, ÄrztInnen, RechtsanwältInnen"]
+  },
+  {
+    "id": "7",
+    "shortName": "Polizeipräsidium München ",
+    "fullName": "Polizeipräsidium München",
+    "image": "",
+    "description": "Dabei klären wir über den Ablauf eines Strafverfahrens und über Opferrechte auf, erläutern polizeiliche Maßnahmen und Möglichkeiten, geben Verhaltenstipps zur Vorbeugung und weisen auf Beratungsstellen und Hilfeeinrichtungen hin. Bei Bedarf stellen wir den Kontakt zur zuständigen Polizeidienststelle her. ",
+    "state": "München",
+    "address": {
+      "street": "Ettstraße 2",
+      "city": "80333 München"
+    },
+    "phone": "089/2910-3430 ",
+    "link": "https://www.polizei.bayern.de/schuetzen-und-vorbeugen/beratung/beauftragte-der-polizei-fuer-kriminalitaetsopfer/005081/index.html",
+    "tags": ["All"],
+    "services": ["Beratungstätigkeit", "Kontaktherstellung zu anderen Einrichtungen"]
+  },
+  {
+    "id": "8",
+    "shortName": "Stiftung Opferhilfe Bayern",
+    "fullName": "Stiftung Opferhilfe Bayern",
+    "image": "",
+    "description": "Die Stiftung gewährt Zuwendungen an Personen, die Opfer einer Straftat geworden sind. Leistungen können auch enge Angehörige (Ehegatte, Lebenspartner, Kinder, Eltern) erhalten, wenn sie durch die Tat besondere Nachteile erlitten haben. Ziel der Stiftung ist es, Opfer von Straftaten und deren enge Angehörige finanziell zu unterstützen. Dadurch sollen bestehende Schutzlücken im Entschädigungsrecht geschlossen werden, da Opfer von Straftaten und deren Angehörige erlittene Schäden vom Täter und vom Sozialsystem häufig nicht oder nur teilweise ausgeglichen erhalten. ",
+    "state": "Bayern",
+    "address": {
+      "street": "Prielmayerstr. 7",
+      "city": "80335 München"
+    },
+    "phone": "089 5597 - 1362",
+    "link": "https://www.opferhilfebayern.de/Kontakt.html",
+    "tags": ["All"],
+    "services": ["kein Parteiverkehr"]
+  },
+  {
+    "id": "9",
+    "shortName": "Opferhilfe Land Brandenburg e.V.",
+    "fullName": "Opferhilfe Land Brandenburg e.V.",
+    "image": "https://www.opferhilfe-brandenburg.de/wp-content/uploads/2015/11/logo_gross.jpg",
+    "description": "Sie können mit uns persönlich über das Geschehene sprechen. Wir informieren Sie über mögliche seelische Folgen. Wir unterstützen Sie im Umgang mit überwältigend erlebten Gefühlen und bei der Wiederherstellung von Sicherheit und Selbstvertrauen. Akutbehandlung in unserer Traumaambulanz in Potsdam ",
+    "state": "Brandenburg",
+    "address": {
+      "street": "Steinstraße 12 Zugang über Toreinfahrt Steinstraße 11",
+      "city": "14776 Brandenburg an der Havel"
+    },
+    "phone": "03381 224 85 5",
+    "link": "https://www.opferhilfe-brandenburg.de/aktuelles/",
+    "tags": ["All"],
+    "services": ["Allgemeine Informationen über die Rechte von Verletzten und Geschädigten im Strafverfahren", "Rechtliche Beratung und Beistand durch einen Rechtsanwalt (Opferanwalt)", "Psychosoziale Prozessbegleitung", "Besonderer Opferschutz: Häusliche Gewalt/ Gewalt in der Partnerschaft/ Stalking/ Gewaltschutz", "Besonderer Opferschutz: Sexueller Mißbrauch von Kindern", "Besonderer Opferschutz: Opfer rechtsextremer Gewalt", "Strafrechtliche Rehabilitierung", "E-Mail: brandenburg@opferhilfe-brandenburg.de", "Erreichbarkeit: Dienstag 14:00-18:00 und Donnerstag 10:00-14:00 Uhr"]
+  },
+  {
+    "id": "10",
+    "shortName": "Hessische Opferhilfen",
+    "fullName": "Hessische Opferhilfen",
+    "image": "",
+    "description": "Unsere Beratung wird von geschulten SozialpädagogInnen und SozialarbeiterInnen durchgeführt und umfasst: Onlineberatung bei Problemen und Ängsten infolge einer erlebten Straftat Unterstützung bei der Verarbeitung traumatischer Erfahrungen.Bei Bedarf Hilfe bei der Kontaktaufnahme zu RechtsanwältInnen, TherapeutInnen, Jugendämtern, Frauenhäusern usw. ",
+    "state": "Hessen",
+    "address": {
+      "street": "",
+      "city": ""
+    },
+    "phone": "It’s an online counseling center, the phone they provided in Impressum I guess is not the phone we want here",
+    "link": "https://justizministerium.hessen.de/Praevention/Opferschutz/Opferberatungsstellen",
+    "tags": ["All"],
+    "services": ["Onlineberatung", "Unterstützung bei traumatischen Erfahrungen", "Kontaktherstellung zu anderen Einrichtungen"]
+  },
+  {
+    "id": "11",
+    "shortName": "TRAUMA- UND OPFERZENTRUM FRANKFURT e.V.",
+    "fullName": "TRAUMA- UND OPFERZENTRUM FRANKFURT e.V.",
+    "image": "",
+    "description": "Das TRAUMA- UND OPFERZENTRUM FRANKFURT e.V. ist eine professionelle Beratungseinrichtung für Frauen und Männer, Mädchen und Jungen. Egal ob sie Beleidigt, Überfallen, Verletzt, Misshandelt oder Vergewaltigt wurden. Wenn Sie über das Erlebte sprechen wollen beraten und unterstützen wir Sie kostenlos, streng vertraulich und auf Wunsch anonym - unabhängig davon, ob Sie Anzeige erstattet haben oder erstatten wollen ...",
+    "state": "Hessen",
+    "address": {
+      "street": "Zeil 81",
+      "city": "60313 Frankfurt/Main"
+    },
+    "phone": "(069) 21 655 828",
+    "link": "https://www.trauma-undopferzentrum.de ",
+    "tags": ["All"],
+    "services": ["Montag - Donnerstag: 09:30 Uhr - 17:00 Uhr; Freitag: 09:30 Uhr - 14:30 Uhr sowie nach Vereinbarung", "Unterstützung und Entlastung durch Zuhören und Sprechen über das Geschehene ", "Differenzierte Diagnostik durch Psychologinnen", "Psychologische 'Erste Hilfe'", "Traumaberatung", "Krisenintervention", "Gespräche über Probleme und Ängste im Zusammenhang mit einer Straftat", "Informationen über Strafanzeige, Nebenklage, Privatklage und den Ablauf des Strafverfahrens (keine Rechtsberatung)", "Informationen über finanzielle Hilfsmöglichkeiten", "Hinweise auf psychotherapeutische Hilfsmöglichkeiten", "Knüpfen von Kontakten bzw. Weitervermittlung zu Sozialbehörden u. a.", "Praktische Hilfe beim Ausfüllen von Formularen schreiben"]
+  },
+  {
+    "id": "12",
+    "shortName": "Justiz in Sachsen",
+    "fullName": "Sächsisches Staatsministerium der Justiz und für Demokratie, Europa und Gleichstellung",
+    "image": "",
+    "description": "Collection of different kind of victim-help resources",
+    "state": "Sachsen ",
+    "address": {
+      "street": "",
+      "city": "01095 Dresden"
+    },
+    "phone": "",
+    "link": "https://www.justiz.sachsen.de/content/2956.htm",
+    "tags": ["All"],
+    "services": ["Collection of different kind of victim-help resources "]
+  },
+  {
+    "id": "13",
+    "shortName": "Thüringer Ministerium für Migration, Justiz und Verbraucherschutz ",
+    "fullName": "Thüringer Ministerium für Migration, Justiz und Verbraucherschutz ",
+    "image": "",
+    "description": "Collection of different kind of victim-help resources ",
+    "state": "Thüringen",
+    "address": {
+      "street": "Werner-Seelenbinder-Straße 5 ",
+      "city": "99096 Erfurt "
+    },
+    "phone": "",
+    "link": "https://justiz.thueringen.de/themen/opferhilfeundopferschutz/einrichtungen ",
+    "tags": ["All"],
+    "services": ["Collection of different kind of victim-help resources "]
+  },
+  {
+    "id": "14",
+    "shortName": "Stiftung Rheinland-Pfalz für Opferschutz ",
+    "fullName": "Stiftung Rheinland-Pfalz für Opferschutz ",
+    "image": "",
+    "description": "Die Stiftung hilft durch eine einmalige finanzielle Zuwendung. ",
+    "state": "Rheinland-Pfalz. Aufgabe der Stiftung ist es, vor allem Opfern von Straftaten ergänzende finanzielle Hilfe zu leisten. Sie soll zur Linderung von Notlagen beitragen, wenn diesen Menschen nicht auf andere Weise geholfen werden kann. Ein Rechtsanspruch auf finanzielle Unterstützung besteht allerdings nicht. Mit der Stiftung sollen Lücken im geltenden gesetzlichen Entschädigungssystem geschlossen werden. ",
+    "address": {
+      "street": "Ernst-Ludwig-Str. 3 ",
+      "city": "55116 Mainz "
+    },
+    "phone": "06131/16-4881 ",
+    "link": "https://jm.rlp.de/de/themen/opferschutz/stiftung-rheinland-pfalz-fuer-opferschutz/",
+    "tags": ["All"],
+    "services": ["Finanzielle Hilfe "]
+  },
+  {
+    "id": "15",
+    "shortName": "Hilfe Telefon",
+    "fullName": "Hilfe Telefon ",
+    "image": "https://www.hilfetelefon.de/typo3conf/ext/bafza_templateset_hilfetelefon/Resources/Public/Images/BFZ_Logo_Hilfetelefon_2018_auf_weiss_RGB.svg",
+    "description": "Beratung und Hilfe für Frauen zur telefonischen Beratung in 18 Fremdsprachen. ",
+    "state": "All",
+    "address": {
+      "street": "",
+      "city": ""
+    },
+    "phone": "08000 116 016 ",
+    "link": "https://www.hilfetelefon.de/",
+    "tags": ["Domestic Violence", "Sexual Violence", "Stalking"],
+    "services": ["Mit Hilfe von Dolmetscherinnen ist die telefonische Beratung unter der 08000 116 016 ist damit jetzt in 18 Fremdsprachen möglich.", "Psychosoziale Beratung"]
   }
 ]

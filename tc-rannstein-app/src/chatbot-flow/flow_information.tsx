@@ -1,9 +1,9 @@
 import React from "react";
 import StartBubbles from "../components/StartBubbles"
 import i18n from "../i18n/i18n";
-import policeIcon from "../resources/icons/police.svg";
-import legalIcon from "../resources/icons/legal.svg";
-import communityIcon from "../resources/icons/community.svg";
+import policeIcon from "../assets/icons/police.svg";
+import legalIcon from "../assets/icons/legal.svg";
+import communityIcon from "../assets/icons/community.svg";
 import UserBubble from "../components/UserBubble";
 import Navigator from "../components/Navigator";
 

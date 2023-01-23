@@ -3,7 +3,7 @@ import React from "react";
 import ChatBot from 'react-simple-chatbot';
 import { ThemeProvider } from 'styled-components';
 
-import botAvatar from "../resources/botAvatar.svg";
+import botAvatar from "../assets/botAvatar.svg";
 import i18n from "i18next";
 
 const font: string = 'Raleway';

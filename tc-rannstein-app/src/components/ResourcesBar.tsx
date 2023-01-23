@@ -16,9 +16,10 @@ const ResourcesBar = (props: any) => {
             <Box onClick={() => {
                 if (props.innerRef === '') {
                     console.log('going back 1')
-                    navigate(-1)
+                    // navigate(-1)
                 }
-                navigate(props.innerRef)
+                navigate(-1)
+                // navigate(props.innerRef)
             }
             }>
                 <Typography color={'secondary'} fontWeight={'bold'} textAlign='left' ml='10px' mt='5px'>

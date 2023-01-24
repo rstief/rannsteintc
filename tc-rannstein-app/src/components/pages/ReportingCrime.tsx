@@ -53,7 +53,7 @@ const ReportingCrime = () => {
                 <Typography fontWeight='bold' m='15px'>
                 {t('categories')}
                 </Typography>
-                <Typography m='9px' fontStyle={'italic'}>
+                <Typography m='9px' ml='15px' fontStyle={'italic'}>
                 {t('resources.report.catexp')}
                 </Typography>
             </Box>
@@ -62,7 +62,7 @@ const ReportingCrime = () => {
                 {t('sensitive')}
                 </Typography>
                 <Box display={'flex'} flexWrap='wrap' flexDirection='row' justifyContent={'space-evenly'}>
-                    <Box display={'flex'} flexDirection={'column'} onClick={() => {
+                    <Box width={'125px'} height={'125px'} display={'flex'} flexDirection={'column'} onClick={() => {
                         navigate('../procedures/sexualassault')
                     }}>
                         <Box m={'4px'} alignSelf='center' width={'65px'} height={'65px'} sx={{ border: 1, backgroundColor: '#D9D9D9' }} borderColor={'black'} borderRadius='15px'>
@@ -71,7 +71,7 @@ const ReportingCrime = () => {
                         </Box>
                         <Typography m={'4px'} align='center' color='black' fontSize={'11px'}>{t('crimes.sa')}</Typography>
                     </Box>
-                    <Box display={'flex'} flexDirection={'column'} onClick={() => {
+                    <Box width={'125px'} height={'125px'} display={'flex'} flexDirection={'column'} onClick={() => {
                         navigate('../procedures/sexualharassment')
                     }}>
                         <Box m={'4px'} alignSelf='center' width={'65px'} height={'65px'} sx={{ border: 1, backgroundColor: '#D9D9D9' }} borderColor={'black'} borderRadius='15px'>
@@ -80,7 +80,7 @@ const ReportingCrime = () => {
                         </Box>
                         <Typography m={'4px'} align='center' color='black' fontSize={'11px'}>{t('crimes.sh')}</Typography>
                     </Box>
-                    <Box display={'flex'} flexDirection={'column'} onClick={() => {
+                    <Box width={'125px'} height={'125px'} display={'flex'} flexDirection={'column'} onClick={() => {
                         navigate('../procedures/physicalassault')
                     }}>
                         <Box m={'4px'} alignSelf='center' width={'65px'} height={'65px'} sx={{ border: 1, backgroundColor: '#D9D9D9' }} borderColor={'black'} borderRadius='15px'>
@@ -98,7 +98,7 @@ const ReportingCrime = () => {
                 </Typography>
 
                 <Box display={'flex'} flexWrap='wrap' flexDirection='row' justifyContent={'space-evenly'}>
-                    <Box display={'flex'} flexDirection={'column'} onClick={() => {
+                    <Box width={'125px'} height={'125px'} display={'flex'} flexDirection={'column'} onClick={() => {
                         navigate('../procedures/cybercrime')
                     }}>
                         <Box m={'4px'} alignSelf='center' width={'65px'} height={'65px'} sx={{ border: 1, backgroundColor: '#D9D9D9' }} borderColor={'black'} borderRadius='15px'>
@@ -107,7 +107,7 @@ const ReportingCrime = () => {
                         </Box>
                         <Typography m={'4px'} align='center' color='black' fontSize={'11px'}>{t('crimes.cc')}</Typography>
                     </Box>
-                    <Box display={'flex'} flexDirection={'column'} onClick={() => {
+                    <Box width={'125px'} height={'125px'} display={'flex'} flexDirection={'column'} onClick={() => {
                         navigate('../procedures/fraud')
                     }}>
                         <Box m={'4px'} alignSelf='center' width={'65px'} height={'65px'} sx={{ border: 1, backgroundColor: '#D9D9D9' }} borderColor={'black'} borderRadius='15px'>
@@ -116,7 +116,7 @@ const ReportingCrime = () => {
                         </Box>
                         <Typography m={'4px'} align='center' color='black' fontSize={'11px'}>{t('crimes.f')}</Typography>
                     </Box>
-                    <Box display={'flex'} flexDirection={'column'} onClick={() => {
+                    <Box width={'125px'} height={'125px'} display={'flex'} flexDirection={'column'} onClick={() => {
                         navigate('../procedures/theft')
                     }}>
                         <Box m={'4px'} alignSelf='center' width={'65px'} height={'65px'} sx={{ border: 1, backgroundColor: '#D9D9D9' }} borderColor={'black'} borderRadius='15px'>

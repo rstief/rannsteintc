@@ -27,7 +27,7 @@ const LegalResourcesLawyerPage = () => {
                 </Typography>
                 <Divider sx={{ margin: '10px' }} />
                 <Box display={'flex'} flexDirection='row' paddingLeft={'20px'} paddingRight={'20px'}>
-                    <Box alignSelf={'center'} height='50%' width='40%' pr='8px'>
+                    <Box alignSelf={'center'} height='50%' pr='8px'>
                         <img src={lawyer1} className='lawyerimage' alt='lawyer' >
                         </img>
                     </Box>
@@ -36,7 +36,7 @@ const LegalResourcesLawyerPage = () => {
                     </Typography>
                 </Box>
                 <Box display={'flex'} flexDirection='row' paddingLeft={'20px'} paddingRight={'20px'}>
-                    <Box alignSelf={'center'} height='50%' width='40%' pr='8px'>
+                    <Box alignSelf={'center'} height='50%' pr='8px'>
                         <img src={lawyer2} className='lawyerimage' alt='lawyer' >
                         </img>
                     </Box>
@@ -45,7 +45,7 @@ const LegalResourcesLawyerPage = () => {
                     </Typography>
                 </Box>
                 <Box display={'flex'} flexDirection='row' paddingLeft={'20px'} paddingRight={'20px'}>
-                    <Box alignSelf={'center'} height='50%' width='40%' pr='8px'>
+                    <Box alignSelf={'center'} height='50%' pr='8px'>
                         <img src={court} className='lawyerimage' alt='lawyer' >
                         </img>
                     </Box>
@@ -60,7 +60,7 @@ const LegalResourcesLawyerPage = () => {
                 </Typography>
                 <Divider sx={{ margin: '10px' }} />
                 <Box display={'flex'} flexDirection='row' paddingLeft={'20px'} paddingRight={'20px'}>
-                    <Box alignSelf={'center'} height='50%' width='40%' pr='8px'>
+                    <Box alignSelf={'center'} height='50%' pr='8px'>
                         <img src={coins} className='lawyerimage' alt='lawyer' >
                         </img>
                     </Box>
@@ -69,7 +69,7 @@ const LegalResourcesLawyerPage = () => {
                     </Typography>
                 </Box>
                 <Box display={'flex'} flexDirection='row' paddingLeft={'20px'} paddingRight={'20px'}>
-                    <Box alignSelf={'center'} height='50%' width='40%' pr='8px'>
+                    <Box alignSelf={'center'} height='50%' pr='8px'>
                         <img src={benefit} className='lawyerimage' alt='lawyer' >
                         </img>
                     </Box>
@@ -78,7 +78,7 @@ const LegalResourcesLawyerPage = () => {
                     </Typography>
                 </Box>
                 <Box display={'flex'} flexDirection='row' paddingLeft={'20px'} paddingRight={'20px'}>
-                    <Box alignSelf={'center'} height='50%' width='40%' pr='8px'>
+                    <Box alignSelf={'center'} height='50%' pr='8px'>
                         <img src={loan} className='lawyerimage' alt='lawyer' >
                         </img>
                     </Box>

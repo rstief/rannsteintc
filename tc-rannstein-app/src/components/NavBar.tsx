@@ -102,7 +102,7 @@ const NavBar = () => {
                                 <Typography color='primary' fontWeight='bold' fontSize='14px'>{t('navbar.police.key')}</Typography>
                             </AccordionSummary>
                             <AccordionDetails sx={{ backgroundColor: 'white', padding: "0" }}>
-                                <Link href='../lilo/notimplemented' color='secondary' underline='none'>
+                                <Link href='../../lilo/notimplemented' color='secondary' underline='none'>
                                     <div className="buttonPadding">
                                     {t('navbar.police.l1')}
                                     </div>
@@ -125,7 +125,7 @@ const NavBar = () => {
                                 <Typography color='primary' fontWeight='bold' fontSize='14px'>{t('navbar.legal.key')}</Typography>
                             </AccordionSummary>
                             <AccordionDetails sx={{ backgroundColor: 'white', padding: "0" }}>
-                                <Link href='../lilo/notimplemented' color='secondary' underline='none'>
+                                <Link href='../../lilo/notimplemented' color='secondary' underline='none'>
                                     <div className="buttonPadding">
                                         {t('navbar.legal.l1')}
                                     </div>

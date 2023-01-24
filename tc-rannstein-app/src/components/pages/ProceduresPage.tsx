@@ -16,7 +16,7 @@ const ProceduresPage = () => {
 
     return (
         <Box>
-            <ResourcesBar innerRef='/lilo/reportcrime' name={t('resourcesbar.law')}/>
+            <ResourcesBar innerRef='/lilo/reportcrime' name={t('resourcesbar.police')}/>
             <Box display={'flex'} height='20%' marginLeft='10px' marginRight='8px' mt={'10px'} mb='10px' sx={{ justifyContent: 'start' }}>
                 <Box height={'10%'} alignSelf='center' justifyContent={'center'}>
                     <img src={sexualharassment} className='communityfriendimage' alt='intro' />
@@ -57,7 +57,7 @@ const ProceduresPage = () => {
                         Police Procedures:
                     </Typography>
                     <Box display={'flex'} flexDirection='row' paddingLeft={'20px'} paddingRight={'20px'}>
-                        <Box alignSelf={'center'} height='50%' width='40%' pr='8px'>
+                        <Box alignSelf={'center'} height='50%' pr='8px'>
                             <img src={lawyer1} className='lawyerimage' alt='lawyer' >
                             </img>
                         </Box>
@@ -66,7 +66,7 @@ const ProceduresPage = () => {
                         </Typography>
                     </Box>
                     <Box display={'flex'} flexDirection='row' paddingLeft={'20px'} paddingRight={'20px'}>
-                        <Box alignSelf={'center'} height='50%' width='40%' pr='8px'>
+                        <Box alignSelf={'center'} height='50%' pr='8px'>
                             <img src={lawyer2} className='lawyerimage' alt='lawyer' >
                             </img>
                         </Box>
@@ -75,7 +75,7 @@ const ProceduresPage = () => {
                         </Typography>
                     </Box>
                     <Box display={'flex'} flexDirection='row' paddingLeft={'20px'} paddingRight={'20px'}>
-                        <Box alignSelf={'center'} height='50%' width='40%' pr='8px'>
+                        <Box alignSelf={'center'} height='50%' pr='8px'>
                             <img src={court} className='lawyerimage' alt='lawyer' >
                             </img>
                         </Box>
@@ -84,7 +84,7 @@ const ProceduresPage = () => {
                         </Typography>
                     </Box>
                     <Box display={'flex'} flexDirection='row' paddingLeft={'20px'} paddingRight={'20px'}>
-                        <Box alignSelf={'center'} height='50%' width='40%' pr='8px'>
+                        <Box alignSelf={'center'} height='50%' pr='8px'>
                             <img src={court} className='lawyerimage' alt='lawyer' >
                             </img>
                         </Box>
